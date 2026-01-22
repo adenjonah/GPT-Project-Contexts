@@ -1,14 +1,15 @@
 {
   "_metadata": {
     "domain": "biometrics",
-    "description": "Garmin metrics including HRV, sleep, heart rate, steps, intensity minutes, and activity data",
-    "keywords": ["Garmin", "HRV", "sleep", "heart rate", "recovery", "training load", "cycling", "running", "steps", "intensity minutes", "activity"],
+    "description": "Recent Garmin metrics including HRV, sleep, and training activities",
+    "keywords": ["Garmin", "HRV", "sleep", "heart rate", "recovery", "training load", "cycling"],
     "last_updated": "2026-01-22",
-    "source": "Garmin Connect exports"
+    "source": "Garmin Connect exports",
+    "data_window": "Last 2 weeks of daily data + phase summaries"
   },
   "current_window": {
-    "label": "last_4_weeks",
-    "start_date": "2025-12-26",
+    "label": "last_2_weeks",
+    "start_date": "2026-01-08",
     "end_date": "2026-01-22",
     "timezone": "America/Los_Angeles"
   },
@@ -30,17 +31,7 @@
       { "date": "2026-01-11", "overnight_hrv_ms": 67, "baseline_range": "45-59", "avg_7d_ms": 48 },
       { "date": "2026-01-10", "overnight_hrv_ms": null, "baseline_range": "45-59", "avg_7d_ms": 45 },
       { "date": "2026-01-09", "overnight_hrv_ms": 49, "baseline_range": "45-59", "avg_7d_ms": 45 },
-      { "date": "2026-01-08", "overnight_hrv_ms": 49, "baseline_range": "45-59", "avg_7d_ms": 44 },
-      { "date": "2026-01-07", "overnight_hrv_ms": 39, "baseline_range": "45-59", "avg_7d_ms": 43 },
-      { "date": "2026-01-06", "overnight_hrv_ms": 46, "baseline_range": "45-59", "avg_7d_ms": 45 },
-      { "date": "2026-01-05", "overnight_hrv_ms": 44, "baseline_range": "45-59", "avg_7d_ms": 47 },
-      { "date": "2026-01-04", "overnight_hrv_ms": 43, "baseline_range": "45-61", "avg_7d_ms": 49 },
-      { "date": "2025-12-31", "overnight_hrv_ms": 49, "baseline_range": "45-61", "avg_7d_ms": 49 },
-      { "date": "2025-12-30", "overnight_hrv_ms": 55, "baseline_range": "45-61", "avg_7d_ms": 50 },
-      { "date": "2025-12-29", "overnight_hrv_ms": 49, "baseline_range": "45-61", "avg_7d_ms": 49 },
-      { "date": "2025-12-28", "overnight_hrv_ms": 51, "baseline_range": "46-63", "avg_7d_ms": 49 },
-      { "date": "2025-12-27", "overnight_hrv_ms": 44, "baseline_range": "46-63", "avg_7d_ms": 46 },
-      { "date": "2025-12-26", "overnight_hrv_ms": 47, "baseline_range": "47-64", "avg_7d_ms": 46 }
+      { "date": "2026-01-08", "overnight_hrv_ms": 49, "baseline_range": "45-59", "avg_7d_ms": 44 }
     ],
     "summary": {
       "current_7d_avg": 55,
@@ -64,275 +55,91 @@
       { "date": "2026-01-11", "score": 88, "quality": "Good", "duration": "9h 48m", "bedtime": "00:36", "wake": "10:36", "rhr": 44, "body_battery": 50 },
       { "date": "2026-01-10", "score": null, "quality": null, "duration": "9h 23m", "bedtime": "23:45", "wake": "09:08", "rhr": 54, "body_battery": null },
       { "date": "2026-01-09", "score": 96, "quality": "Excellent", "duration": "8h 1m", "bedtime": "23:26", "wake": "07:31", "rhr": 48, "body_battery": 79 },
-      { "date": "2026-01-08", "score": 82, "quality": "Good", "duration": "7h 19m", "bedtime": "23:34", "wake": "07:13", "rhr": 48, "body_battery": 69 },
-      { "date": "2026-01-07", "score": 41, "quality": "Poor", "duration": "3h 10m", "bedtime": "12:52", "wake": "16:17", "rhr": 53, "body_battery": 23 },
-      { "date": "2026-01-06", "score": 69, "quality": "Fair", "duration": "5h 39m", "bedtime": "01:35", "wake": "07:52", "rhr": 49, "body_battery": 49 },
-      { "date": "2026-01-05", "score": 82, "quality": "Good", "duration": "8h 36m", "bedtime": "00:38", "wake": "09:41", "rhr": 50, "body_battery": 67 },
-      { "date": "2026-01-04", "score": 64, "quality": "Fair", "duration": "8h 43m", "bedtime": "23:32", "wake": "09:22", "rhr": 51, "body_battery": 53 },
-      { "date": "2025-12-31", "score": 90, "quality": "Excellent", "duration": "7h 59m", "bedtime": "02:31", "wake": "10:42", "rhr": 48, "body_battery": 66 },
-      { "date": "2025-12-30", "score": 71, "quality": "Fair", "duration": "5h 27m", "bedtime": "02:34", "wake": "08:01", "rhr": 46, "body_battery": 56 },
-      { "date": "2025-12-29", "score": 88, "quality": "Good", "duration": "9h 19m", "bedtime": "02:10", "wake": "11:35", "rhr": 47, "body_battery": 69 },
-      { "date": "2025-12-28", "score": 74, "quality": "Fair", "duration": "8h 52m", "bedtime": "22:58", "wake": "09:14", "rhr": 47, "body_battery": 68 },
-      { "date": "2025-12-27", "score": 87, "quality": "Good", "duration": "8h 7m", "bedtime": "03:29", "wake": "11:41", "rhr": 50, "body_battery": 63 },
-      { "date": "2025-12-26", "score": 85, "quality": "Good", "duration": "6h 58m", "bedtime": "02:14", "wake": "09:12", "rhr": 48, "body_battery": 67 }
+      { "date": "2026-01-08", "score": 82, "quality": "Good", "duration": "7h 19m", "bedtime": "23:34", "wake": "07:13", "rhr": 48, "body_battery": 69 }
     ],
     "summary": {
-      "avg_score": 78,
-      "avg_duration": "7h 30m",
+      "avg_score": 80,
+      "avg_duration": "7h 45m",
       "typical_bedtime": "01:00-02:00",
       "typical_wake": "09:00-10:00",
       "pattern": "Late bedtime, late wake - consistent with schedule.json"
     }
   },
-  "heart_rate_weekly": {
-    "description": "Weekly average resting and max HR over past year",
-    "current_phase": "bike_base_building",
-    "data": [
-      { "week_start": "2026-01-16", "resting_bpm": 48, "high_bpm": 144 },
-      { "week_start": "2026-01-09", "resting_bpm": 47, "high_bpm": 145 },
-      { "week_start": "2026-01-02", "resting_bpm": 50, "high_bpm": 151 },
-      { "week_start": "2025-12-26", "resting_bpm": 48, "high_bpm": 145 },
-      { "week_start": "2025-12-19", "resting_bpm": 53, "high_bpm": 145 },
-      { "week_start": "2025-12-12", "resting_bpm": 53, "high_bpm": 137 },
-      { "week_start": "2025-12-05", "resting_bpm": 53, "high_bpm": 133 },
-      { "week_start": "2025-11-28", "resting_bpm": 49, "high_bpm": 115 },
-      { "week_start": "2025-11-21", "resting_bpm": 50, "high_bpm": 113 },
-      { "week_start": "2025-11-14", "resting_bpm": 50, "high_bpm": 125 },
-      { "week_start": "2025-11-07", "resting_bpm": 51, "high_bpm": 121 },
-      { "week_start": "2025-10-31", "resting_bpm": 50, "high_bpm": 120 },
-      { "week_start": "2025-10-24", "resting_bpm": 50, "high_bpm": 122 },
-      { "week_start": "2025-10-17", "resting_bpm": 49, "high_bpm": 121 },
-      { "week_start": "2025-10-10", "resting_bpm": 49, "high_bpm": 114 },
-      { "week_start": "2025-10-03", "resting_bpm": 45, "high_bpm": 110 },
-      { "week_start": "2025-09-26", "resting_bpm": 46, "high_bpm": 111 },
-      { "week_start": "2025-09-19", "resting_bpm": 44, "high_bpm": 119, "note": "Injury week" },
-      { "week_start": "2025-09-12", "resting_bpm": 45, "high_bpm": 128 },
-      { "week_start": "2025-09-05", "resting_bpm": 44, "high_bpm": 157 },
-      { "week_start": "2025-08-29", "resting_bpm": 46, "high_bpm": 167 },
-      { "week_start": "2025-08-22", "resting_bpm": 42, "high_bpm": 150 },
-      { "week_start": "2025-08-15", "resting_bpm": 43, "high_bpm": 167 },
-      { "week_start": "2025-08-08", "resting_bpm": 44, "high_bpm": 155 },
-      { "week_start": "2025-08-01", "resting_bpm": 45, "high_bpm": 171 },
-      { "week_start": "2025-07-25", "resting_bpm": 41, "high_bpm": 137 },
-      { "week_start": "2025-07-18", "resting_bpm": 44, "high_bpm": 171 },
-      { "week_start": "2025-07-11", "resting_bpm": 44, "high_bpm": 163 },
-      { "week_start": "2025-07-04", "resting_bpm": 45, "high_bpm": 144 },
-      { "week_start": "2025-06-27", "resting_bpm": 45, "high_bpm": 154 },
-      { "week_start": "2025-06-20", "resting_bpm": 45, "high_bpm": 157 },
-      { "week_start": "2025-06-13", "resting_bpm": 44, "high_bpm": 149 },
-      { "week_start": "2025-06-06", "resting_bpm": 45, "high_bpm": 159 },
-      { "week_start": "2025-05-30", "resting_bpm": 46, "high_bpm": 153 },
-      { "week_start": "2025-05-23", "resting_bpm": 48, "high_bpm": 152 },
-      { "week_start": "2025-05-16", "resting_bpm": 47, "high_bpm": 123 },
-      { "week_start": "2025-05-09", "resting_bpm": 47, "high_bpm": 136 },
-      { "week_start": "2025-05-02", "resting_bpm": 42, "high_bpm": 133 },
-      { "week_start": "2025-04-25", "resting_bpm": 44, "high_bpm": 154 },
-      { "week_start": "2025-04-18", "resting_bpm": 44, "high_bpm": 162 },
-      { "week_start": "2025-04-11", "resting_bpm": 43, "high_bpm": 159 },
-      { "week_start": "2025-04-04", "resting_bpm": 42, "high_bpm": 157 },
-      { "week_start": "2025-03-28", "resting_bpm": 42, "high_bpm": 158 },
-      { "week_start": "2025-03-21", "resting_bpm": 41, "high_bpm": 175 },
-      { "week_start": "2025-03-14", "resting_bpm": 43, "high_bpm": 155 },
-      { "week_start": "2025-03-07", "resting_bpm": 46, "high_bpm": 160 },
-      { "week_start": "2025-02-28", "resting_bpm": 43, "high_bpm": 159 },
-      { "week_start": "2025-02-21", "resting_bpm": 44, "high_bpm": 141 },
-      { "week_start": "2025-02-14", "resting_bpm": 43, "high_bpm": 156 },
-      { "week_start": "2025-02-07", "resting_bpm": 43, "high_bpm": 157 },
-      { "week_start": "2025-01-31", "resting_bpm": 42, "high_bpm": 165 },
-      { "week_start": "2025-01-24", "resting_bpm": 42, "high_bpm": 157 }
-    ]
-  },
-  "activity_calories_monthly": {
-    "description": "Monthly activity calories by type - shows training load shift",
-    "data": [
-      { "month": "2026-01", "activity": "Cycling", "calories": 17549, "note": "Bike base building" },
-      { "month": "2025-12", "activity": "Cycling", "calories": 7516, "note": "Return to activity" },
-      { "month": "2025-12", "activity": "Other", "calories": 0 },
-      { "month": "2025-09", "activity": "Running", "calories": 9260, "note": "Injury month - partial" },
-      { "month": "2025-08", "activity": "Running", "calories": 23964, "note": "Peak training pre-injury" },
-      { "month": "2025-08", "activity": "Other", "calories": 1558 }
-    ],
-    "interpretation": {
-      "pre_injury_aug_2025": "~24,000 cal/month running = ~50-60 mpw",
-      "injury_sep_2025": "~9,000 cal running (partial month before injury)",
-      "recovery_dec_2025": "~7,500 cal cycling (ramping up)",
-      "current_jan_2026": "~17,500 cal cycling so far (on track for 20,000+)"
+  "heart_rate_phases": {
+    "description": "Phase summaries for heart rate trends (detailed weekly data removed)",
+    "current_resting_hr": "47-48 bpm",
+    "current_max_hr_capacity": "160-174 bpm",
+    "phases": {
+      "pre_injury_running": {
+        "period": "Jan 2025 - Sep 2025",
+        "resting_hr_range": "41-48 bpm",
+        "max_hr_range": "150-175 bpm",
+        "interpretation": "High aerobic fitness, regular high-intensity running"
+      },
+      "injury_detraining": {
+        "period": "Oct 2025 - Nov 2025",
+        "resting_hr_range": "49-51 bpm",
+        "max_hr_range": "110-125 bpm",
+        "interpretation": "RHR elevated 5-10 bpm, max HR dropped (no hard exercise)"
+      },
+      "bike_base_rebuild": {
+        "period": "Dec 2025 - present",
+        "resting_hr_range": "47-53 bpm (trending down)",
+        "max_hr_range": "133-174 bpm (trending up)",
+        "interpretation": "Fitness rebuilding via cycling, RHR recovering"
+      }
     }
   },
-  "steps_weekly": {
-    "description": "Weekly step totals over past year - reflects training volume and daily activity",
-    "year_totals": {
-      "total_steps": 4561316,
-      "total_distance_mi": 2665.71,
-      "avg_daily": 12600,
-      "avg_weekly": 87718
-    },
-    "data": [
-      { "week_start": "2026-01-16", "steps": 45520 },
-      { "week_start": "2026-01-09", "steps": 42714 },
-      { "week_start": "2026-01-02", "steps": 53337 },
-      { "week_start": "2025-12-26", "steps": 43056 },
-      { "week_start": "2025-12-19", "steps": 32659 },
-      { "week_start": "2025-12-12", "steps": 49770 },
-      { "week_start": "2025-12-05", "steps": 58725 },
-      { "week_start": "2025-11-28", "steps": 21511 },
-      { "week_start": "2025-11-21", "steps": 18462 },
-      { "week_start": "2025-11-14", "steps": 20169 },
-      { "week_start": "2025-11-07", "steps": 28987 },
-      { "week_start": "2025-10-31", "steps": 41444 },
-      { "week_start": "2025-10-24", "steps": 17019 },
-      { "week_start": "2025-10-17", "steps": 22367 },
-      { "week_start": "2025-10-10", "steps": 16263 },
-      { "week_start": "2025-10-03", "steps": 26413 },
-      { "week_start": "2025-09-26", "steps": 29159 },
-      { "week_start": "2025-09-19", "steps": 23804, "note": "Injury week" },
-      { "week_start": "2025-09-12", "steps": 87504 },
-      { "week_start": "2025-09-05", "steps": 130489 },
-      { "week_start": "2025-08-29", "steps": 159207 },
-      { "week_start": "2025-08-22", "steps": 145447 },
-      { "week_start": "2025-08-15", "steps": 128786 },
-      { "week_start": "2025-08-08", "steps": 175154 },
-      { "week_start": "2025-08-01", "steps": 116081 },
-      { "week_start": "2025-07-25", "steps": 56416 },
-      { "week_start": "2025-07-18", "steps": 84570 },
-      { "week_start": "2025-07-11", "steps": 138713 },
-      { "week_start": "2025-07-04", "steps": 79222 },
-      { "week_start": "2025-06-27", "steps": 96049 },
-      { "week_start": "2025-06-20", "steps": 98503 },
-      { "week_start": "2025-06-13", "steps": 74755 },
-      { "week_start": "2025-06-06", "steps": 80561 },
-      { "week_start": "2025-05-30", "steps": 75252 },
-      { "week_start": "2025-05-23", "steps": 80336 },
-      { "week_start": "2025-05-16", "steps": 88059 },
-      { "week_start": "2025-05-09", "steps": 85380 },
-      { "week_start": "2025-05-02", "steps": 89702 },
-      { "week_start": "2025-04-25", "steps": 135540 },
-      { "week_start": "2025-04-18", "steps": 146655 },
-      { "week_start": "2025-04-11", "steps": 131360 },
-      { "week_start": "2025-04-04", "steps": 149533 },
-      { "week_start": "2025-03-28", "steps": 128508 },
-      { "week_start": "2025-03-21", "steps": 148827 },
-      { "week_start": "2025-03-14", "steps": 179533 },
-      { "week_start": "2025-03-07", "steps": 131651 },
-      { "week_start": "2025-02-28", "steps": 134101 },
-      { "week_start": "2025-02-21", "steps": 113655 },
-      { "week_start": "2025-02-14", "steps": 134032 },
-      { "week_start": "2025-02-07", "steps": 118728 },
-      { "week_start": "2025-01-31", "steps": 124845 },
-      { "week_start": "2025-01-24", "steps": 122783 }
-    ],
-    "phase_analysis": {
+  "steps_phases": {
+    "description": "Phase summaries for step counts (detailed weekly data removed)",
+    "current_weekly": "43-53k steps",
+    "phases": {
       "pre_injury_running": {
         "period": "Jan-Sep 2025",
         "avg_weekly": 115000,
-        "range": "75k-180k",
         "note": "High running volume = high step counts"
       },
       "injury_detraining": {
         "period": "Oct-Nov 2025",
         "avg_weekly": 23000,
-        "range": "16k-42k",
         "note": "Massive drop - no running, limited walking"
       },
       "bike_recovery": {
         "period": "Dec 2025-Jan 2026",
         "avg_weekly": 45000,
-        "range": "32k-59k",
         "note": "Cycling doesn't generate steps - lower than running phase"
       }
     }
   },
-  "intensity_minutes_weekly": {
-    "description": "Weekly intensity minutes (moderate + vigorous x2) - Garmin goal is 500 min/week",
-    "averages": {
-      "avg_weekly_moderate_min": 41,
-      "avg_weekly_vigorous_min": 292,
-      "vigorous_multiplier": 2
-    },
-    "data": [
-      { "week_start": "2026-01-12", "total_min": 1229, "pct_goal": 245 },
-      { "week_start": "2026-01-05", "total_min": 896, "pct_goal": 179 },
-      { "week_start": "2025-12-29", "total_min": 719, "pct_goal": 143 },
-      { "week_start": "2025-12-22", "total_min": 773, "pct_goal": 154 },
-      { "week_start": "2025-12-15", "total_min": 317, "pct_goal": 63 },
-      { "week_start": "2025-12-08", "total_min": 296, "pct_goal": 59 },
-      { "week_start": "2025-12-01", "total_min": 71, "pct_goal": 14 },
-      { "week_start": "2025-11-24", "total_min": 6, "pct_goal": 1 },
-      { "week_start": "2025-11-17", "total_min": 79, "pct_goal": 15 },
-      { "week_start": "2025-11-10", "total_min": 50, "pct_goal": 10 },
-      { "week_start": "2025-11-03", "total_min": 29, "pct_goal": 5 },
-      { "week_start": "2025-10-27", "total_min": 42, "pct_goal": 8 },
-      { "week_start": "2025-10-20", "total_min": 10, "pct_goal": 2 },
-      { "week_start": "2025-10-13", "total_min": 30, "pct_goal": 6 },
-      { "week_start": "2025-10-06", "total_min": 6, "pct_goal": 1 },
-      { "week_start": "2025-09-29", "total_min": 4, "pct_goal": 0 },
-      { "week_start": "2025-09-22", "total_min": 19, "pct_goal": 3 },
-      { "week_start": "2025-09-15", "total_min": 339, "pct_goal": 67, "note": "Injury week" },
-      { "week_start": "2025-09-08", "total_min": 890, "pct_goal": 178 },
-      { "week_start": "2025-09-01", "total_min": 1080, "pct_goal": 216 },
-      { "week_start": "2025-08-25", "total_min": 787, "pct_goal": 157 },
-      { "week_start": "2025-08-18", "total_min": 960, "pct_goal": 192 },
-      { "week_start": "2025-08-11", "total_min": 1218, "pct_goal": 243 },
-      { "week_start": "2025-08-04", "total_min": 990, "pct_goal": 198 },
-      { "week_start": "2025-07-28", "total_min": 685, "pct_goal": 137 },
-      { "week_start": "2025-07-21", "total_min": 849, "pct_goal": 169 },
-      { "week_start": "2025-07-14", "total_min": 957, "pct_goal": 191 },
-      { "week_start": "2025-07-07", "total_min": 601, "pct_goal": 120 },
-      { "week_start": "2025-06-30", "total_min": 780, "pct_goal": 156 },
-      { "week_start": "2025-06-23", "total_min": 737, "pct_goal": 147 },
-      { "week_start": "2025-06-16", "total_min": 649, "pct_goal": 129 },
-      { "week_start": "2025-06-09", "total_min": 653, "pct_goal": 130 },
-      { "week_start": "2025-06-02", "total_min": 672, "pct_goal": 134 },
-      { "week_start": "2025-05-26", "total_min": 439, "pct_goal": 87 },
-      { "week_start": "2025-05-19", "total_min": 413, "pct_goal": 82 },
-      { "week_start": "2025-05-12", "total_min": 308, "pct_goal": 61 },
-      { "week_start": "2025-05-05", "total_min": 14, "pct_goal": 2 },
-      { "week_start": "2025-04-28", "total_min": 757, "pct_goal": 151 },
-      { "week_start": "2025-04-21", "total_min": 805, "pct_goal": 161 },
-      { "week_start": "2025-04-14", "total_min": 1007, "pct_goal": 201 },
-      { "week_start": "2025-04-07", "total_min": 1074, "pct_goal": 214 },
-      { "week_start": "2025-03-31", "total_min": 813, "pct_goal": 162 },
-      { "week_start": "2025-03-24", "total_min": 951, "pct_goal": 190 },
-      { "week_start": "2025-03-17", "total_min": 1119, "pct_goal": 223 },
-      { "week_start": "2025-03-10", "total_min": 964, "pct_goal": 192 },
-      { "week_start": "2025-03-03", "total_min": 924, "pct_goal": 184 },
-      { "week_start": "2025-02-24", "total_min": 833, "pct_goal": 166 },
-      { "week_start": "2025-02-17", "total_min": 866, "pct_goal": 173 },
-      { "week_start": "2025-02-10", "total_min": 1371, "pct_goal": 274, "note": "Peak intensity week" },
-      { "week_start": "2025-02-03", "total_min": 972, "pct_goal": 194 },
-      { "week_start": "2025-01-27", "total_min": 949, "pct_goal": 189 }
-    ],
-    "phase_analysis": {
+  "intensity_minutes_phases": {
+    "description": "Phase summaries for intensity minutes (detailed weekly data removed)",
+    "current_weekly": "900-1230 min (180-245% of goal)",
+    "garmin_goal": "500 min/week",
+    "phases": {
       "pre_injury_running": {
         "period": "Jan-Sep 2025",
         "avg_weekly_min": 850,
-        "range": "300-1400",
         "pct_goal_range": "60-274%",
-        "note": "Consistently exceeding goal, high training load"
+        "note": "Consistently exceeding goal"
       },
       "injury_detraining": {
         "period": "Oct-Nov 2025",
         "avg_weekly_min": 30,
-        "range": "4-80",
         "pct_goal_range": "0-15%",
-        "note": "Near zero intensity - full detraining"
+        "note": "Near zero intensity"
       },
       "bike_recovery": {
         "period": "Dec 2025-Jan 2026",
-        "avg_weekly_min": 615,
-        "range": "71-1229",
+        "avg_weekly_min": 700,
         "pct_goal_range": "14-245%",
-        "note": "Rapid ramp-up, now back to pre-injury levels"
+        "note": "Back to pre-injury intensity levels via cycling"
       }
     }
   },
   "training_activities": {
-    "description": "Recent training activities from Garmin - note: ~1/20 workouts tracked (watch often dead)",
-    "last_running_before_injury": [
-      { "date": "2025-09-16", "type": "Running", "distance_mi": 1.06, "duration": "00:07:42", "avg_hr": 141, "max_hr": 155, "calories": 119, "pace_min_mi": "7:15", "note": "Last run before injury" },
-      { "date": "2025-09-15", "type": "Running", "distance_mi": 4.01, "duration": "00:29:13", "avg_hr": 149, "max_hr": 175, "calories": 445, "pace_min_mi": "7:17" }
-    ],
-    "cycling_recovery_phase": [
+    "description": "Last 2 weeks of training activities",
+    "tracking_note": "Only ~5% of workouts tracked - watch often dead",
+    "data": [
       { "date": "2026-01-21", "type": "Indoor Cycling", "duration": "01:10:26", "avg_hr": 133, "max_hr": 160, "calories": 650, "distance_mi": 18.77 },
       { "date": "2026-01-20", "type": "Indoor Cycling", "duration": "02:30:18", "avg_hr": 129, "max_hr": 155, "calories": 1342, "sessions": 2, "note": "Two sessions" },
       { "date": "2026-01-18", "type": "Indoor Cycling", "duration": "04:04:30", "avg_hr": 138, "max_hr": 160, "calories": 2042, "distance_mi": 67.02, "note": "Big volume day - Saturday ride" },
@@ -344,69 +151,20 @@
       { "date": "2026-01-12", "type": "Indoor Cycling", "duration": "01:31:08", "avg_hr": 128, "max_hr": 155, "calories": 753 },
       { "date": "2026-01-11", "type": "Indoor Cycling", "duration": "03:30:12", "avg_hr": 134, "max_hr": 163, "calories": 1676, "note": "Big volume day - Sunday ride" },
       { "date": "2026-01-09", "type": "Indoor Cycling", "duration": "01:10:39", "avg_hr": 146, "max_hr": 174, "calories": 807, "note": "Workout ride - hit 174 HR" },
-      { "date": "2026-01-08", "type": "Indoor Cycling", "duration": "02:01:01", "avg_hr": 134, "max_hr": 160, "calories": 1108 },
-      { "date": "2026-01-07", "type": "Indoor Cycling", "duration": "01:30:05", "avg_hr": 140, "max_hr": 161, "calories": 895 },
-      { "date": "2026-01-06", "type": "Indoor Cycling", "duration": "01:00:02", "avg_hr": 143, "max_hr": 171, "calories": 667, "note": "Workout ride" },
-      { "date": "2026-01-05", "type": "Cycling", "duration": "00:38:28", "avg_hr": 123, "max_hr": 142, "calories": 332, "location": "Honolulu" },
-      { "date": "2026-01-04", "type": "Mixed", "duration": "02:33:13", "avg_hr": 137, "max_hr": 166, "calories": 1523, "sessions": 2, "location": "Honolulu" },
-      { "date": "2026-01-03", "type": "Indoor Cycling", "duration": "01:11:03", "avg_hr": 135, "max_hr": 173, "calories": 691 },
-      { "date": "2026-01-02", "type": "Indoor Cycling", "duration": "00:58:54", "avg_hr": 135, "max_hr": 147, "calories": 587 },
-      { "date": "2025-12-31", "type": "Indoor Cycling", "duration": "00:20:00", "avg_hr": 135, "max_hr": 164, "calories": 239 },
-      { "date": "2025-12-29", "type": "Indoor Cycling", "duration": "01:30:19", "avg_hr": 128, "max_hr": 150, "calories": 759 },
-      { "date": "2025-12-28", "type": "Indoor Cycling", "duration": "00:33:03", "avg_hr": 124, "max_hr": 139, "calories": 292 },
-      { "date": "2025-12-27", "type": "Indoor Cycling", "duration": "01:15:38", "avg_hr": 142, "max_hr": 172, "calories": 819 },
-      { "date": "2025-12-26", "type": "Indoor Cycling", "duration": "01:45:23", "avg_hr": 123, "max_hr": 158, "calories": 869 },
-      { "date": "2025-12-25", "type": "Cycling", "duration": "00:24:22", "avg_hr": 126, "max_hr": 155, "calories": 235, "location": "Spokane" },
-      { "date": "2025-12-24", "type": "Indoor Cycling", "duration": "01:00:01", "avg_hr": 137, "max_hr": 159, "calories": 619 },
-      { "date": "2025-12-23", "type": "Indoor Cycling", "duration": "01:00:24", "avg_hr": 144, "max_hr": 171, "calories": 741 },
-      { "date": "2025-12-21", "type": "Cycling", "duration": "00:54:43", "avg_hr": 150, "max_hr": 185, "calories": 721, "location": "Spokane County", "note": "Hit 185 HR - highest since injury" },
-      { "date": "2025-12-20", "type": "Indoor Cycling", "duration": "00:45:07", "avg_hr": 142, "max_hr": 159, "calories": 550 },
-      { "date": "2025-12-19", "type": "Indoor Cycling", "duration": "00:29:30", "avg_hr": 150, "max_hr": 165, "calories": 418 },
-      { "date": "2025-12-14", "type": "Indoor Cycling", "duration": "00:30:04", "avg_hr": 144, "max_hr": 161, "calories": 401 },
-      { "date": "2025-12-12", "type": "Indoor Cycling", "duration": "00:29:51", "avg_hr": 143, "max_hr": 157, "calories": 382 },
-      { "date": "2025-12-11", "type": "Indoor Cycling", "duration": "00:29:40", "avg_hr": 161, "max_hr": 173, "calories": 471, "note": "First tracked cycling session" }
+      { "date": "2026-01-08", "type": "Indoor Cycling", "duration": "02:01:01", "avg_hr": 134, "max_hr": 160, "calories": 1108 }
     ],
     "summary": {
-      "tracking_note": "Only ~5% of workouts tracked - watch often dead",
       "cycling_start_date": "2025-12-11",
-      "total_tracked_rides": 32,
-      "total_tracked_time": "~40 hours",
-      "total_tracked_calories": "~22,000",
       "volume_progression": {
         "early_dec": "30-45 min sessions",
         "late_dec": "45-90 min sessions",
         "jan_2026": "60-240 min sessions, including 3.5-4hr rides"
       },
-      "max_hr_progression": {
-        "early_dec": "157-173 bpm",
-        "late_dec": "158-185 bpm",
-        "jan_2026": "147-174 bpm regularly"
-      },
-      "weekly_pattern_emerging": {
+      "weekly_pattern": {
         "big_volume_days": "Saturday + Sunday (3-4hr rides)",
         "workout_days": "Tuesday + Friday (higher intensity, 60-90min)",
         "normal_days": "Mon/Wed/Thu (60-90min steady)"
       }
-    }
-  },
-  "training_phases_from_hr": {
-    "pre_injury_running": {
-      "period": "Jan 2025 - Sep 2025",
-      "resting_hr_range": "41-48 bpm",
-      "max_hr_range": "150-175 bpm",
-      "interpretation": "High aerobic fitness, regular high-intensity running"
-    },
-    "injury_detraining": {
-      "period": "Oct 2025 - Nov 2025",
-      "resting_hr_range": "49-51 bpm",
-      "max_hr_range": "110-125 bpm",
-      "interpretation": "RHR elevated 5-10 bpm, max HR dropped (no hard exercise)"
-    },
-    "bike_base_rebuild": {
-      "period": "Dec 2025 - present",
-      "resting_hr_range": "47-53 bpm (trending down)",
-      "max_hr_range": "133-151 bpm (trending up)",
-      "interpretation": "Fitness rebuilding via cycling, RHR recovering, able to push HR higher"
     }
   },
   "current_status_summary": {
@@ -444,8 +202,8 @@
     },
     "sleep": {
       "status": "adequate",
-      "avg_score": 78,
-      "avg_duration": "7h 30m",
+      "avg_score": 80,
+      "avg_duration": "7h 45m",
       "concern": "Late bedtimes (1-2am typical)"
     },
     "readiness_assessment": "Good - HRV trending up, intensity minutes back to pre-injury levels, body responding well to training load"

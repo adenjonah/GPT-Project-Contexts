@@ -1,0 +1,147 @@
+{
+  "_metadata": {
+    "domain": "nutrition",
+    "description": "Guide for photo-based macro estimation and portion sizing",
+    "keywords": ["food", "estimation", "macros", "portions", "calories", "photo"],
+    "last_updated": "2026-01-22"
+  },
+  "estimation_methodology": {
+    "step_1_identify": "Name all food items visible in the photo",
+    "step_2_portion_reference": "Use known objects for scale (hand, plate size, utensils)",
+    "step_3_estimate_weight": "Convert visual to grams using reference guides below",
+    "step_4_lookup_macros": "Use USDA database or kitchen-staples.json for known foods",
+    "step_5_adjust_preparation": "Account for cooking method (oil, butter, sauce, breading)"
+  },
+  "portion_visual_guides": {
+    "proteins": {
+      "palm_of_hand": "3-4oz cooked meat/fish (~85-115g)",
+      "deck_of_cards": "3oz cooked meat (~85g)",
+      "checkbook": "3oz fish fillet (~85g)",
+      "fist": "1 cup shredded chicken (~140g)",
+      "one_egg": "50g, ~6g protein, ~70 cal",
+      "golf_ball": "2 tbsp hummus or nut butter (~32g)"
+    },
+    "carbs": {
+      "fist": "1 cup cooked rice/pasta (~200g cooked)",
+      "cupped_hand": "1/2 cup cooked grains (~100g)",
+      "tennis_ball": "1 medium fruit (~150g)",
+      "baseball": "1 cup cereal or large apple",
+      "computer_mouse": "1 medium potato (~150g)",
+      "hockey_puck": "1 bagel or english muffin"
+    },
+    "fats": {
+      "thumb_tip": "1 tsp oil/butter (5g, ~45 cal)",
+      "thumb": "1 tbsp oil/butter (15g, ~100-135 cal)",
+      "dice": "1oz cheese (~28g, ~100-110 cal)",
+      "ping_pong_ball": "2 tbsp peanut butter (~32g, ~190 cal)",
+      "small_matchbox": "1oz nuts (~28g, ~160-180 cal)"
+    },
+    "vegetables": {
+      "two_fists": "1 cup raw leafy greens",
+      "fist": "1 cup raw vegetables",
+      "palm": "1/2 cup cooked vegetables"
+    }
+  },
+  "common_foods_quick_reference": {
+    "grains_cooked": {
+      "white_rice": { "per_cup": { "g": 200, "cal": 205, "carbs": 45, "protein": 4, "fat": 0 }},
+      "brown_rice": { "per_cup": { "g": 200, "cal": 215, "carbs": 45, "protein": 5, "fat": 2 }},
+      "pasta": { "per_cup": { "g": 140, "cal": 220, "carbs": 43, "protein": 8, "fat": 1 }},
+      "quinoa": { "per_cup": { "g": 185, "cal": 220, "carbs": 39, "protein": 8, "fat": 4 }},
+      "oatmeal": { "per_cup": { "g": 234, "cal": 160, "carbs": 27, "protein": 6, "fat": 3 }}
+    },
+    "proteins": {
+      "chicken_breast": { "per_oz": { "g": 28, "cal": 45, "protein": 9, "carbs": 0, "fat": 1 }},
+      "chicken_thigh": { "per_oz": { "g": 28, "cal": 55, "protein": 7, "carbs": 0, "fat": 3 }},
+      "salmon": { "per_oz": { "g": 28, "cal": 60, "protein": 7, "carbs": 0, "fat": 3 }},
+      "ground_beef_90_lean": { "per_oz": { "g": 28, "cal": 50, "protein": 7, "carbs": 0, "fat": 2 }},
+      "ground_beef_80_lean": { "per_oz": { "g": 28, "cal": 70, "protein": 6, "carbs": 0, "fat": 5 }},
+      "steak_sirloin": { "per_oz": { "g": 28, "cal": 50, "protein": 8, "carbs": 0, "fat": 2 }},
+      "pork_chop": { "per_oz": { "g": 28, "cal": 55, "protein": 8, "carbs": 0, "fat": 2 }},
+      "shrimp": { "per_oz": { "g": 28, "cal": 30, "protein": 6, "carbs": 0, "fat": 0 }},
+      "tofu_firm": { "per_oz": { "g": 28, "cal": 25, "protein": 3, "carbs": 1, "fat": 1 }},
+      "eggs": { "per_large": { "g": 50, "cal": 70, "protein": 6, "carbs": 0, "fat": 5 }}
+    },
+    "dairy": {
+      "whole_milk": { "per_cup": { "g": 244, "cal": 150, "protein": 8, "carbs": 12, "fat": 8 }},
+      "skim_milk": { "per_cup": { "g": 245, "cal": 85, "protein": 8, "carbs": 12, "fat": 0 }},
+      "greek_yogurt_nonfat": { "per_cup": { "g": 245, "cal": 130, "protein": 23, "carbs": 9, "fat": 0 }},
+      "cheddar_cheese": { "per_oz": { "g": 28, "cal": 115, "protein": 7, "carbs": 0, "fat": 9 }},
+      "mozzarella": { "per_oz": { "g": 28, "cal": 85, "protein": 6, "carbs": 1, "fat": 6 }},
+      "cottage_cheese": { "per_cup": { "g": 226, "cal": 220, "protein": 25, "carbs": 8, "fat": 10 }}
+    },
+    "fats_oils": {
+      "olive_oil": { "per_tbsp": { "g": 14, "cal": 120, "protein": 0, "carbs": 0, "fat": 14 }},
+      "butter": { "per_tbsp": { "g": 14, "cal": 100, "protein": 0, "carbs": 0, "fat": 11 }},
+      "avocado": { "per_half": { "g": 100, "cal": 160, "protein": 2, "carbs": 9, "fat": 15 }},
+      "peanut_butter": { "per_tbsp": { "g": 16, "cal": 95, "protein": 4, "carbs": 3, "fat": 8 }},
+      "almonds": { "per_oz": { "g": 28, "cal": 165, "protein": 6, "carbs": 6, "fat": 14 }}
+    },
+    "common_meals": {
+      "burrito_bowl_chipotle_style": { "typical": { "cal": "700-1000", "protein": "30-50", "carbs": "70-100", "fat": "25-40" }},
+      "burger_with_bun": { "typical": { "cal": "500-800", "protein": "25-40", "carbs": "40-60", "fat": "25-45" }},
+      "pizza_slice_large": { "per_slice": { "cal": "250-350", "protein": "10-15", "carbs": "30-40", "fat": "10-15" }},
+      "sushi_roll_8pc": { "per_roll": { "cal": "250-400", "protein": "8-15", "carbs": "40-60", "fat": "5-15" }}
+    }
+  },
+  "restaurant_adjustments": {
+    "portion_rule": "Restaurant portions are typically 1.5-2x home portions",
+    "hidden_calories": {
+      "cooking_oil": "+100-200 cal for sauteed/fried items",
+      "sauces_dressings": "+50-150 cal (often 200+ for creamy)",
+      "butter_on_bread": "+100 cal per pat",
+      "cheese_additions": "+100 cal per oz added",
+      "breading_frying": "+100-300 cal vs grilled"
+    },
+    "estimation_strategy": [
+      "Ask if preparation method is available",
+      "Assume oil/butter used unless specified otherwise",
+      "Default to higher end of range for rich dishes",
+      "Pasta dishes: assume 1.5-2 cups pasta, plus sauce calories"
+    ]
+  },
+  "photo_estimation_output_format": {
+    "required_fields": [
+      "Item name",
+      "Estimated weight (g)",
+      "Calories",
+      "Protein (g)",
+      "Carbs (g)",
+      "Fat (g)"
+    ],
+    "confidence_levels": {
+      "confident": "Clear photo, standard portion, known food",
+      "moderate": "Partially visible, some assumptions made",
+      "rough": "Obscured, mixed dish, or unfamiliar preparation"
+    },
+    "range_format": "For uncertain items, provide low-high range (e.g., 400-550 cal)",
+    "example_output": {
+      "items": [
+        { "name": "Grilled chicken breast", "weight_g": 170, "cal": 280, "protein": 53, "carbs": 0, "fat": 6, "confidence": "confident" },
+        { "name": "White rice", "weight_g": 250, "cal": 260, "protein": 5, "carbs": 57, "fat": 0, "confidence": "confident" },
+        { "name": "Steamed broccoli", "weight_g": 100, "cal": 35, "protein": 3, "carbs": 7, "fat": 0, "confidence": "confident" },
+        { "name": "Cooking oil (assumed)", "weight_g": 7, "cal": 60, "protein": 0, "carbs": 0, "fat": 7, "confidence": "moderate" }
+      ],
+      "total": { "cal": 635, "protein": 61, "carbs": 64, "fat": 13 },
+      "notes": "Assumed minimal oil for cooking chicken. If pan-fried, add 50-100 cal."
+    }
+  },
+  "common_estimation_errors": {
+    "underestimation": [
+      "Not accounting for cooking oil",
+      "Ignoring sauces and dressings",
+      "Underestimating portion sizes",
+      "Missing cheese/butter on vegetables"
+    ],
+    "overestimation": [
+      "Assuming all meat includes skin/fat",
+      "Using raw weights for cooked food",
+      "Double-counting mixed dish components"
+    ],
+    "tips": [
+      "When in doubt, round up slightly",
+      "Weigh foods when possible to calibrate eye",
+      "Take photos with a reference object (fork, hand) for scale"
+    ]
+  }
+}

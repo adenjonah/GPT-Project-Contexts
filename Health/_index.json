@@ -1,30 +1,31 @@
 {
   "_metadata": {
     "domain": "index",
-    "description": "Routing index for Health context files - helps AI systems find relevant context",
-    "keywords": ["index", "routing", "context", "health", "navigation"],
-    "last_updated": "2025-12-21"
+    "description": "Global rules and file reference for Health context",
+    "keywords": ["index", "rules", "context", "health"],
+    "last_updated": "2026-01-22"
   },
   "project": {
     "name": "Health",
-    "purpose": "Route questions to the right local context JSON files and apply global training + nutrition rules consistently."
+    "purpose": "Provide consistent training, nutrition, and recovery guidance based on personal health data and goals."
   },
   "global_rules": {
     "time_anchor": {
-      "rule": "Convert any relative time references to absolute dates using timeline.json temporal_anchor.profile_anchor_date."
+      "rule": "Convert relative time references to absolute dates using timeline.json temporal_anchor.profile_anchor_date."
     },
     "nutrition": {
       "deficit_policy": {
         "default_daily_deficit_kcal": 400,
         "saturday_deficit_kcal": 800,
-        "notes": [
-          "All days are at least -400 kcal deficit.",
-          "Saturdays are -800 kcal deficit because they are easy rides."
-        ]
+        "notes": "All days are -400 kcal deficit. Saturdays are -800 kcal (easy ride day)."
       },
       "macro_policy": {
         "source_of_truth": "nutrition-goals.json",
-        "rule": "Protein grams fixed; when calorie target changes (e.g., eat-back from exercise), allocate added calories primarily to carbs (fat fixed unless explicitly overridden)."
+        "rule": "Protein grams fixed. When adding calories (eat-back from exercise), allocate primarily to carbs. Fat stays fixed unless overridden."
+      },
+      "eat_back_rule": {
+        "fraction": 0.5,
+        "note": "Eat back 50% of exercise calories. Allocate to carbs."
       }
     },
     "training_week_structure": {
@@ -48,237 +49,29 @@
       }
     }
   },
-  "context_files": [
-    {
-      "id": "nutrition_calorie_macros",
-      "filename": "nutrition-goals.json",
-      "use_for": [
-        "daily calorie target + macros",
-        "meal calorie distribution",
-        "exercise calorie adjustment examples",
-        "macro scaling rules when adding calories"
-      ],
-      "priority_when": [
-        "user asks how much to eat today",
-        "user asks macro targets",
-        "user asks how to adjust intake after a ride",
-        "user asks meal calorie splits"
-      ]
-    },
-    {
-      "id": "eating_samples",
-      "filename": "eating-samples.json",
-      "use_for": [
-        "historical examples of actual eating patterns",
-        "real meal compositions and timing",
-        "weight fluctuation context",
-        "comparing targets vs actual intake"
-      ],
-      "priority_when": [
-        "user asks what they typically eat",
-        "user asks for meal suggestions based on history",
-        "user asks about eating patterns or habits",
-        "user asks about weight trends"
-      ]
-    },
-    {
-      "id": "timeline_and_phases",
-      "filename": "timeline.json",
-      "use_for": [
-        "anchor date conversion",
-        "injury timeline and return-to-run phases",
-        "race date + checkpoints"
-      ],
-      "priority_when": [
-        "user asks 'when can I run' or time-to-race planning",
-        "user asks about phase changes",
-        "user references 'now' or relative dates"
-      ]
-    },
-    {
-      "id": "health_profile",
-      "filename": "profile.json",
-      "use_for": [
-        "baseline vitals, sleep, lifestyle constraints",
-        "medical constraints and risk flags",
-        "nutrition policy notes (eat-back fraction, carb scaling)"
-      ],
-      "priority_when": [
-        "user asks about safety, recovery, or bone-health constraints",
-        "user asks for fueling rules tied to training load",
-        "user asks for monitoring triggers (HRV, libido, bone pain)"
-      ]
-    },
-    {
-      "id": "labs_bloodwork",
-      "filename": "lab-results.json",
-      "use_for": [
-        "interpreting lab values and flags",
-        "supplement decisions (avoid/consider)",
-        "risk context (e.g., vitamin B6 high, fasting glucose mildly high)"
-      ],
-      "priority_when": [
-        "user asks about supplements",
-        "user asks about lab interpretation",
-        "user asks if a change is medically risky"
-      ]
-    },
-    {
-      "id": "medical_records",
-      "filename": "medical-records.json",
-      "use_for": [
-        "patient demographics and history",
-        "diagnosis codes and problem list",
-        "imaging reports and bone density scans"
-      ],
-      "priority_when": [
-        "user asks about diagnosis history",
-        "user asks about imaging results",
-        "user asks about bone density or fractures"
-      ]
-    },
-    {
-      "id": "recent_metrics",
-      "filename": "recent-metrics.json",
-      "use_for": [
-        "sleep/HRV/stress trends",
-        "recent training history and load",
-        "readiness pattern detection"
-      ],
-      "priority_when": [
-        "user asks why they feel flat/tired",
-        "user asks to adjust training based on readiness",
-        "user asks about recovery patterns"
-      ]
-    },
-    {
-      "id": "skincare_routine",
-      "filename": "skincare.json",
-      "use_for": [
-        "skincare procedures and timing constraints",
-        "shaving protocol and product usage",
-        "compatibility with actives"
-      ],
-      "priority_when": [
-        "user asks about skincare routine",
-        "user asks about shaving or ingrowns",
-        "user asks what products to use when"
-      ]
-    },
-    {
-      "id": "strength_training",
-      "filename": "strength-training.json",
-      "use_for": [
-        "complete weekly strength program",
-        "upper body aesthetics (Tue/Wed/Fri)",
-        "core and running-specific strength (Mon/Thu/Sat)",
-        "daily workout lookup by day of week",
-        "exercise selection and weekly volumes"
-      ],
-      "priority_when": [
-        "user asks 'what's my lift today'",
-        "user asks for upper body workout details",
-        "user asks for core/lower routine details",
-        "user asks for abs/obliques work",
-        "user asks for calves or running strength"
-      ]
-    },
-    {
-      "id": "weekly_schedule",
-      "filename": "weekly-schedule.json",
-      "use_for": [
-        "workout block availability by day",
-        "optimal vs suboptimal training windows",
-        "scheduling constraints"
-      ],
-      "priority_when": [
-        "user asks when to schedule a workout",
-        "user asks to plan a training week",
-        "user asks about available time windows"
-      ]
-    },
-    {
-      "id": "kitchen_staples",
-      "filename": "kitchen-staples.json",
-      "use_for": [
-        "available foods and their macros",
-        "pre/post/during workout food suitability",
-        "digestion speed for timing decisions",
-        "drink mix recipes"
-      ],
-      "priority_when": [
-        "user asks what to eat before/after/during workout",
-        "user asks for meal suggestions",
-        "user asks about fueling for a specific session"
-      ]
-    },
-    {
-      "id": "training_manifesto",
-      "filename": "training-manifesto.json",
-      "use_for": [
-        "training philosophy and principles",
-        "periodization and phase structure",
-        "session types and their purposes",
-        "fueling philosophy",
-        "recovery rules and deload triggers",
-        "decision rules for daily training choices"
-      ],
-      "priority_when": [
-        "user asks how to structure training",
-        "user asks about intensity distribution",
-        "user asks whether to do intensity today",
-        "user asks about recovery or deload",
-        "user asks about fueling around workouts"
-      ]
-    },
-    {
-      "id": "historical_baselines",
-      "filename": "historical-baselines.json",
-      "use_for": [
-        "personal records and race history",
-        "fitness progression over time",
-        "VDOT and equivalent paces",
-        "training history context"
-      ],
-      "priority_when": [
-        "user asks about PRs or race history",
-        "user asks for training paces",
-        "user asks about progress or improvement",
-        "user asks to compare current vs past fitness"
-      ]
-    }
-  ],
-  "routing_logic": {
-    "if_question_mentions": {
-      "calories|macros|deficit|eat back|meal split": ["nutrition_calorie_macros", "kitchen_staples", "health_profile"],
-      "what to eat|pre-workout|post-workout|fueling|food": ["kitchen_staples", "nutrition_calorie_macros", "training_manifesto"],
-      "timeline|when can I run|race|phase": ["timeline_and_phases", "training_manifesto", "health_profile"],
-      "schedule|workout block|when to train|plan week": ["weekly_schedule", "training_manifesto"],
-      "upper body|delts|chest|arms|aesthetics lifting": ["strength_training", "recent_metrics"],
-      "core|abs|obliques|calves|achilles|hamstrings|running strength": ["strength_training", "timeline_and_phases", "recent_metrics"],
-      "lift|lifting|strength|what's my workout": ["strength_training", "weekly_schedule"],
-      "blood|labs|supplements|vitamins": ["labs_bloodwork", "health_profile"],
-      "skincare|shave|ingrowns|actives|treatments": ["skincare_routine"],
-      "imaging|x-ray|mri|dxa|bone density|fracture": ["medical_records", "labs_bloodwork"],
-      "sleep|hrv|stress|recovery|garmin|tired|flat": ["recent_metrics", "health_profile", "training_manifesto"],
-      "PR|personal record|race result|history|progression": ["historical_baselines", "timeline_and_phases"],
-      "training|volume|intensity|threshold|easy|tempo": ["training_manifesto", "weekly_schedule", "recent_metrics"],
-      "paces|VDOT|interval|workout prescription": ["historical_baselines", "training_manifesto"]
-    },
-    "conflict_resolution": [
-      "If two files disagree, prefer the more specific plan file (strength-training.json) over general guidance.",
-      "If dates are involved, timeline.json overrides any implied timing elsewhere.",
-      "For training philosophy questions, training-manifesto.json is authoritative.",
-      "For food/fueling questions, kitchen-staples.json has the available foods, training-manifesto.json has the timing rules.",
-      "For 'what's my lift today', use strength-training.json and look up the current day of week."
-    ]
+  "context_files": {
+    "nutrition-goals.json": "Daily calorie targets, macros, meal distribution, exercise adjustments",
+    "eating-samples.json": "Historical eating patterns, actual meals, weight trends",
+    "timeline.json": "Anchor date, injury timeline, training phases, race date",
+    "profile.json": "Baseline vitals, medical conditions, risk flags, constraints",
+    "lab-results.json": "Blood work values, supplement guidance, risk context",
+    "medical-records.json": "Diagnosis history, imaging results, bone density",
+    "recent-metrics.json": "Last 2 weeks of HRV, sleep, training data + phase summaries",
+    "skincare.json": "Skincare procedures, shaving protocol, product timing",
+    "strength-training.json": "Weekly strength program by day of week",
+    "weekly-schedule.json": "Workout block availability, optimal training windows",
+    "kitchen-staples.json": "Available foods, macros, timing suitability",
+    "training-manifesto.json": "Training philosophy, periodization, fueling rules, recovery",
+    "historical-baselines.json": "PRs, race history, VDOT paces, fitness progression",
+    "inference-rules.json": "Situational inference, implicit needs, day-of-week defaults",
+    "food-estimation.json": "Photo-based macro estimation, portion guides"
   },
   "response_format_preferences": {
     "default": "Start with what to do first. Then short reasoning. No filler.",
     "output_modes": [
       "single-day prescription",
       "weekly schedule summary",
-      "JSON-only update to a referenced plan"
+      "macro/calorie breakdown"
     ]
   }
 }

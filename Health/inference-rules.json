@@ -1,0 +1,193 @@
+{
+  "_metadata": {
+    "domain": "inference",
+    "description": "Rules for interpreting incomplete information and situational context",
+    "keywords": ["inference", "context", "reasoning", "implicit", "situational"],
+    "last_updated": "2026-01-22"
+  },
+  "situational_inference": {
+    "travel": {
+      "triggers": ["flight", "flying", "airport", "landed", "travel", "trip", "timezone", "jet lag"],
+      "inferences": [
+        "Schedule is disrupted from normal weekly blocks",
+        "Timezone adjustment may be needed",
+        "Nutrition likely suboptimal (airport/airplane food)",
+        "May have missed workouts",
+        "Hydration likely low",
+        "Sleep schedule disrupted"
+      ],
+      "questions_to_consider": [
+        "What timezone are they adjusting to/from?",
+        "When did they last workout?",
+        "What day of the week is it (training type)?",
+        "Can they get a workout in today?",
+        "What's the remaining calorie/macro budget?"
+      ],
+      "example_chain": {
+        "input": "landing at 4pm Hawaii time",
+        "inferences": [
+          "Traveling from NYC (home base) = -5 hours timezone shift",
+          "Thursday = normal volume bike day + core strength",
+          "Landing 4pm local = limited workout window before evening",
+          "Flight nutrition = likely high sodium, low protein, dehydrated",
+          "Response should address: workout timing, hydration priority, meal plan for rest of day"
+        ]
+      }
+    },
+    "missed_workout": {
+      "triggers": ["haven't worked out", "missed", "skipped", "didn't train", "no workout"],
+      "inferences": [
+        "User wants guidance on fitting workout into remaining day",
+        "Check what day's training type should be",
+        "Check remaining time in optimal window",
+        "May need to adjust or combine sessions"
+      ],
+      "questions_to_consider": [
+        "How much time is left today?",
+        "What type of session was scheduled?",
+        "Can it be shortened or modified?",
+        "Should it be skipped entirely?"
+      ]
+    },
+    "fatigue_signals": {
+      "triggers": ["tired", "exhausted", "flat", "no energy", "sluggish", "fatigued"],
+      "inferences": [
+        "Check HRV/sleep trends in recent-metrics.json",
+        "May need recovery day adjustment",
+        "Could be under-fueling (check calorie deficit)",
+        "Could be overtraining (check recent volume)"
+      ],
+      "questions_to_consider": [
+        "What's the recent HRV trend?",
+        "What's the recent sleep quality?",
+        "How has training volume been?",
+        "Is this acute (today) or chronic (pattern)?"
+      ],
+      "decision_tree": {
+        "hrv_below_baseline": "Consider reducing intensity, not volume",
+        "sleep_score_below_70": "Prioritize recovery, easy session only",
+        "multiple_poor_nights": "May need full rest day"
+      }
+    },
+    "hunger_signals": {
+      "triggers": ["hungry", "starving", "low appetite", "not hungry"],
+      "inferences": {
+        "very_hungry": [
+          "May be under-fueled from recent training",
+          "Check if yesterday had high calorie burn",
+          "May need to increase carbs"
+        ],
+        "not_hungry": [
+          "Could be RED-S warning sign",
+          "Check if this is a pattern",
+          "Per risk_flags: prioritize eating anyway if training"
+        ]
+      }
+    }
+  },
+  "day_of_week_defaults": {
+    "rule": "If user asks about training without specifying day, assume TODAY",
+    "monday": {
+      "bike": "normal_volume_ride (60-90min)",
+      "strength": "core_and_running_muscles",
+      "optimal_window": "12:00-18:00"
+    },
+    "tuesday": {
+      "bike": "workout_ride (60-90min, higher intensity)",
+      "strength": "upper_body_aesthetics",
+      "optimal_window": "11:45-end_of_day"
+    },
+    "wednesday": {
+      "bike": "large_volume_ride (90-150min)",
+      "strength": "upper_body_aesthetics",
+      "optimal_window": "13:00-19:00"
+    },
+    "thursday": {
+      "bike": "normal_volume_ride (60-90min)",
+      "strength": "core_and_running_muscles",
+      "optimal_window": "11:45-19:00",
+      "hard_constraint": "Must finish by 19:00"
+    },
+    "friday": {
+      "bike": "workout_ride (60-90min, higher intensity)",
+      "strength": "upper_body_aesthetics",
+      "optimal_window": "all_day"
+    },
+    "saturday": {
+      "bike": "easy_ride (can be long but low intensity)",
+      "strength": "core_and_running_muscles",
+      "optimal_window": "all_day",
+      "deficit_note": "-800 kcal day (easy ride = lower calorie need)"
+    },
+    "sunday": {
+      "bike": "large_volume_ride (2-4hrs)",
+      "strength": "none_by_default",
+      "optimal_window": "until 16:00"
+    }
+  },
+  "implicit_needs": {
+    "what_should_i_eat": {
+      "clarify": "Pre-workout, during, or post-workout?",
+      "check": [
+        "What's the calorie budget remaining?",
+        "What macros are they short on?",
+        "What's in kitchen-staples.json?"
+      ]
+    },
+    "how_much_should_i_eat": {
+      "check": [
+        "What's today's base calorie target?",
+        "Did they train? If so, how many calories burned?",
+        "Apply 50% eat-back rule from training-manifesto.json"
+      ]
+    },
+    "whats_my_workout": {
+      "check": [
+        "What day is it?",
+        "Look up day_of_week_defaults above",
+        "Look up strength-training.json for specific exercises"
+      ]
+    },
+    "can_i_skip": {
+      "evaluate": [
+        "What's the reason? (fatigue, schedule, motivation)",
+        "What's the recent training load?",
+        "Is this a pattern or one-off?",
+        "What's the cost of skipping vs modifying?"
+      ],
+      "default_response": "Suggest modification before skip unless clear recovery need"
+    }
+  },
+  "nutrition_context_rules": {
+    "pre_workout": {
+      "timing": "1-2 hours before",
+      "priority": "Fast-digesting carbs, moderate protein, low fat",
+      "avoid": "Fasted training for long sessions (bone health risk)"
+    },
+    "during_workout": {
+      "applies_when": "Session > 90 minutes",
+      "priority": "Simple carbs (drink mix, gels)",
+      "target": "30-60g carbs/hour for sessions >90min"
+    },
+    "post_workout": {
+      "timing": "Within 1-2 hours",
+      "priority": "Protein + carbs for recovery",
+      "target": "30-40g protein, carbs to match training load"
+    }
+  },
+  "calorie_adjustment_rules": {
+    "exercise_eat_back": {
+      "rule": "Eat back 50% of exercise calories",
+      "source": "training-manifesto.json",
+      "example": {
+        "burned": 800,
+        "eat_back": 400,
+        "allocation": "Primarily to carbs (protein/fat stay fixed)"
+      }
+    },
+    "saturday_exception": {
+      "rule": "Saturdays are -800 kcal deficit (easy ride day)",
+      "source": "_index.json global_rules"
+    }
+  }
+}

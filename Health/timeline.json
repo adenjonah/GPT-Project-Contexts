@@ -3,10 +3,10 @@
     "domain": "planning",
     "description": "Injury timeline, medication schedule, training phases, and competition goals",
     "keywords": ["timeline", "injury", "fracture", "teriparatide", "training phases", "race", "5K", "recovery"],
-    "last_updated": "2025-12-21"
+    "last_updated": "2026-01-22"
   },
   "temporal_anchor": {
-    "profile_anchor_date": "2025-12-21",
+    "profile_anchor_date": "2026-01-22",
     "timezone_assumption": "US Pacific",
     "rule": "All relative time references (e.g., 'now', 'recently', 'in a few months') must be converted to absolute calendar dates using this anchor."
   },
@@ -16,13 +16,13 @@
       "nwb_start_date": "2025-09-21",
       "nwb_end_date": "2025-11-30",
       "return_to_walking_and_biking_date": "2025-12-01",
-      "weeks_post_injury_as_of_anchor": 13
+      "weeks_post_injury_as_of_anchor": 18
     }
   },
   "medication": {
     "teriparatide": {
       "start_date": "2025-12-03",
-      "weeks_on_medication_as_of_anchor": 2.5,
+      "weeks_on_medication_as_of_anchor": 7,
       "planned_end_date": "2026-06-03",
       "cycle_duration_months": 6,
       "dose_reported": "20 mcg (user unsure of unit exactness)",
