@@ -1,0 +1,90 @@
+{
+  "_metadata": {
+    "domain": "planning",
+    "description": "Injury timeline, medication schedule, training phases, and competition goals",
+    "keywords": ["timeline", "injury", "fracture", "teriparatide", "training phases", "race", "5K", "recovery"],
+    "last_updated": "2025-12-21"
+  },
+  "temporal_anchor": {
+    "profile_anchor_date": "2025-12-21",
+    "timezone_assumption": "US Pacific",
+    "rule": "All relative time references (e.g., 'now', 'recently', 'in a few months') must be converted to absolute calendar dates using this anchor."
+  },
+  "injury": {
+    "femoral_neck_stress_fracture": {
+      "injury_date_estimated": "2025-09-21",
+      "nwb_start_date": "2025-09-21",
+      "nwb_end_date": "2025-11-30",
+      "return_to_walking_and_biking_date": "2025-12-01",
+      "weeks_post_injury_as_of_anchor": 13
+    }
+  },
+  "medication": {
+    "teriparatide": {
+      "start_date": "2025-12-03",
+      "weeks_on_medication_as_of_anchor": 2.5,
+      "planned_end_date": "2026-06-03",
+      "cycle_duration_months": 6,
+      "dose_reported": "20 mcg (user unsure of unit exactness)",
+      "route": "daily injection",
+      "indication": "raise chronically low alkaline phosphatase / bone health support"
+    }
+  },
+  "training_phases": {
+    "phase_1_bike_base": {
+      "start_date": "2025-12-01",
+      "end_date": "2026-01-31",
+      "primary_focus": "high-volume cycling aerobic base",
+      "target_volume_hours_per_week": "10-20"
+    },
+    "phase_2_run_reintroduction": {
+      "start_date": "2026-02-01",
+      "end_date": "2026-04-03",
+      "running_volume_target_mpw": 20,
+      "cycling_volume_target_hours_per_week": 10,
+      "notes": "walk-jog progression, no plyometrics early"
+    }
+  },
+  "body_composition": {
+    "fat_loss_phase": {
+      "start_date": "2025-12-21",
+      "end_date": "2026-04-04",
+      "target_fat_loss_lbs": 5,
+      "expected_rate_lbs_per_week": "0.25-0.4"
+    }
+  },
+  "competition": {
+    "goal_race": {
+      "event": "5K",
+      "race_date": "2026-04-04",
+      "target_time": "14:45"
+    }
+  },
+  "nutrition_plan": {
+    "base_calorie_plan_start": "2025-12-21",
+    "review_checkpoints": [
+      "2026-01-15",
+      "2026-02-15",
+      "2026-03-15"
+    ]
+  },
+  "monitoring_rules": {
+    "lab_draw_window": {
+      "recommended_start": "2026-01-01",
+      "recommended_end": "2026-02-15"
+    },
+    "hrv_trend_context": {
+      "pre_injury_baseline_period": "2025-06-01 to 2025-09-20",
+      "detraining_period": "2025-09-21 to 2025-11-30",
+      "recovery_rebuild_period": "2025-12-01 onward"
+    }
+  },
+  "enforced_context_rules": {
+    "no_relative_language": true,
+    "examples": {
+      "disallowed": ["now", "recently", "a few months", "currently"],
+      "required": ["YYYY-MM-DD", "explicit date ranges"]
+    },
+    "update_policy": "If the anchor date changes, all derived timelines must be recalculated."
+  }
+}

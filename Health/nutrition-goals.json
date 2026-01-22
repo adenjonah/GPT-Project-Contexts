@@ -1,0 +1,170 @@
+{
+  "_metadata": {
+    "domain": "nutrition",
+    "description": "Daily calorie targets, macro distribution, and meal timing goals",
+    "keywords": ["calories", "macros", "protein", "carbs", "fat", "meals", "deficit", "exercise adjustment"],
+    "last_updated": "2025-12-21"
+  },
+  "default_goal": {
+    "calories": 1700,
+    "macros": {
+      "carbs_g": 197,
+      "protein_g": 147,
+      "fat_g": 36,
+      "macro_calories": {
+        "carbs_kcal": 788,
+        "protein_kcal": 588,
+        "fat_kcal": 324,
+        "total_kcal": 1700
+      },
+      "macro_percent": {
+        "carbs_pct": 46,
+        "protein_pct": 35,
+        "fat_pct": 19
+      }
+    },
+    "meal_goals": {
+      "total_daily_goal_pct": 100,
+      "breakfast": { "calories": 595, "pct": 35 },
+      "lunch": { "calories": 680, "pct": 40 },
+      "dinner": { "calories": 340, "pct": 20 },
+      "snacks": { "calories": 85, "pct": 5 }
+    },
+    "nutrient_goals": {
+      "saturated_fat_g": 15,
+      "polyunsaturated_fat_g": 12,
+      "monounsaturated_fat_g": 25,
+      "trans_fat_g": 0,
+      "cholesterol_mg": 300,
+      "sodium_mg": 3500,
+      "potassium_mg": 4700,
+      "fiber_g": 35,
+      "sugar_g": 130,
+      "vitamin_a_pct": 100,
+      "vitamin_c_pct": 100,
+      "calcium_pct": 100,
+      "iron_pct": 100
+    }
+  },
+  "exercise_adjustment_example": {
+    "exercise_burn_kcal": 500,
+    "new_calorie_goal": 2200,
+    "rule": "Protein grams fixed; extra calories go to carbs (fat fixed).",
+    "macros": {
+      "carbs_g": 322,
+      "protein_g": 147,
+      "fat_g": 36,
+      "macro_calories": {
+        "carbs_kcal": 1288,
+        "protein_kcal": 588,
+        "fat_kcal": 324,
+        "total_kcal": 2200
+      },
+      "macro_percent": {
+        "carbs_pct": 58.5,
+        "protein_pct": 26.7,
+        "fat_pct": 14.7
+      }
+    }
+  },
+  "updated_nutrition_targets": {
+    "base_day_no_exercise": {
+      "calories": 2100,
+      "macros_grams": {
+        "protein_g": 140,
+        "fat_g": 65,
+        "carbs_g": 240
+      },
+      "macro_percent_estimates": {
+        "protein_pct": 27,
+        "fat_pct": 28,
+        "carbs_pct": 45
+      }
+    },
+    "exercise_calorie_policy": {
+      "eat_back_fraction_of_reported_burn": "0.70-0.80",
+      "rationale": "support energy availability and bone recovery during high volume"
+    },
+    "carb_scaling_by_training": {
+      "easy_bike_<=60min": { "add_carbs_g": "30-40" },
+      "bike_90min": { "add_carbs_g": "60-80" },
+      "bike_2to3hr": { "add_carbs_g": "100-140" },
+      "macro_priority_for_additions": "add mostly carbs; minimize added fat"
+    }
+  },
+  "meal_distribution_targets": {
+    "percent_of_daily_calories": {
+      "breakfast_pre_workout": 30,
+      "lunch_post_workout": 35,
+      "dinner": 25,
+      "snacks": 10
+    },
+    "base_day_calories_by_meal": {
+      "breakfast_pre_workout_kcal": 630,
+      "lunch_post_workout_kcal": 735,
+      "dinner_kcal": 525,
+      "snacks_kcal": 210
+    },
+    "macro_targets_by_meal": {
+      "breakfast_pre_workout": {
+        "carbs_g": "90-100",
+        "protein_g": "30-35",
+        "fat_g_max": 10
+      },
+      "lunch_post_workout": {
+        "carbs_g": "100-120",
+        "protein_g": "40-45",
+        "fat_g": "15-20"
+      },
+      "dinner": {
+        "carbs_g": "40-60",
+        "protein_g": "30-35",
+        "fat_g": "20-25"
+      },
+      "snacks": {
+        "notes": "protein top-ups, calcium sources, or easy carbs as needed"
+      }
+    }
+  },
+  "micronutrient_targets": {
+    "calcium_mg_per_day": "1200-1500",
+    "vitamin_d_IU_per_day": "1500-2000",
+    "vitamin_d_target_25oh_ng_per_ml": "40-60",
+    "sodium_mg_per_day": "3000-4000 (base), 4000-4500 on long bike days ok",
+    "potassium_mg_per_day": 4700,
+    "fiber_g_per_day": 30,
+    "hydration": {
+      "baseline_liters_per_day": "2.5-3.0",
+      "additional_per_training_hour_ml": "500-750"
+    },
+    "iron_policy": "do not supplement unless ferritin/CBC indicate need",
+    "phosphorus_policy": "do not restrict; normal dietary intake encouraged"
+  },
+  "myfitnesspal_goal_adjustments": {
+    "fat_breakdown_targets_g": {
+      "saturated_fat_g": 18,
+      "monounsaturated_fat_g": 30,
+      "polyunsaturated_fat_g": 12,
+      "trans_fat_g": 0
+    },
+    "cholesterol_mg": 400,
+    "sodium_mg": 3500,
+    "potassium_mg": 4700,
+    "fiber_g": 30,
+    "sugar_g": 160,
+    "vitamin_targets_percent": {
+      "vitamin_a_pct": 100,
+      "vitamin_c_pct": 100,
+      "calcium_pct": "120-130",
+      "iron_pct": 100
+    }
+  },
+  "deficit_policy": {
+    "default_daily_deficit_kcal": 400,
+    "saturday_deficit_kcal": 800,
+    "notes": [
+      "All days are at least -400 kcal deficit.",
+      "Saturdays are -800 kcal deficit because they are easy rides."
+    ]
+  }
+}

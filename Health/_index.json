@@ -1,0 +1,205 @@
+{
+  "_metadata": {
+    "domain": "index",
+    "description": "Routing index for Health context files - helps AI systems find relevant context",
+    "keywords": ["index", "routing", "context", "health", "navigation"],
+    "last_updated": "2025-12-21"
+  },
+  "project": {
+    "name": "Health",
+    "purpose": "Route questions to the right local context JSON files and apply global training + nutrition rules consistently."
+  },
+  "global_rules": {
+    "time_anchor": {
+      "rule": "Convert any relative time references to absolute dates using timeline.json temporal_anchor.profile_anchor_date."
+    },
+    "nutrition": {
+      "deficit_policy": {
+        "default_daily_deficit_kcal": 400,
+        "saturday_deficit_kcal": 800,
+        "notes": [
+          "All days are at least -400 kcal deficit.",
+          "Saturdays are -800 kcal deficit because they are easy rides."
+        ]
+      },
+      "macro_policy": {
+        "source_of_truth": "nutrition-goals.json",
+        "rule": "Protein grams fixed; when calorie target changes (e.g., eat-back from exercise), allocate added calories primarily to carbs (fat fixed unless explicitly overridden)."
+      }
+    },
+    "training_week_structure": {
+      "bike_day_types": {
+        "monday": "normal_volume_ride",
+        "tuesday": "workout_ride",
+        "wednesday": "large_volume_ride",
+        "thursday": "normal_volume_ride",
+        "friday": "workout_ride",
+        "saturday": "easy_ride",
+        "sunday": "large_volume_ride"
+      },
+      "strength_day_types": {
+        "monday": "core_and_running_muscles",
+        "tuesday": "upper_body_aesthetics",
+        "wednesday": "upper_body_aesthetics",
+        "thursday": "core_and_running_muscles",
+        "friday": "upper_body_aesthetics",
+        "saturday": "core_and_running_muscles",
+        "sunday": "none_by_default"
+      }
+    }
+  },
+  "context_files": [
+    {
+      "id": "nutrition_calorie_macros",
+      "filename": "nutrition-goals.json",
+      "use_for": [
+        "daily calorie target + macros",
+        "meal calorie distribution",
+        "exercise calorie adjustment examples",
+        "macro scaling rules when adding calories"
+      ],
+      "priority_when": [
+        "user asks how much to eat today",
+        "user asks macro targets",
+        "user asks how to adjust intake after a ride",
+        "user asks meal calorie splits"
+      ]
+    },
+    {
+      "id": "timeline_and_phases",
+      "filename": "timeline.json",
+      "use_for": [
+        "anchor date conversion",
+        "injury timeline and return-to-run phases",
+        "race date + checkpoints"
+      ],
+      "priority_when": [
+        "user asks 'when can I run' or time-to-race planning",
+        "user asks about phase changes",
+        "user references 'now' or relative dates"
+      ]
+    },
+    {
+      "id": "health_profile",
+      "filename": "profile.json",
+      "use_for": [
+        "baseline vitals, sleep, lifestyle constraints",
+        "medical constraints and risk flags",
+        "nutrition policy notes (eat-back fraction, carb scaling)"
+      ],
+      "priority_when": [
+        "user asks about safety, recovery, or bone-health constraints",
+        "user asks for fueling rules tied to training load",
+        "user asks for monitoring triggers (HRV, libido, bone pain)"
+      ]
+    },
+    {
+      "id": "labs_bloodwork",
+      "filename": "lab-results.json",
+      "use_for": [
+        "interpreting lab values and flags",
+        "supplement decisions (avoid/consider)",
+        "risk context (e.g., vitamin B6 high, fasting glucose mildly high)"
+      ],
+      "priority_when": [
+        "user asks about supplements",
+        "user asks about lab interpretation",
+        "user asks if a change is medically risky"
+      ]
+    },
+    {
+      "id": "medical_records",
+      "filename": "medical-records.json",
+      "use_for": [
+        "patient demographics and history",
+        "diagnosis codes and problem list",
+        "imaging reports and bone density scans"
+      ],
+      "priority_when": [
+        "user asks about diagnosis history",
+        "user asks about imaging results",
+        "user asks about bone density or fractures"
+      ]
+    },
+    {
+      "id": "recent_metrics",
+      "filename": "recent-metrics.json",
+      "use_for": [
+        "sleep/HRV/stress trends",
+        "recent training history and load",
+        "readiness pattern detection"
+      ],
+      "priority_when": [
+        "user asks why they feel flat/tired",
+        "user asks to adjust training based on readiness",
+        "user asks about recovery patterns"
+      ]
+    },
+    {
+      "id": "skincare_routine",
+      "filename": "skincare.json",
+      "use_for": [
+        "skincare procedures and timing constraints",
+        "shaving protocol and product usage",
+        "compatibility with actives"
+      ],
+      "priority_when": [
+        "user asks about skincare routine",
+        "user asks about shaving or ingrowns",
+        "user asks what products to use when"
+      ]
+    },
+    {
+      "id": "upper_body_plan",
+      "filename": "upper-body-training.json",
+      "use_for": [
+        "upper body aesthetics lifting plan",
+        "exercise selection + weekly volumes",
+        "Tue/Wed/Fri structure"
+      ],
+      "priority_when": [
+        "user asks for upper body workout details",
+        "user asks to modify aesthetics plan",
+        "user asks for minimal effective dose lifting"
+      ]
+    },
+    {
+      "id": "core_running_strength_plan",
+      "filename": "core-training.json",
+      "use_for": [
+        "core + lower body running-specific routine",
+        "Mon/Thu/Sat structure",
+        "calves/hamstrings/hip stability + ab aesthetics"
+      ],
+      "priority_when": [
+        "user asks for core/lower routine details",
+        "user asks for injury-resilient running strength",
+        "user asks for abs/obliques work that won't hurt running"
+      ]
+    }
+  ],
+  "routing_logic": {
+    "if_question_mentions": {
+      "calories|macros|deficit|eat back|meal split": ["nutrition_calorie_macros", "health_profile", "recent_metrics"],
+      "timeline|when can I run|race|phase": ["timeline_and_phases", "health_profile"],
+      "upper body|delts|chest|arms|aesthetics lifting": ["upper_body_plan", "recent_metrics"],
+      "core|abs|obliques|calves|achilles|hamstrings|running strength": ["core_running_strength_plan", "timeline_and_phases", "recent_metrics"],
+      "blood|labs|supplements|vitamins": ["labs_bloodwork", "health_profile"],
+      "skincare|shave|ingrowns|actives|treatments": ["skincare_routine"],
+      "imaging|x-ray|mri|dxa|bone density|fracture": ["medical_records", "labs_bloodwork"],
+      "sleep|hrv|stress|recovery|garmin": ["recent_metrics", "health_profile"]
+    },
+    "conflict_resolution": [
+      "If two files disagree, prefer the more specific plan file (upper-body-training.json or core-training.json) over general guidance.",
+      "If dates are involved, timeline.json overrides any implied timing elsewhere."
+    ]
+  },
+  "response_format_preferences": {
+    "default": "Start with what to do first. Then short reasoning. No filler.",
+    "output_modes": [
+      "single-day prescription",
+      "weekly schedule summary",
+      "JSON-only update to a referenced plan"
+    ]
+  }
+}

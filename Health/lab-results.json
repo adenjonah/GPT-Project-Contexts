@@ -1,0 +1,135 @@
+{
+  "_metadata": {
+    "domain": "medical",
+    "description": "Blood work, lab tests, CBC, metabolic panels, hormones, vitamins",
+    "keywords": ["labs", "blood", "CBC", "metabolic", "hormones", "vitamins", "testosterone", "vitamin D", "ferritin"],
+    "last_updated": "2025-04-23"
+  },
+  "collection_dates": {
+    "primary": "2025-04-23 08:51",
+    "historical": {
+      "testosterone_total": "2023-11-28 11:24"
+    }
+  },
+  "cbc": {
+    "white_blood_cell": { "value": 6.9, "units": "x10^3/uL", "ref_range": [3.12, 8.44] },
+    "red_blood_cell": { "value": 5.24, "units": "x10^6/uL", "ref_range": [4.20, 5.73] },
+    "hemoglobin": { "value": 15.5, "units": "g/dL", "ref_range": [12.6, 17.0] },
+    "hematocrit": { "value": 46.5, "units": "%", "ref_range": [37.2, 47.9] },
+    "mean_cell_volume": { "value": 88.7, "units": "fL", "ref_range": [78.6, 94.2] },
+    "mean_cell_hemoglobin": { "value": 29.6, "units": "pg", "ref_range": [26.7, 33.4] },
+    "mean_cell_hemoglobin_concentration": { "value": 33.3, "units": "g/dL", "ref_range": [32.5, 37.1] },
+    "rdw": { "value": 11.8, "units": "%", "ref_range": [11.3, 13.9] },
+    "platelet": { "value": 262, "units": "x10^3/uL", "ref_range": [156, 325] },
+    "mean_platelet_volume": { "value": 10.1, "units": "fL", "ref_range": [9.0, 12.1] },
+    "nucleated_rbc_percent": { "value": 0.0, "units": "/100 WBCs", "ref_range": [0.0, 0.0] },
+    "absolute_nucleated_rbc": { "value": 0.0, "units": "x10^3/uL", "ref_range": [0.0, 0.0] }
+  },
+  "metabolic": {
+    "basic_panel": {
+      "sodium": { "value": 141, "units": "mmol/L", "ref_range": [137, 145] },
+      "potassium": { "value": 4.6, "units": "mmol/L", "ref_range": [3.5, 5.1] },
+      "chloride": { "value": 103, "units": "mmol/L", "ref_range": [98, 107] },
+      "carbon_dioxide": { "value": 24, "units": "mmol/L", "ref_range": [19, 27] },
+      "bun": { "value": 19, "units": "mg/dL", "ref_range": [7, 26] },
+      "creatinine": { "value": 0.96, "units": "mg/dL", "ref_range": [0.70, 1.30] },
+      "glucose": { "value": 92, "units": "mg/dL", "ref_range": [75, 100] },
+      "anion_gap": { "value": 14, "units": "mmol/L", "ref_range": [5, 17] },
+      "calcium_total": { "value": 9.8, "units": "mg/dL", "ref_range": [8.8, 10.3] },
+      "calcium_ionized": { "value": 5.1, "units": "mg/dL", "ref_range": [4.7, 5.5] }
+    },
+    "comprehensive_panel": {
+      "glucose_fasting": {
+        "value": 103,
+        "units": "mg/dL",
+        "ref_range": [65, 99],
+        "flag": "mildly high"
+      },
+      "bun": { "value": 13, "units": "mg/dL", "ref_range": [7, 25] },
+      "creatinine": { "value": 0.92, "units": "mg/dL", "ref_range": [0.60, 1.24] },
+      "egfr": { "value": 121, "units": "mL/min/1.73m2", "ref_range": [60] },
+      "sodium": { "value": 140, "units": "mmol/L", "ref_range": [135, 146] },
+      "potassium": { "value": 4.1, "units": "mmol/L", "ref_range": [3.5, 5.3] },
+      "chloride": { "value": 105, "units": "mmol/L", "ref_range": [98, 110] },
+      "bicarbonate": { "value": 26, "units": "mmol/L", "ref_range": [20, 32] },
+      "protein_total": { "value": 7.5, "units": "g/dL", "ref_range": [6.1, 8.1] },
+      "albumin": { "value": 4.9, "units": "g/dL", "ref_range": [3.6, 5.1] },
+      "globulin": { "value": 2.6, "units": "g/dL", "ref_range": [1.9, 3.7] },
+      "albumin_globulin_ratio": { "value": 1.9, "ref_range": [1.0, 2.5] },
+      "bilirubin_total": { "value": 0.4, "units": "mg/dL", "ref_range": [0.2, 1.2] },
+      "alkaline_phosphatase_total": { "value": 51, "units": "U/L", "ref_range": [36, 130] },
+      "ast": { "value": 21, "units": "U/L", "ref_range": [10, 40] },
+      "alt": { "value": 16, "units": "U/L", "ref_range": [9, 46] }
+    }
+  },
+  "bone_markers": {
+    "alkaline_phosphatase_bone_specific": [
+      {
+        "value": 8.4,
+        "units": "ug/L",
+        "ref_range": [10.0, 28.8],
+        "flag": "low"
+      },
+      {
+        "value": 7.7,
+        "units": "mcg/L",
+        "ref_range": [8.4, 29.3],
+        "flag": "low"
+      }
+    ]
+  },
+  "inflammation": {
+    "crp": { "value": "<3", "units": "mg/L", "ref_range": ["<=4"] },
+    "esr": { "value": 5, "units": "mm/hr", "ref_range": [1, 15] }
+  },
+  "hormones": {
+    "testosterone_total": {
+      "value": 573,
+      "units": "ng/dL",
+      "ref_range": [250, 827]
+    },
+    "tsh": { "value": 1.5, "units": "mIU/L" },
+    "total_t3": { "value": 115, "units": "ng/dL" },
+    "parathyroid_hormone_intact": {
+      "value": 18,
+      "units": "pg/mL",
+      "ref_range": [16, 77],
+      "flag": "low-normal"
+    }
+  },
+  "vitamins_minerals": {
+    "vitamin_b12": { "value": 581, "units": "pg/mL" },
+    "ferritin": { "value": 158, "units": "ng/mL" },
+    "vitamin_d_25oh": [
+      {
+        "value": 49.2,
+        "units": "ng/mL"
+      },
+      {
+        "value": 55,
+        "units": "ng/mL",
+        "ref_range": [30, 100],
+        "flag": "optimal"
+      }
+    ],
+    "vitamin_b6_plasma": {
+      "value": 44.3,
+      "units": "ng/mL",
+      "ref_range": [2.1, 21.7],
+      "flag": "high"
+    }
+  },
+  "urine_amino_acids": {
+    "summary": "All urine amino acids within reference ranges",
+    "interpretation": "normal"
+  },
+  "pending_labs_needed": [
+    "total testosterone",
+    "free testosterone or SHBG",
+    "TSH, free T3, free T4",
+    "ferritin",
+    "CBC",
+    "HbA1c",
+    "lipid panel"
+  ]
+}

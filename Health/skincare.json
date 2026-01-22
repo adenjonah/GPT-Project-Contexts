@@ -1,0 +1,142 @@
+{
+  "_metadata": {
+    "domain": "skincare",
+    "description": "Skincare routine, shaving protocol, and product usage rules",
+    "keywords": ["skincare", "shaving", "ingrowns", "acne", "routine", "actives", "azelaic acid", "salicylic acid", "niacinamide"],
+    "last_updated": "2025-12-21"
+  },
+  "goal": "Zero ingrowns, zero inflammatory acne, resilient barrier with repeatable shaving",
+  "products": {
+    "cleanser": "Olay Clarifying Daily Facial Cleanser (Niacinamide)",
+    "hyaluronic_acid": "Hyaluronic Acid serum",
+    "moisturizer": "Dermalogica Skin Smoothing Cream",
+    "sunscreen": "CeraVe Hydrating Mineral Sunscreen SPF 30 (Tinted)",
+    "azelaic_acid": "Azelaic Acid 10%",
+    "salicylic_spot": "La Roche-Posay Effaclar Salicylic Acid Acne Treatment (spot)",
+    "eye_serum": "Eye serum (8% caffeine + retinol + HA + niacinamide + peptides)",
+    "occlusive": "Vaseline",
+    "bump_treatment": "Bump cream"
+  },
+  "shaving_plan": {
+    "cadence": "every 3 days (shave, then 2 no-shave days, repeat)",
+    "frequency_per_week_estimate": "2-3x per week",
+    "face": {
+      "tool": "foil shaver",
+      "direction": "with grain only",
+      "passes": 1,
+      "pressure": "minimal"
+    },
+    "neck_below_jawline": {
+      "tool": "electric razor with guard",
+      "direction": "with grain only",
+      "passes": 1,
+      "pressure": "minimal"
+    }
+  },
+  "global_rules": [
+    "Hyaluronic acid only applied to damp skin",
+    "No razor blades below the jawline",
+    "Barrier > exfoliation",
+    "Salicylic acid never on neck",
+    "Retinol restricted to eye area only",
+    "No actives on shave day (Day 1)",
+    "No actives within 24h after shaving (Day 2)",
+    "Actives allowed only on buffer day (Day 3)"
+  ],
+  "daily_baseline": {
+    "AM": [
+      "Cleanse",
+      "HA (on damp skin)",
+      "Moisturizer",
+      "Tinted mineral SPF"
+    ],
+    "PM": [
+      "Cleanse",
+      "HA (on damp skin)",
+      "Moisturizer"
+    ]
+  },
+  "3_day_loop": {
+    "Day_1_shave_day": {
+      "AM": [
+        "Baseline AM",
+        "Warm shower",
+        "Shave: face foil (with grain), neck electric w/ guard (with grain)",
+        "Cooldown 10 min",
+        "HA (light layer)",
+        "Moisturizer",
+        "Vaseline: thin layer on neck only",
+        "Sunscreen (if not already applied in baseline)"
+      ],
+      "PM": [
+        "Baseline PM only",
+        "Forbidden: azelaic acid, salicylic acid, niacinamide serum, eye retinol, exfoliation"
+      ],
+      "optional_spot_care": {
+        "bump_cream": {
+          "use": "spot treat only if an active inflamed bump is present",
+          "area": "neck bumps only",
+          "duration_days": "1-2",
+          "constraint": "avoid broad application"
+        }
+      }
+    },
+    "Day_2_post_shave_day": {
+      "AM": [
+        "Baseline AM only"
+      ],
+      "PM": [
+        "Baseline PM",
+        "Add: Niacinamide serum 4-5%",
+        "Optional: Eye serum (only if zero irritation)",
+        "Optional: Vaseline (neck only if dry)"
+      ],
+      "forbidden": [
+        "azelaic acid",
+        "salicylic acid",
+        "exfoliation"
+      ]
+    },
+    "Day_3_buffer_day_no_shave": {
+      "AM": [
+        "Baseline AM only"
+      ],
+      "PM": [
+        "Baseline PM",
+        "Add ONE primary treatment: Azelaic Acid 10% OR Niacinamide serum",
+        "Optional: Salicylic acid spot treat face pimples only",
+        "Optional: Eye serum"
+      ],
+      "constraints": [
+        "Do not use azelaic and salicylic on the same area in the same night",
+        "Salicylic is spot-only and face-only",
+        "If any irritation occurs, choose Niacinamide only and skip azelaic/salicylic"
+      ]
+    }
+  },
+  "exfoliation_policy": {
+    "physical_exfoliation": {
+      "product": "Grown Alchemist Exfoliator",
+      "frequency": "0-1x per week max",
+      "allowed_day": "Day 3 only",
+      "restriction": "never on Day 1 or Day 2; never if irritation present"
+    }
+  },
+  "forbidden": [
+    "razor blades on neck",
+    "daily exfoliation",
+    "alcohol aftershaves",
+    "benzoyl peroxide on shaved skin",
+    "retinoids outside the eye area",
+    "salicylic acid on neck",
+    "dry-skin hyaluronic acid application"
+  ],
+  "success_metrics": {
+    "2_weeks": "less redness and fewer bumps after shaving",
+    "4_weeks": "no inflamed ingrowns",
+    "8_weeks": "smooth regrowth, even tone, minimal acne flares"
+  },
+  "escalation": {
+    "if_ingrowns_persist_after_8_weeks": "hair exit angle problem > skincare: consider longer stubble tolerance or laser hair reduction"
+  }
+}

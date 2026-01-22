@@ -1,0 +1,120 @@
+{
+  "_metadata": {
+    "domain": "profile",
+    "description": "Basic health profile, vitals, lifestyle, medical conditions, and training context",
+    "keywords": ["profile", "vitals", "weight", "height", "sleep", "lifestyle", "conditions", "hypophosphatasia"],
+    "last_updated": "2025-12-21"
+  },
+  "user_profile": {
+    "age_years": 21,
+    "weight_lbs": 165,
+    "height_in": 70.75,
+    "resting_hr_bpm": 52,
+    "hrv_7day_avg_ms": 44,
+    "sleep": {
+      "avg_hours": 8,
+      "bed_time_typical": "00:00",
+      "wake_time_typical": "09:00",
+      "sleep_interruptions": "rare",
+      "tracker": "Garmin",
+      "subjective_quality": "good"
+    },
+    "lifestyle": {
+      "steps_per_day_recent": "2000-3000",
+      "caffeine_mg_per_day_typical": 100,
+      "caffeine_cutoff_time": "13:00",
+      "alcohol_pattern_past": "5-15 drinks in one day ~ every 3 weeks",
+      "alcohol_plan": "none foreseeable future",
+      "nicotine": false,
+      "nsaid_frequent_use": false,
+      "sun_exposure": "low"
+    }
+  },
+  "medical": {
+    "conditions": [
+      "hypophosphatasia",
+      "history of bone stress injuries"
+    ],
+    "recent_injury": {
+      "type": "femoral neck stress fracture",
+      "side": "compression",
+      "extent": "20% width",
+      "time_since_injury_weeks": 13,
+      "nwb_duration_weeks": 10,
+      "current_status": "walking + biking",
+      "history": {
+        "stress_reactions": true,
+        "stress_fractures_prior": "first fracture"
+      }
+    },
+    "medications": [
+      {
+        "name": "teriparatide",
+        "dose_reported": "20 mcg (user unsure of unit exactness)",
+        "route": "daily injection",
+        "time_on_medication_weeks": 2.5,
+        "planned_cycle_duration_months": 6,
+        "indication": "raise chronically low alkaline phosphatase / bone health support"
+      }
+    ]
+  },
+  "performance_goal": {
+    "event": "5K",
+    "target_time": "14:45",
+    "race_date": "2026-04-04",
+    "current_date_context": "2025-12-21",
+    "body_composition_goal": {
+      "fat_loss_target_lbs": 5,
+      "fat_loss_notes": "re-scoped from 10-15 lb to 5 lb"
+    }
+  },
+  "training_plan_intent": {
+    "phase_1": {
+      "duration_months": 2,
+      "primary_modality": "cycling",
+      "target_volume_hours_per_week": "10-20",
+      "notes": "build aerobic base while returning from femoral neck SFx"
+    },
+    "phase_2": {
+      "primary_modality": "running + cycling",
+      "target_running_miles_per_week": 20,
+      "target_cycling_hours_per_week": 10,
+      "notes": "reintroduce workouts later; maintain high cross-training volume"
+    },
+    "recent_training_actual": {
+      "pre_injury_block": {
+        "duration_weeks": 12,
+        "weekly_miles": "50-60",
+        "frequency_days_per_week": 6,
+        "structure": "2 workouts + 1 long run"
+      },
+      "last_2_weeks": {
+        "cycling_days_per_week": 3,
+        "session_duration_progression": "30 min -> 45-60 min",
+        "strength": "core 2x/week",
+        "sauna": {
+          "protocol": "3x10 min sauna + 2 min cool off",
+          "frequency_per_week": 3
+        }
+      }
+    }
+  },
+  "risk_flags_and_rules": {
+    "primary_limiter": "bone health / fracture risk",
+    "constraints": [
+      "avoid aggressive calorie deficits during teriparatide cycle",
+      "avoid low-carb high-volume training pattern",
+      "avoid fasted long rides",
+      "prioritize post-workout carbs",
+      "sauna should be reduced during early bone recovery phase (assistant recommendation)"
+    ],
+    "symptom_trigger_rule": {
+      "triggers": ["low hunger", "libido drop", "HRV falling trend", "bone pain"],
+      "first_action": "increase carbs (not protein/fat)"
+    }
+  },
+  "supplement_status": {
+    "current": "no supplements; uses Fairlife protein shakes",
+    "nutrition_tracking_status": "just started tracking; no baseline intake estimates yet"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "_metadata": {
+    "domain": "medical",
+    "description": "Patient information, diagnoses, and imaging reports",
+    "keywords": ["patient", "diagnosis", "ICD10", "imaging", "X-ray", "MRI", "DXA", "bone density", "fracture"],
+    "last_updated": "2025-11-07"
+  },
+  "patient": {
+    "name": "Aden, Jonah",
+    "patient_id": "1400930936",
+    "date_of_birth": "2004-03-09",
+    "age_at_exam_dates": {
+      "2025-10-27": 21,
+      "2025-11-07": 21,
+      "2025-09-19": 21,
+      "2025-09-17": 21
+    },
+    "sex": "Male",
+    "ethnicity": null
+  },
+  "problem_list_icd10": [
+    {
+      "code": "M81.8",
+      "description": "Other osteoporosis without current pathological fracture"
+    },
+    {
+      "code": "R74.8",
+      "description": "Abnormal levels of other serum enzymes"
+    },
+    {
+      "code": "E67.3",
+      "description": "Hypervitaminosis D"
+    },
+    {
+      "code": "M89.8X9",
+      "description": "Other specified disorders of bone, unspecified site"
+    },
+    {
+      "code": "S72.90XS",
+      "description": "Unspecified fracture of unspecified femur, sequela"
+    },
+    {
+      "code": "M25.551",
+      "description": "Pain in right hip"
+    }
+  ],
+  "imaging_reports": [
+    {
+      "modality": "XR",
+      "exam_name": "XR Bone Age (Hand)",
+      "body_part": "Left hand",
+      "technique": "PA radiograph of the left hand",
+      "clinical_information": [
+        "Osteoporosis",
+        "Abnormal levels of other serum enzymes",
+        "Hypervitaminosis D",
+        "Other specified disorders of bone, unspecified site",
+        "Unspecified fracture of unspecified femur, sequela"
+      ],
+      "comparison": "None available.",
+      "findings": [
+        "Patient is skeletally mature",
+        "No fracture identified",
+        "Joint spaces preserved",
+        "Negative ulnar variance"
+      ],
+      "impression": "Bone age within normal limits (skeletally mature).",
+      "order_number": "981614338",
+      "result_date_time_local": "2025-11-07 14:16",
+      "signing_radiologist": "Matthew Moy"
+    },
+    {
+      "modality": "DXA",
+      "exam_name": "Bone Densitometry",
+      "indication": "Screening for osteoporosis",
+      "referring_provider": "COHEN, ADI",
+      "exam_date": "2025-10-27",
+      "accession_number": "25008493662",
+      "reported_by": "Marcella Walker",
+      "report_time_local": "2025-10-27 14:52:00",
+      "bone_density": [
+        {
+          "region": "AP Spine (L1-L4)",
+          "bmd_g_cm2": 1.073,
+          "t_score": -0.2,
+          "z_score": 0.1,
+          "classification": "Normal"
+        },
+        {
+          "region": "Femoral Neck (Left)",
+          "bmd_g_cm2": 1.103,
+          "t_score": 1.3,
+          "z_score": 1.3,
+          "classification": "Normal"
+        },
+        {
+          "region": "Total Hip (Left)",
+          "bmd_g_cm2": 1.194,
+          "t_score": 1.1,
+          "z_score": 1.1,
+          "classification": "Normal"
+        },
+        {
+          "region": "1/3 Forearm (Left)",
+          "bmd_g_cm2": 0.829,
+          "t_score": 0.2,
+          "z_score": 0.2,
+          "classification": "Normal"
+        }
+      ],
+      "who_criteria_text": {
+        "normal": "T-score at or above -1.0",
+        "osteopenia": "T-score between -1.0 and -2.5",
+        "osteoporosis": "T-score at or below -2.5"
+      },
+      "previous_exams": [
+        {
+          "region": "AP Spine (L1-L4)",
+          "exam_date": "2025-10-27",
+          "age": 21,
+          "bmd_g_cm2": 1.073,
+          "t_score": -0.2,
+          "bmd_change_vs_baseline_percent": 3.1,
+          "bmd_change_vs_previous_percent": 3.1,
+          "significant_at_95ci": true
+        },
+        {
+          "region": "AP Spine (L1-L4)",
+          "exam_date": "2023-10-18",
+          "age": 19,
+          "bmd_g_cm2": 1.041,
+          "t_score": -0.5
+        },
+        {
+          "region": "1/3 Forearm (Left)",
+          "exam_date": "2025-10-27",
+          "age": 21,
+          "bmd_g_cm2": 0.829,
+          "t_score": 0.2,
+          "bmd_change_vs_baseline_percent": 2.3,
+          "bmd_change_vs_previous_percent": 2.3,
+          "significant_at_95ci": false
+        },
+        {
+          "region": "1/3 Forearm (Left)",
+          "exam_date": "2023-10-18",
+          "age": 19,
+          "bmd_g_cm2": 0.81,
+          "t_score": -0.1
+        }
+      ],
+      "least_significant_change": {
+        "ap_spine_lsc_g_cm2": 0.022,
+        "forearm_1_3_lsc_g_cm2": 0.023,
+        "note": "*Denotes significance at 95% confidence level"
+      },
+      "impression": "Using WHO criteria, on the basis of bone density at all sites, the patient has normal bone density."
+    },
+    {
+      "modality": "MRI",
+      "exam_name": "MR HIP WITHOUT IV CONTRAST - RIGHT",
+      "body_part": "Right hip",
+      "clinical_information": "Acute hip pain, rule out stress injury and labral",
+      "icd10": ["M25.551"],
+      "technique": "Multisequence multiplanar MRI of the right hip without contrast",
+      "comparison": "None available.",
+      "findings": {
+        "right_hip": [
+          "Femoral cam morphology present",
+          "Labrum unremarkable",
+          "No focal cartilage defect",
+          "No subchondral bone marrow signal abnormality",
+          "No joint effusion or intra-articular body",
+          "No evidence of avascular necrosis"
+        ],
+        "left_hip": [
+          "Femoral cam morphology present (large field-of-view images)",
+          "No focal cartilage defect",
+          "No subchondral bone marrow signal abnormality",
+          "No joint effusion or intra-articular body",
+          "No evidence of avascular necrosis"
+        ],
+        "regional_osseous_structures": [
+          "Nondisplaced incomplete stress fracture along the medial/compressive base of the right femoral neck with low signal fracture line and associated bone marrow edema (13:18)",
+          "Fracture line involves less than 20% of the diameter of the femoral neck",
+          "No dislocation",
+          "Symphysis pubis and sacroiliac joints well maintained",
+          "Visualized lower lumbar spine unremarkable"
+        ],
+        "tendons": [
+          "Hamstring origins intact",
+          "Iliopsoas insertions intact",
+          "Gluteus minimus and medius insertions intact"
+        ],
+        "muscles_and_subcutaneous_tissues": [
+          "No abnormal muscle signal suggesting denervation or disproportionate atrophy",
+          "Subcutaneous tissues unremarkable"
+        ],
+        "visceral_pelvis": ["Visualized intrapelvic structures unremarkable"]
+      },
+      "impression": "Nondisplaced incomplete stress fracture along the medial/compressive base of the right femoral neck. The fracture line involves less than 20% of the diameter of the femoral neck.",
+      "order_number": "955273841",
+      "result_date_time_local": "2025-09-19 12:11",
+      "signing_radiologist": "Matthew Moy"
+    },
+    {
+      "modality": "XR",
+      "exam_name": "XR HIP STANDARD (AP, FROGLEG) - RIGHT",
+      "body_part": "Right hip",
+      "clinical_information": "Acute right hip pain",
+      "icd10": ["M25.551"],
+      "technique": "AP and frog-leg lateral views of the right hip",
+      "comparison": "Right thigh MRI 2023-10-23",
+      "findings": [
+        "No fracture or dislocation evident",
+        "Right hip joint space maintained",
+        "Mild cam morphology of the right femoral head-neck junction"
+      ],
+      "impression": "No acute osseous abnormality. Maintained right hip joint space. Mild right femoral cam morphology.",
+      "order_number": "955274240",
+      "result_date_time_local": "2025-09-17 14:57",
+      "signing_radiologist": "Michael Rasiej"
+    }
+  ]
+}

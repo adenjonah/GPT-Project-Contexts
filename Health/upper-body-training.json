@@ -1,0 +1,140 @@
+{
+  "_metadata": {
+    "domain": "training",
+    "description": "Upper body aesthetics-focused workout plan for minimal mass with maximum visual impact",
+    "keywords": ["upper body", "aesthetics", "delts", "chest", "arms", "lifting", "workout", "hypertrophy"],
+    "last_updated": "2025-12-21"
+  },
+  "goal": "Maximum aesthetics with minimum mass",
+  "aesthetic_priority_order": [
+    "lateral delts",
+    "upper chest",
+    "rear delts",
+    "arms (contrast, not size)",
+    "lats (minimal)"
+  ],
+  "schedule": {
+    "tuesday": "Upper Chest + Lateral Delts",
+    "wednesday": "Rear Delts + Back + Arms",
+    "friday": "Delts Dominant Fill Day"
+  },
+  "frequency": 3,
+  "constraints": {
+    "cardio_volume": "high",
+    "calorie_state": "slight deficit",
+    "mass_ceiling": "do not chase scale weight or PRs"
+  },
+  "training_principles": [
+    "Silhouette > strength",
+    "Moderate loads, perfect tension",
+    "Stop sets when tension drops",
+    "Pumps over grinders"
+  ],
+  "weekly_volume_targets": {
+    "lateral_delt_sets": 16,
+    "upper_chest_sets": 10,
+    "rear_delt_sets": 12,
+    "arms_sets": 6,
+    "lat_sets": 6
+  },
+  "days": {
+    "tuesday_upper_chest_lateral": {
+      "exercises": [
+        {
+          "name": "incline dumbbell press (20-30 deg)",
+          "sets": 4,
+          "reps": "6-10",
+          "notes": "stop 1 rep before slowdown"
+        },
+        {
+          "name": "low-to-high cable fly",
+          "sets": 3,
+          "reps": "12-15",
+          "notes": "constant tension, no lockout"
+        },
+        {
+          "name": "cable lateral raise",
+          "sets": 5,
+          "reps": "15-20",
+          "notes": "2s up, 2s down"
+        }
+      ]
+    },
+    "wednesday_rear_back_arms": {
+      "exercises": [
+        {
+          "name": "chest-supported row OR neutral-grip pulldown",
+          "sets": 3,
+          "reps": "8-12",
+          "notes": "no torso swing"
+        },
+        {
+          "name": "rear delt cable fly",
+          "sets": 5,
+          "reps": "15-25",
+          "notes": "elbows wide, pinkies back"
+        },
+        {
+          "name": "incline dumbbell curls",
+          "sets": 3,
+          "reps": "10-15"
+        },
+        {
+          "name": "overhead cable triceps extension",
+          "sets": 3,
+          "reps": "10-15"
+        }
+      ]
+    },
+    "friday_delt_fill": {
+      "exercises": [
+        {
+          "name": "machine or smith incline press",
+          "sets": 3,
+          "reps": "8-10",
+          "notes": "controlled, no grinding"
+        },
+        {
+          "name": "lean-away lateral raise",
+          "sets": 5,
+          "reps": "15-20",
+          "notes": "partials allowed last set"
+        },
+        {
+          "name": "rear delt fly (any)",
+          "sets": 4,
+          "reps": "20-25"
+        },
+        {
+          "name": "optional arm pump superset",
+          "sets": 2,
+          "reps": "15-20",
+          "notes": "ONLY if recovered"
+        }
+      ]
+    }
+  },
+  "intensity_rules": {
+    "rir": 1,
+    "failure": "isolations only, last set",
+    "drop_sets": "allowed on laterals only"
+  },
+  "progression": {
+    "rule": "Add reps before weight",
+    "cap": "if pumps flatten for 2 weeks, volume is too high",
+    "deload": "reduce volume by 25% for 1 week if joints ache"
+  },
+  "what_we_removed": [
+    "flat bench",
+    "overhead barbell press",
+    "heavy lat width chasing",
+    "trap isolation",
+    "excess arm volume"
+  ],
+  "success_criteria": {
+    "in_clothes": "shoulders dominate silhouette",
+    "shirtless": "upper chest shelf visible, capped delts",
+    "scale_weight": "stable or slightly down",
+    "running": "no negative impact on workouts"
+  }
+}
