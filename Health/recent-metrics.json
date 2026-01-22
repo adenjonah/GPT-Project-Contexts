@@ -326,6 +326,69 @@
       }
     }
   },
+  "training_activities": {
+    "description": "Recent training activities from Garmin - note: ~1/20 workouts tracked (watch often dead)",
+    "last_running_before_injury": [
+      { "date": "2025-09-16", "type": "Running", "distance_mi": 1.06, "duration": "00:07:42", "avg_hr": 141, "max_hr": 155, "calories": 119, "pace_min_mi": "7:15", "note": "Last run before injury" },
+      { "date": "2025-09-15", "type": "Running", "distance_mi": 4.01, "duration": "00:29:13", "avg_hr": 149, "max_hr": 175, "calories": 445, "pace_min_mi": "7:17" }
+    ],
+    "cycling_recovery_phase": [
+      { "date": "2026-01-21", "type": "Indoor Cycling", "duration": "01:10:26", "avg_hr": 133, "max_hr": 160, "calories": 650, "distance_mi": 18.77 },
+      { "date": "2026-01-20", "type": "Indoor Cycling", "duration": "02:30:18", "avg_hr": 129, "max_hr": 155, "calories": 1342, "sessions": 2, "note": "Two sessions" },
+      { "date": "2026-01-18", "type": "Indoor Cycling", "duration": "04:04:30", "avg_hr": 138, "max_hr": 160, "calories": 2042, "distance_mi": 67.02, "note": "Big volume day - Saturday ride" },
+      { "date": "2026-01-17", "type": "Indoor Cycling", "duration": "01:13:02", "avg_hr": 127, "max_hr": 143, "calories": 669, "sessions": 2 },
+      { "date": "2026-01-16", "type": "Indoor Cycling", "duration": "02:32:04", "avg_hr": 137, "max_hr": 173, "calories": 1440, "sessions": 2, "note": "Workout ride - hit 173 HR" },
+      { "date": "2026-01-15", "type": "Mixed", "duration": "02:18:05", "avg_hr": 138, "max_hr": 168, "calories": 1389, "sessions": 2, "note": "Indoor + outdoor NYC ride" },
+      { "date": "2026-01-14", "type": "Indoor Cycling", "duration": "01:10:01", "avg_hr": 140, "max_hr": 168, "calories": 760, "note": "Workout day" },
+      { "date": "2026-01-13", "type": "Cycling", "duration": "00:31:27", "avg_hr": 109, "max_hr": 149, "calories": 218, "location": "Spokane County", "note": "Easy outdoor ride" },
+      { "date": "2026-01-12", "type": "Indoor Cycling", "duration": "01:31:08", "avg_hr": 128, "max_hr": 155, "calories": 753 },
+      { "date": "2026-01-11", "type": "Indoor Cycling", "duration": "03:30:12", "avg_hr": 134, "max_hr": 163, "calories": 1676, "note": "Big volume day - Sunday ride" },
+      { "date": "2026-01-09", "type": "Indoor Cycling", "duration": "01:10:39", "avg_hr": 146, "max_hr": 174, "calories": 807, "note": "Workout ride - hit 174 HR" },
+      { "date": "2026-01-08", "type": "Indoor Cycling", "duration": "02:01:01", "avg_hr": 134, "max_hr": 160, "calories": 1108 },
+      { "date": "2026-01-07", "type": "Indoor Cycling", "duration": "01:30:05", "avg_hr": 140, "max_hr": 161, "calories": 895 },
+      { "date": "2026-01-06", "type": "Indoor Cycling", "duration": "01:00:02", "avg_hr": 143, "max_hr": 171, "calories": 667, "note": "Workout ride" },
+      { "date": "2026-01-05", "type": "Cycling", "duration": "00:38:28", "avg_hr": 123, "max_hr": 142, "calories": 332, "location": "Honolulu" },
+      { "date": "2026-01-04", "type": "Mixed", "duration": "02:33:13", "avg_hr": 137, "max_hr": 166, "calories": 1523, "sessions": 2, "location": "Honolulu" },
+      { "date": "2026-01-03", "type": "Indoor Cycling", "duration": "01:11:03", "avg_hr": 135, "max_hr": 173, "calories": 691 },
+      { "date": "2026-01-02", "type": "Indoor Cycling", "duration": "00:58:54", "avg_hr": 135, "max_hr": 147, "calories": 587 },
+      { "date": "2025-12-31", "type": "Indoor Cycling", "duration": "00:20:00", "avg_hr": 135, "max_hr": 164, "calories": 239 },
+      { "date": "2025-12-29", "type": "Indoor Cycling", "duration": "01:30:19", "avg_hr": 128, "max_hr": 150, "calories": 759 },
+      { "date": "2025-12-28", "type": "Indoor Cycling", "duration": "00:33:03", "avg_hr": 124, "max_hr": 139, "calories": 292 },
+      { "date": "2025-12-27", "type": "Indoor Cycling", "duration": "01:15:38", "avg_hr": 142, "max_hr": 172, "calories": 819 },
+      { "date": "2025-12-26", "type": "Indoor Cycling", "duration": "01:45:23", "avg_hr": 123, "max_hr": 158, "calories": 869 },
+      { "date": "2025-12-25", "type": "Cycling", "duration": "00:24:22", "avg_hr": 126, "max_hr": 155, "calories": 235, "location": "Spokane" },
+      { "date": "2025-12-24", "type": "Indoor Cycling", "duration": "01:00:01", "avg_hr": 137, "max_hr": 159, "calories": 619 },
+      { "date": "2025-12-23", "type": "Indoor Cycling", "duration": "01:00:24", "avg_hr": 144, "max_hr": 171, "calories": 741 },
+      { "date": "2025-12-21", "type": "Cycling", "duration": "00:54:43", "avg_hr": 150, "max_hr": 185, "calories": 721, "location": "Spokane County", "note": "Hit 185 HR - highest since injury" },
+      { "date": "2025-12-20", "type": "Indoor Cycling", "duration": "00:45:07", "avg_hr": 142, "max_hr": 159, "calories": 550 },
+      { "date": "2025-12-19", "type": "Indoor Cycling", "duration": "00:29:30", "avg_hr": 150, "max_hr": 165, "calories": 418 },
+      { "date": "2025-12-14", "type": "Indoor Cycling", "duration": "00:30:04", "avg_hr": 144, "max_hr": 161, "calories": 401 },
+      { "date": "2025-12-12", "type": "Indoor Cycling", "duration": "00:29:51", "avg_hr": 143, "max_hr": 157, "calories": 382 },
+      { "date": "2025-12-11", "type": "Indoor Cycling", "duration": "00:29:40", "avg_hr": 161, "max_hr": 173, "calories": 471, "note": "First tracked cycling session" }
+    ],
+    "summary": {
+      "tracking_note": "Only ~5% of workouts tracked - watch often dead",
+      "cycling_start_date": "2025-12-11",
+      "total_tracked_rides": 32,
+      "total_tracked_time": "~40 hours",
+      "total_tracked_calories": "~22,000",
+      "volume_progression": {
+        "early_dec": "30-45 min sessions",
+        "late_dec": "45-90 min sessions",
+        "jan_2026": "60-240 min sessions, including 3.5-4hr rides"
+      },
+      "max_hr_progression": {
+        "early_dec": "157-173 bpm",
+        "late_dec": "158-185 bpm",
+        "jan_2026": "147-174 bpm regularly"
+      },
+      "weekly_pattern_emerging": {
+        "big_volume_days": "Saturday + Sunday (3-4hr rides)",
+        "workout_days": "Tuesday + Friday (higher intensity, 60-90min)",
+        "normal_days": "Mon/Wed/Thu (60-90min steady)"
+      }
+    }
+  },
   "training_phases_from_hr": {
     "pre_injury_running": {
       "period": "Jan 2025 - Sep 2025",
@@ -361,8 +424,10 @@
     },
     "training_load": {
       "status": "building",
-      "current_weekly_high_hr": "144-151 bpm",
-      "target": "Get back to 160+ regularly as fitness builds"
+      "current_weekly_high_hr": "160-174 bpm",
+      "weekly_volume": "8-12+ hours cycling",
+      "big_days": "3-4hr rides on Sat/Sun",
+      "note": "Volume ramping well, HR capacity improving"
     },
     "steps": {
       "status": "moderate",
