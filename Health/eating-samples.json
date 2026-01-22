@@ -1,0 +1,290 @@
+{
+  "_metadata": {
+    "domain": "nutrition",
+    "description": "Historical sample days of eating from MyFitnessPal exports",
+    "keywords": ["eating", "nutrition", "meals", "macros", "history", "MFP", "MyFitnessPal"],
+    "last_updated": "2026-01-21",
+    "source": "MyFitnessPal export",
+    "purpose": "Show GPT how user actually eats to inform meal suggestions"
+  },
+  "sample_days": [
+    {
+      "date": "2026-01-15",
+      "day_of_week": "Wednesday",
+      "weight_lbs": 159.2,
+      "completeness": "complete",
+      "totals": {
+        "calories": 3069,
+        "protein_g": 141,
+        "carbs_g": 371,
+        "fat_g": 87,
+        "fiber_g": 22,
+        "sugar_g": 121,
+        "sodium_mg": 2233
+      },
+      "meals": {
+        "breakfast": {
+          "time_range": "9:55 AM - 11:45 AM",
+          "calories": 680,
+          "protein_g": 23,
+          "carbs_g": 132,
+          "fat_g": 12,
+          "items_estimated": ["oats", "yogurt or milk-based item", "fruit/sugar source"]
+        },
+        "lunch": {
+          "time_range": "1:40 PM - 4:40 PM",
+          "calories": 1261,
+          "protein_g": 84,
+          "carbs_g": 155,
+          "fat_g": 30,
+          "items_estimated": ["protein source (chicken/beef)", "carb-heavy meal", "fruit"]
+        },
+        "dinner": {
+          "time_range": "4:45 PM",
+          "calories": 1128,
+          "protein_g": 45,
+          "carbs_g": 138,
+          "fat_g": 45,
+          "items_estimated": ["large mixed meal"]
+        }
+      },
+      "notes": "High calorie day, likely training day. Good protein distribution."
+    },
+    {
+      "date": "2026-01-16",
+      "day_of_week": "Thursday",
+      "weight_lbs": 159.0,
+      "completeness": "complete",
+      "totals": {
+        "calories": 3677,
+        "protein_g": 201,
+        "carbs_g": 456,
+        "fat_g": 96,
+        "fiber_g": 32,
+        "sugar_g": 166,
+        "sodium_mg": 4099
+      },
+      "meals": {
+        "breakfast": {
+          "time_range": "11:45 AM - 11:50 AM",
+          "calories": 986,
+          "protein_g": 47,
+          "carbs_g": 176,
+          "fat_g": 12,
+          "items_estimated": ["large carb-focused breakfast", "eggs or protein", "oats"]
+        },
+        "lunch": {
+          "time_range": "12:40 PM - 3:45 PM",
+          "calories": 1072,
+          "protein_g": 76,
+          "carbs_g": 141,
+          "fat_g": 28,
+          "items_estimated": ["protein shake or yogurt", "carb source", "eggs"]
+        },
+        "dinner": {
+          "time_range": "8:10 PM - 10:15 PM",
+          "calories": 1619,
+          "protein_g": 82,
+          "carbs_g": 194,
+          "fat_g": 56,
+          "items_estimated": ["large dinner", "dessert or carb drink", "protein source"]
+        }
+      },
+      "notes": "Highest calorie day in sample. Very high protein (201g). Late eating pattern."
+    },
+    {
+      "date": "2026-01-17",
+      "day_of_week": "Friday",
+      "weight_lbs": 164.2,
+      "completeness": "complete",
+      "totals": {
+        "calories": 2430,
+        "protein_g": 140,
+        "carbs_g": 453,
+        "fat_g": 85,
+        "fiber_g": 23,
+        "sugar_g": 223,
+        "sodium_mg": 4055
+      },
+      "meals": {
+        "breakfast": {
+          "time_range": "10:50 AM - 10:55 AM",
+          "calories": 538,
+          "protein_g": 38,
+          "carbs_g": 62,
+          "fat_g": 17,
+          "items_estimated": ["carb drink", "higher-fat protein meal"]
+        },
+        "lunch": {
+          "time_range": "2:45 PM",
+          "calories": 1170,
+          "protein_g": 60,
+          "carbs_g": 297,
+          "fat_g": 50,
+          "items_estimated": ["large meal out or high-cal item", "sugar drink (117g sugar entry)"]
+        },
+        "dinner": {
+          "time_range": "9:20 PM - 10:45 PM",
+          "calories": 722,
+          "protein_g": 43,
+          "carbs_g": 95,
+          "fat_g": 20,
+          "items_estimated": ["protein + carb meal", "yogurt or dessert"]
+        }
+      },
+      "notes": "Weight spike to 164.2 (water/food weight from prior day). Very high sugar day (223g)."
+    },
+    {
+      "date": "2026-01-18",
+      "day_of_week": "Saturday",
+      "weight_lbs": 160.9,
+      "completeness": "complete",
+      "totals": {
+        "calories": 3791,
+        "protein_g": 172,
+        "carbs_g": 534,
+        "fat_g": 112,
+        "fiber_g": 7,
+        "sugar_g": 352,
+        "sodium_mg": 4066
+      },
+      "meals": {
+        "breakfast": {
+          "time_range": "9:50 AM - 10:55 AM",
+          "calories": 445,
+          "protein_g": 32,
+          "carbs_g": 69,
+          "fat_g": 6,
+          "items_estimated": ["maltodextrin/carb powder", "protein source"]
+        },
+        "lunch": {
+          "time_range": "11:15 AM - 4:15 PM",
+          "calories": 2411,
+          "protein_g": 97,
+          "carbs_g": 367,
+          "fat_g": 66,
+          "items_estimated": ["multiple entries - likely training day fueling", "eggs", "carb drinks", "protein shake"]
+        },
+        "dinner": {
+          "time_range": "8:05 PM - 11:35 AM (mislabeled)",
+          "calories": 935,
+          "protein_g": 44,
+          "carbs_g": 99,
+          "fat_g": 40,
+          "items_estimated": ["protein + carb meal", "sugar drink"]
+        }
+      },
+      "notes": "Highest sugar day (352g) - likely big training day with lots of carb fueling. Very high carbs overall."
+    },
+    {
+      "date": "2026-01-21",
+      "day_of_week": "Tuesday",
+      "weight_lbs": null,
+      "completeness": "complete",
+      "totals": {
+        "calories": 2116,
+        "protein_g": 132,
+        "carbs_g": 263,
+        "fat_g": 61,
+        "fiber_g": 5,
+        "sugar_g": 150,
+        "sodium_mg": 691
+      },
+      "meals": {
+        "breakfast": {
+          "time_range": "11:20 AM",
+          "calories": 310,
+          "protein_g": 6,
+          "carbs_g": 61,
+          "fat_g": 6,
+          "items_estimated": ["oats or carb-focused breakfast"]
+        },
+        "lunch": {
+          "time_range": "2:20 PM",
+          "calories": 789,
+          "protein_g": 78,
+          "carbs_g": 69,
+          "fat_g": 22,
+          "items_estimated": ["protein-heavy meal", "carb side"]
+        },
+        "dinner": {
+          "time_range": "6:15 PM - 7:10 PM",
+          "calories": 1017,
+          "protein_g": 48,
+          "carbs_g": 133,
+          "fat_g": 33,
+          "items_estimated": ["carb drink/gel", "protein + carb dinner"]
+        }
+      },
+      "notes": "Lower calorie day. Earlier eating window (done by 7:10 PM). Good protein."
+    }
+  ],
+  "incomplete_days": [
+    {
+      "date": "2026-01-19",
+      "reason": "No dinner logged, lunch at 11:40 PM suggests incomplete tracking",
+      "logged_calories": 2367
+    },
+    {
+      "date": "2026-01-20",
+      "reason": "No dinner logged",
+      "logged_calories": 1475
+    }
+  ],
+  "weight_trend": {
+    "dates": ["2026-01-15", "2026-01-16", "2026-01-17", "2026-01-18", "2026-01-19"],
+    "weights_lbs": [159.2, 159.0, 164.2, 160.9, 157.6],
+    "average_lbs": 160.2,
+    "notes": "Large daily fluctuations (157.6 - 164.2) typical of high-carb athlete diet with water retention swings"
+  },
+  "patterns_observed": {
+    "eating_window": {
+      "typical_first_meal": "10:00 AM - 12:00 PM",
+      "typical_last_meal": "8:00 PM - 10:30 PM",
+      "pattern": "Late breakfast, late dinner - compressed eating window"
+    },
+    "calorie_range": {
+      "low_day": 2116,
+      "high_day": 3791,
+      "average_complete_days": 3017,
+      "notes": "Wide range depending on training load"
+    },
+    "macro_tendencies": {
+      "protein": {
+        "range_g": "132-201",
+        "average_g": 157,
+        "assessment": "Generally meeting 140g+ target"
+      },
+      "carbs": {
+        "range_g": "263-534",
+        "average_g": 415,
+        "assessment": "High carb intake, especially on training days"
+      },
+      "fat": {
+        "range_g": "61-112",
+        "average_g": 88,
+        "assessment": "Moderate fat, sometimes high on big eating days"
+      },
+      "sugar": {
+        "range_g": "121-352",
+        "average_g": 202,
+        "assessment": "Very high sugar - likely from training carbs (maltodextrin, fructose, fruit)"
+      }
+    },
+    "meal_distribution": {
+      "breakfast_pct": "15-26%",
+      "lunch_pct": "29-64%",
+      "dinner_pct": "27-44%",
+      "pattern": "Lunch often largest meal, especially on training days"
+    }
+  },
+  "comparison_to_targets": {
+    "target_calories_base": 2100,
+    "actual_average": 3017,
+    "delta": "+917 average (expected if eating back training calories)",
+    "target_protein_g": 140,
+    "actual_average_protein_g": 157,
+    "protein_assessment": "Meeting target",
+    "notes": "Higher actual intake than base target is expected given high training volume and eat-back policy"
+  }
+}

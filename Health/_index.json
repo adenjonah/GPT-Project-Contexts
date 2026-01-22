@@ -66,6 +66,22 @@
       ]
     },
     {
+      "id": "eating_samples",
+      "filename": "eating-samples.json",
+      "use_for": [
+        "historical examples of actual eating patterns",
+        "real meal compositions and timing",
+        "weight fluctuation context",
+        "comparing targets vs actual intake"
+      ],
+      "priority_when": [
+        "user asks what they typically eat",
+        "user asks for meal suggestions based on history",
+        "user asks about eating patterns or habits",
+        "user asks about weight trends"
+      ]
+    },
+    {
       "id": "timeline_and_phases",
       "filename": "timeline.json",
       "use_for": [
