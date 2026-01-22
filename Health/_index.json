@@ -150,31 +150,21 @@
       ]
     },
     {
-      "id": "upper_body_plan",
-      "filename": "upper-body-training.json",
+      "id": "strength_training",
+      "filename": "strength-training.json",
       "use_for": [
-        "upper body aesthetics lifting plan",
-        "exercise selection + weekly volumes",
-        "Tue/Wed/Fri structure"
+        "complete weekly strength program",
+        "upper body aesthetics (Tue/Wed/Fri)",
+        "core and running-specific strength (Mon/Thu/Sat)",
+        "daily workout lookup by day of week",
+        "exercise selection and weekly volumes"
       ],
       "priority_when": [
+        "user asks 'what's my lift today'",
         "user asks for upper body workout details",
-        "user asks to modify aesthetics plan",
-        "user asks for minimal effective dose lifting"
-      ]
-    },
-    {
-      "id": "core_running_strength_plan",
-      "filename": "core-training.json",
-      "use_for": [
-        "core + lower body running-specific routine",
-        "Mon/Thu/Sat structure",
-        "calves/hamstrings/hip stability + ab aesthetics"
-      ],
-      "priority_when": [
         "user asks for core/lower routine details",
-        "user asks for injury-resilient running strength",
-        "user asks for abs/obliques work that won't hurt running"
+        "user asks for abs/obliques work",
+        "user asks for calves or running strength"
       ]
     },
     {
@@ -248,8 +238,9 @@
       "what to eat|pre-workout|post-workout|fueling|food": ["kitchen_staples", "nutrition_calorie_macros", "training_manifesto"],
       "timeline|when can I run|race|phase": ["timeline_and_phases", "training_manifesto", "health_profile"],
       "schedule|workout block|when to train|plan week": ["weekly_schedule", "training_manifesto"],
-      "upper body|delts|chest|arms|aesthetics lifting": ["upper_body_plan", "recent_metrics"],
-      "core|abs|obliques|calves|achilles|hamstrings|running strength": ["core_running_strength_plan", "timeline_and_phases", "recent_metrics"],
+      "upper body|delts|chest|arms|aesthetics lifting": ["strength_training", "recent_metrics"],
+      "core|abs|obliques|calves|achilles|hamstrings|running strength": ["strength_training", "timeline_and_phases", "recent_metrics"],
+      "lift|lifting|strength|what's my workout": ["strength_training", "weekly_schedule"],
       "blood|labs|supplements|vitamins": ["labs_bloodwork", "health_profile"],
       "skincare|shave|ingrowns|actives|treatments": ["skincare_routine"],
       "imaging|x-ray|mri|dxa|bone density|fracture": ["medical_records", "labs_bloodwork"],
@@ -259,10 +250,11 @@
       "paces|VDOT|interval|workout prescription": ["historical_baselines", "training_manifesto"]
     },
     "conflict_resolution": [
-      "If two files disagree, prefer the more specific plan file (upper-body-training.json or core-training.json) over general guidance.",
+      "If two files disagree, prefer the more specific plan file (strength-training.json) over general guidance.",
       "If dates are involved, timeline.json overrides any implied timing elsewhere.",
       "For training philosophy questions, training-manifesto.json is authoritative.",
-      "For food/fueling questions, kitchen-staples.json has the available foods, training-manifesto.json has the timing rules."
+      "For food/fueling questions, kitchen-staples.json has the available foods, training-manifesto.json has the timing rules.",
+      "For 'what's my lift today', use strength-training.json and look up the current day of week."
     ]
   },
   "response_format_preferences": {

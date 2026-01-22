@@ -1,0 +1,294 @@
+{
+  "_metadata": {
+    "domain": "training",
+    "description": "Complete weekly strength program: upper body aesthetics + running-specific core/lower body",
+    "keywords": ["strength", "lifting", "core", "upper body", "delts", "abs", "calves", "weekly plan"],
+    "last_updated": "2025-12-21"
+  },
+  "program_overview": {
+    "goals": [
+      "Maximum aesthetics with minimum mass (upper body)",
+      "Running-specific strength and injury resilience (lower body/core)",
+      "Visible abs and athletic obliques"
+    ],
+    "session_duration_minutes": 30,
+    "frequency": "6 days/week",
+    "structure": "Alternating upper body aesthetics (Tue/Wed/Fri) and core/running (Mon/Thu/Sat)"
+  },
+  "weekly_schedule": {
+    "monday": {
+      "focus": "Core Isometrics + Calves",
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "Isometric Calf Raise (straight knee)",
+          "sets": 3,
+          "hold_seconds": 30,
+          "notes": "Slow up, hold at top, slow down"
+        },
+        {
+          "name": "Seated Soleus Raise",
+          "sets": 2,
+          "reps": "12-15",
+          "notes": "Pause at top"
+        },
+        {
+          "name": "Dead Bug",
+          "sets": 3,
+          "reps": "8 each side",
+          "notes": "Slow and controlled, brace throughout"
+        },
+        {
+          "name": "Pallof Press",
+          "sets": 3,
+          "hold_seconds": 20,
+          "notes": "Each side, anti-rotation focus"
+        },
+        {
+          "name": "Side Plank",
+          "sets": 2,
+          "hold_seconds": 30,
+          "notes": "Each side"
+        }
+      ]
+    },
+    "tuesday": {
+      "focus": "Upper Chest + Lateral Delts",
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "Incline Dumbbell Press (20-30°)",
+          "sets": 4,
+          "reps": "6-10",
+          "notes": "Stop 1 rep before slowdown"
+        },
+        {
+          "name": "Low-to-High Cable Fly",
+          "sets": 3,
+          "reps": "12-15",
+          "notes": "Constant tension, no lockout"
+        },
+        {
+          "name": "Cable Lateral Raise",
+          "sets": 5,
+          "reps": "15-20",
+          "notes": "2s up, 2s down, chase the pump"
+        }
+      ]
+    },
+    "wednesday": {
+      "focus": "Rear Delts + Back + Arms",
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "Chest-Supported Row OR Neutral-Grip Pulldown",
+          "sets": 3,
+          "reps": "8-12",
+          "notes": "No torso swing"
+        },
+        {
+          "name": "Rear Delt Cable Fly",
+          "sets": 5,
+          "reps": "15-25",
+          "notes": "Elbows wide, pinkies back"
+        },
+        {
+          "name": "Incline Dumbbell Curls",
+          "sets": 3,
+          "reps": "10-15"
+        },
+        {
+          "name": "Overhead Cable Triceps Extension",
+          "sets": 3,
+          "reps": "10-15"
+        }
+      ]
+    },
+    "thursday": {
+      "focus": "Unilateral Legs + Visible Abs",
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "Single-Leg RDL",
+          "sets": 2,
+          "reps": "8 each leg",
+          "notes": "Leave 2 reps in reserve"
+        },
+        {
+          "name": "Rear-Foot Elevated Split Squat",
+          "sets": 2,
+          "reps": "8 each leg",
+          "notes": "Avoid deep flexion early in return"
+        },
+        {
+          "name": "Hanging Knee Raises",
+          "sets": 3,
+          "reps": "10-15",
+          "notes": "Control the swing"
+        },
+        {
+          "name": "Cable Crunch",
+          "sets": 3,
+          "reps": "12-15",
+          "notes": "Squeeze at bottom"
+        }
+      ]
+    },
+    "friday": {
+      "focus": "Delts Dominant Fill",
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "Machine or Smith Incline Press",
+          "sets": 3,
+          "reps": "8-10",
+          "notes": "Controlled, no grinding"
+        },
+        {
+          "name": "Lean-Away Lateral Raise",
+          "sets": 5,
+          "reps": "15-20",
+          "notes": "Partials allowed last set"
+        },
+        {
+          "name": "Rear Delt Fly (any variation)",
+          "sets": 4,
+          "reps": "20-25"
+        },
+        {
+          "name": "Arm Pump Superset (optional)",
+          "sets": 2,
+          "reps": "15-20",
+          "notes": "Only if recovered, curls + triceps"
+        }
+      ]
+    },
+    "saturday": {
+      "focus": "Elastic Core + Posterior Chain",
+      "duration_minutes": 30,
+      "exercises": [
+        {
+          "name": "Slider Leg Curls",
+          "sets": 2,
+          "reps": "8-10",
+          "notes": "Hamstring focus"
+        },
+        {
+          "name": "Step-Downs",
+          "sets": 2,
+          "reps": "8 each leg",
+          "notes": "Control the descent"
+        },
+        {
+          "name": "Cable Chops",
+          "sets": 3,
+          "reps": "10 each side",
+          "notes": "Controlled, oblique focus"
+        },
+        {
+          "name": "Ab Wheel OR Plank Variation",
+          "sets": 3,
+          "reps": "8-10 or 30-45s hold",
+          "notes": "Short ROM on ab wheel if needed"
+        },
+        {
+          "name": "Isometric Calf Raise",
+          "sets": 2,
+          "hold_seconds": 30,
+          "notes": "Maintenance from Monday"
+        }
+      ]
+    },
+    "sunday": {
+      "focus": "Rest",
+      "duration_minutes": 0,
+      "exercises": [],
+      "notes": "Full rest day by default. Optional light mobility if desired."
+    }
+  },
+  "weekly_volume_summary": {
+    "lateral_delts": { "sets": 16, "days": ["tuesday", "friday"] },
+    "rear_delts": { "sets": 12, "days": ["wednesday", "friday"] },
+    "upper_chest": { "sets": 10, "days": ["tuesday", "friday"] },
+    "back_lats": { "sets": 6, "days": ["wednesday"] },
+    "arms": { "sets": 6, "days": ["wednesday", "friday optional"] },
+    "calves": { "sets": 7, "days": ["monday", "saturday"] },
+    "hamstrings": { "sets": 4, "days": ["thursday", "saturday"] },
+    "hip_stability": { "sets": 4, "days": ["thursday", "saturday"] },
+    "abs_core": { "sets": 12, "days": ["monday", "thursday", "saturday"] }
+  },
+  "intensity_rules": {
+    "upper_body": {
+      "rir": 1,
+      "failure": "Isolations only, last set",
+      "drop_sets": "Allowed on laterals only"
+    },
+    "lower_core": {
+      "rir": 2,
+      "failure": "Never - protect tendons and running",
+      "priority": "Quality over intensity"
+    }
+  },
+  "progression": {
+    "upper_body": {
+      "rule": "Add reps before weight",
+      "cap": "If pumps flatten for 2 weeks, volume is too high",
+      "deload": "Reduce volume by 25% for 1 week if joints ache"
+    },
+    "lower_core": {
+      "weeks_1_4": "Isometrics + controlled unilateral + short-ROM abs",
+      "weeks_5_10": "Add eccentrics + longer ROM abs",
+      "weeks_11_15": "Introduce light plyometric prep if symptom-free"
+    }
+  },
+  "training_principles": {
+    "upper_body": [
+      "Silhouette > strength",
+      "Moderate loads, perfect tension",
+      "Stop sets when tension drops",
+      "Pumps over grinders"
+    ],
+    "lower_core": [
+      "Single-leg dominance",
+      "Tendon-first loading",
+      "Core stiffness for running + visible definition",
+      "Minimal soreness cost"
+    ]
+  },
+  "pain_rules": {
+    "allowed": "Muscle fatigue, light next-day tightness",
+    "stop_if": [
+      "Sharp pain",
+      "Bone discomfort",
+      "Next-day limping",
+      "Joint ache persisting >48 hours"
+    ]
+  },
+  "aesthetic_guardrails": [
+    "No heavy weighted side bends (thickens waist)",
+    "No spinal compression",
+    "Chase ab thickness via control, not load",
+    "If abs sore enough to affect running, reduce volume",
+    "Do not chase scale weight or PRs on upper body"
+  ],
+  "what_we_removed": [
+    "Flat bench",
+    "Overhead barbell press",
+    "Heavy lat width chasing",
+    "Trap isolation",
+    "Excess arm volume",
+    "Heavy leg press/squats (bone loading concern)"
+  ],
+  "success_metrics": {
+    "upper_body": {
+      "in_clothes": "Shoulders dominate silhouette",
+      "shirtless": "Upper chest shelf visible, capped delts",
+      "scale_weight": "Stable or slightly down"
+    },
+    "lower_core": {
+      "running": "Improved stiffness, no calf/Achilles flare-ups",
+      "visual": "Visible abs at low body fat, athletic obliques",
+      "recovery": "No interference with key bike/run sessions"
+    }
+  }
+}
