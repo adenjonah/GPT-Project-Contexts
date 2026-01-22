@@ -1,8 +1,8 @@
 {
   "_metadata": {
     "domain": "biometrics",
-    "description": "Garmin metrics including HRV, sleep, heart rate, and activity data",
-    "keywords": ["Garmin", "HRV", "sleep", "heart rate", "recovery", "training load", "cycling", "running"],
+    "description": "Garmin metrics including HRV, sleep, heart rate, steps, intensity minutes, and activity data",
+    "keywords": ["Garmin", "HRV", "sleep", "heart rate", "recovery", "training load", "cycling", "running", "steps", "intensity minutes", "activity"],
     "last_updated": "2026-01-22",
     "source": "Garmin Connect exports"
   },
@@ -159,6 +159,173 @@
       "current_jan_2026": "~17,500 cal cycling so far (on track for 20,000+)"
     }
   },
+  "steps_weekly": {
+    "description": "Weekly step totals over past year - reflects training volume and daily activity",
+    "year_totals": {
+      "total_steps": 4561316,
+      "total_distance_mi": 2665.71,
+      "avg_daily": 12600,
+      "avg_weekly": 87718
+    },
+    "data": [
+      { "week_start": "2026-01-16", "steps": 45520 },
+      { "week_start": "2026-01-09", "steps": 42714 },
+      { "week_start": "2026-01-02", "steps": 53337 },
+      { "week_start": "2025-12-26", "steps": 43056 },
+      { "week_start": "2025-12-19", "steps": 32659 },
+      { "week_start": "2025-12-12", "steps": 49770 },
+      { "week_start": "2025-12-05", "steps": 58725 },
+      { "week_start": "2025-11-28", "steps": 21511 },
+      { "week_start": "2025-11-21", "steps": 18462 },
+      { "week_start": "2025-11-14", "steps": 20169 },
+      { "week_start": "2025-11-07", "steps": 28987 },
+      { "week_start": "2025-10-31", "steps": 41444 },
+      { "week_start": "2025-10-24", "steps": 17019 },
+      { "week_start": "2025-10-17", "steps": 22367 },
+      { "week_start": "2025-10-10", "steps": 16263 },
+      { "week_start": "2025-10-03", "steps": 26413 },
+      { "week_start": "2025-09-26", "steps": 29159 },
+      { "week_start": "2025-09-19", "steps": 23804, "note": "Injury week" },
+      { "week_start": "2025-09-12", "steps": 87504 },
+      { "week_start": "2025-09-05", "steps": 130489 },
+      { "week_start": "2025-08-29", "steps": 159207 },
+      { "week_start": "2025-08-22", "steps": 145447 },
+      { "week_start": "2025-08-15", "steps": 128786 },
+      { "week_start": "2025-08-08", "steps": 175154 },
+      { "week_start": "2025-08-01", "steps": 116081 },
+      { "week_start": "2025-07-25", "steps": 56416 },
+      { "week_start": "2025-07-18", "steps": 84570 },
+      { "week_start": "2025-07-11", "steps": 138713 },
+      { "week_start": "2025-07-04", "steps": 79222 },
+      { "week_start": "2025-06-27", "steps": 96049 },
+      { "week_start": "2025-06-20", "steps": 98503 },
+      { "week_start": "2025-06-13", "steps": 74755 },
+      { "week_start": "2025-06-06", "steps": 80561 },
+      { "week_start": "2025-05-30", "steps": 75252 },
+      { "week_start": "2025-05-23", "steps": 80336 },
+      { "week_start": "2025-05-16", "steps": 88059 },
+      { "week_start": "2025-05-09", "steps": 85380 },
+      { "week_start": "2025-05-02", "steps": 89702 },
+      { "week_start": "2025-04-25", "steps": 135540 },
+      { "week_start": "2025-04-18", "steps": 146655 },
+      { "week_start": "2025-04-11", "steps": 131360 },
+      { "week_start": "2025-04-04", "steps": 149533 },
+      { "week_start": "2025-03-28", "steps": 128508 },
+      { "week_start": "2025-03-21", "steps": 148827 },
+      { "week_start": "2025-03-14", "steps": 179533 },
+      { "week_start": "2025-03-07", "steps": 131651 },
+      { "week_start": "2025-02-28", "steps": 134101 },
+      { "week_start": "2025-02-21", "steps": 113655 },
+      { "week_start": "2025-02-14", "steps": 134032 },
+      { "week_start": "2025-02-07", "steps": 118728 },
+      { "week_start": "2025-01-31", "steps": 124845 },
+      { "week_start": "2025-01-24", "steps": 122783 }
+    ],
+    "phase_analysis": {
+      "pre_injury_running": {
+        "period": "Jan-Sep 2025",
+        "avg_weekly": 115000,
+        "range": "75k-180k",
+        "note": "High running volume = high step counts"
+      },
+      "injury_detraining": {
+        "period": "Oct-Nov 2025",
+        "avg_weekly": 23000,
+        "range": "16k-42k",
+        "note": "Massive drop - no running, limited walking"
+      },
+      "bike_recovery": {
+        "period": "Dec 2025-Jan 2026",
+        "avg_weekly": 45000,
+        "range": "32k-59k",
+        "note": "Cycling doesn't generate steps - lower than running phase"
+      }
+    }
+  },
+  "intensity_minutes_weekly": {
+    "description": "Weekly intensity minutes (moderate + vigorous x2) - Garmin goal is 500 min/week",
+    "averages": {
+      "avg_weekly_moderate_min": 41,
+      "avg_weekly_vigorous_min": 292,
+      "vigorous_multiplier": 2
+    },
+    "data": [
+      { "week_start": "2026-01-12", "total_min": 1229, "pct_goal": 245 },
+      { "week_start": "2026-01-05", "total_min": 896, "pct_goal": 179 },
+      { "week_start": "2025-12-29", "total_min": 719, "pct_goal": 143 },
+      { "week_start": "2025-12-22", "total_min": 773, "pct_goal": 154 },
+      { "week_start": "2025-12-15", "total_min": 317, "pct_goal": 63 },
+      { "week_start": "2025-12-08", "total_min": 296, "pct_goal": 59 },
+      { "week_start": "2025-12-01", "total_min": 71, "pct_goal": 14 },
+      { "week_start": "2025-11-24", "total_min": 6, "pct_goal": 1 },
+      { "week_start": "2025-11-17", "total_min": 79, "pct_goal": 15 },
+      { "week_start": "2025-11-10", "total_min": 50, "pct_goal": 10 },
+      { "week_start": "2025-11-03", "total_min": 29, "pct_goal": 5 },
+      { "week_start": "2025-10-27", "total_min": 42, "pct_goal": 8 },
+      { "week_start": "2025-10-20", "total_min": 10, "pct_goal": 2 },
+      { "week_start": "2025-10-13", "total_min": 30, "pct_goal": 6 },
+      { "week_start": "2025-10-06", "total_min": 6, "pct_goal": 1 },
+      { "week_start": "2025-09-29", "total_min": 4, "pct_goal": 0 },
+      { "week_start": "2025-09-22", "total_min": 19, "pct_goal": 3 },
+      { "week_start": "2025-09-15", "total_min": 339, "pct_goal": 67, "note": "Injury week" },
+      { "week_start": "2025-09-08", "total_min": 890, "pct_goal": 178 },
+      { "week_start": "2025-09-01", "total_min": 1080, "pct_goal": 216 },
+      { "week_start": "2025-08-25", "total_min": 787, "pct_goal": 157 },
+      { "week_start": "2025-08-18", "total_min": 960, "pct_goal": 192 },
+      { "week_start": "2025-08-11", "total_min": 1218, "pct_goal": 243 },
+      { "week_start": "2025-08-04", "total_min": 990, "pct_goal": 198 },
+      { "week_start": "2025-07-28", "total_min": 685, "pct_goal": 137 },
+      { "week_start": "2025-07-21", "total_min": 849, "pct_goal": 169 },
+      { "week_start": "2025-07-14", "total_min": 957, "pct_goal": 191 },
+      { "week_start": "2025-07-07", "total_min": 601, "pct_goal": 120 },
+      { "week_start": "2025-06-30", "total_min": 780, "pct_goal": 156 },
+      { "week_start": "2025-06-23", "total_min": 737, "pct_goal": 147 },
+      { "week_start": "2025-06-16", "total_min": 649, "pct_goal": 129 },
+      { "week_start": "2025-06-09", "total_min": 653, "pct_goal": 130 },
+      { "week_start": "2025-06-02", "total_min": 672, "pct_goal": 134 },
+      { "week_start": "2025-05-26", "total_min": 439, "pct_goal": 87 },
+      { "week_start": "2025-05-19", "total_min": 413, "pct_goal": 82 },
+      { "week_start": "2025-05-12", "total_min": 308, "pct_goal": 61 },
+      { "week_start": "2025-05-05", "total_min": 14, "pct_goal": 2 },
+      { "week_start": "2025-04-28", "total_min": 757, "pct_goal": 151 },
+      { "week_start": "2025-04-21", "total_min": 805, "pct_goal": 161 },
+      { "week_start": "2025-04-14", "total_min": 1007, "pct_goal": 201 },
+      { "week_start": "2025-04-07", "total_min": 1074, "pct_goal": 214 },
+      { "week_start": "2025-03-31", "total_min": 813, "pct_goal": 162 },
+      { "week_start": "2025-03-24", "total_min": 951, "pct_goal": 190 },
+      { "week_start": "2025-03-17", "total_min": 1119, "pct_goal": 223 },
+      { "week_start": "2025-03-10", "total_min": 964, "pct_goal": 192 },
+      { "week_start": "2025-03-03", "total_min": 924, "pct_goal": 184 },
+      { "week_start": "2025-02-24", "total_min": 833, "pct_goal": 166 },
+      { "week_start": "2025-02-17", "total_min": 866, "pct_goal": 173 },
+      { "week_start": "2025-02-10", "total_min": 1371, "pct_goal": 274, "note": "Peak intensity week" },
+      { "week_start": "2025-02-03", "total_min": 972, "pct_goal": 194 },
+      { "week_start": "2025-01-27", "total_min": 949, "pct_goal": 189 }
+    ],
+    "phase_analysis": {
+      "pre_injury_running": {
+        "period": "Jan-Sep 2025",
+        "avg_weekly_min": 850,
+        "range": "300-1400",
+        "pct_goal_range": "60-274%",
+        "note": "Consistently exceeding goal, high training load"
+      },
+      "injury_detraining": {
+        "period": "Oct-Nov 2025",
+        "avg_weekly_min": 30,
+        "range": "4-80",
+        "pct_goal_range": "0-15%",
+        "note": "Near zero intensity - full detraining"
+      },
+      "bike_recovery": {
+        "period": "Dec 2025-Jan 2026",
+        "avg_weekly_min": 615,
+        "range": "71-1229",
+        "pct_goal_range": "14-245%",
+        "note": "Rapid ramp-up, now back to pre-injury levels"
+      }
+    }
+  },
   "training_phases_from_hr": {
     "pre_injury_running": {
       "period": "Jan 2025 - Sep 2025",
@@ -197,12 +364,25 @@
       "current_weekly_high_hr": "144-151 bpm",
       "target": "Get back to 160+ regularly as fitness builds"
     },
+    "steps": {
+      "status": "moderate",
+      "current_weekly": "43-53k",
+      "pre_injury_weekly": "115k avg",
+      "note": "Lower than running phase expected - cycling doesn't generate steps"
+    },
+    "intensity_minutes": {
+      "status": "recovered",
+      "current_weekly": "900-1230 min",
+      "pct_goal": "180-245%",
+      "pre_injury_avg": "850 min/week",
+      "note": "Back to pre-injury intensity levels via cycling"
+    },
     "sleep": {
       "status": "adequate",
       "avg_score": 78,
       "avg_duration": "7h 30m",
       "concern": "Late bedtimes (1-2am typical)"
     },
-    "readiness_assessment": "Good - HRV trending up, sleep adequate, body responding to training load"
+    "readiness_assessment": "Good - HRV trending up, intensity minutes back to pre-injury levels, body responding well to training load"
   }
 }
