@@ -1,0 +1,354 @@
+{
+  "_metadata": {
+    "domain": "training_philosophy",
+    "description": "Training manifesto based on van der Poel, Norwegian triathlon method, applied to 5K track running with bike-based volume",
+    "keywords": ["van der Poel", "Norwegian method", "volume", "threshold", "periodization", "aerobic base", "fueling", "recovery"],
+    "last_updated": "2025-12-21",
+    "primary_sources": [
+      "Nils van der Poel - How to Skate a 10k (2022)",
+      "Norwegian Triathlon Federation - Blummenfelt/Iden training methodology",
+      "Lionel Sanders - High volume self-coached approach",
+      "Gustav Iden - Double threshold sessions"
+    ]
+  },
+  "core_philosophy": {
+    "summary": "Massive aerobic volume builds the engine. Specificity comes later. Recovery is training. Fuel the work.",
+    "van_der_poel_axioms": [
+      "The way to improve is to train more, recover more, and sleep more",
+      "Volume is the foundation; intensity is the sharpening",
+      "Threshold work is the primary intensity - it's specific and sustainable",
+      "Recovery between sessions matters more than the sessions themselves",
+      "Periodization: build volume blocks, then add intensity, then taper",
+      "Consistency over heroics - sustainable load trumps peak sessions"
+    ],
+    "norwegian_method_principles": [
+      "High total volume (20-35 hrs/week for elites, scaled for context)",
+      "Threshold zones (lactate 2-4 mmol/L) are the primary intensity",
+      "Double days distribute load and improve recovery capacity",
+      "Lactate-guided pacing - stay in zone, don't chase pace",
+      "High carbohydrate availability for all quality sessions",
+      "Sleep and recovery are non-negotiable"
+    ]
+  },
+  "application_to_context": {
+    "athlete_situation": {
+      "goal": "5K in 14:45 by April 2026",
+      "current_fitness": "15:30 5K (April 2025)",
+      "gap_to_close": "45 seconds",
+      "constraint": "Returning from femoral neck stress fracture",
+      "strategy": "Build aerobic base via cycling while running returns gradually"
+    },
+    "why_this_works": {
+      "van_der_poel_parallel": "Van der Poel used massive volume of skating-specific and cross-training to build aerobic capacity for 10K skating. The aerobic system is the limiter in 5K running (85-90% aerobic). Bike volume builds the same central aerobic adaptations without bone loading.",
+      "transfer_mechanism": [
+        "Central cardiovascular adaptations (stroke volume, cardiac output)",
+        "Mitochondrial density in type I fibers",
+        "Fat oxidation capacity (spares glycogen)",
+        "Lactate clearance ability",
+        "Mental tolerance for sustained effort"
+      ],
+      "what_bike_cannot_build": [
+        "Running economy (neuromuscular, tendon stiffness)",
+        "Running-specific muscle fiber recruitment",
+        "Impact tolerance",
+        "Race-specific pacing"
+      ],
+      "implication": "Bike builds the engine; running specificity sharpens the application. Phase 1 is engine building."
+    }
+  },
+  "periodization": {
+    "current_phase": {
+      "name": "Phase 1: Bike Base",
+      "dates": "2025-12-01 to 2026-01-31",
+      "primary_goal": "Maximize aerobic volume via cycling",
+      "secondary_goal": "Maintain/build strength without running impact",
+      "volume_target": "10-20 hours/week cycling",
+      "intensity_distribution": {
+        "zone_1_easy": "70-80%",
+        "zone_2_tempo": "15-25%",
+        "zone_3_threshold": "0-5%",
+        "zone_4_vo2max": "0%"
+      },
+      "key_sessions": [
+        "Long easy rides (2-3 hours)",
+        "Tempo blocks within easy rides (15-30 min at tempo)",
+        "Double days when volume target requires"
+      ],
+      "avoid": [
+        "High intensity intervals (VO2max work)",
+        "Running (except as cleared by timeline)",
+        "Fasted long rides",
+        "Sleep deprivation for volume"
+      ]
+    },
+    "next_phase": {
+      "name": "Phase 2: Run Reintroduction",
+      "dates": "2026-02-01 to 2026-04-03",
+      "primary_goal": "Reintroduce running volume and specificity",
+      "volume_target": {
+        "running": "Build to 20 mpw",
+        "cycling": "Maintain 10 hrs/week"
+      },
+      "intensity_distribution": {
+        "running": "Mostly easy with progressive tempo introduction",
+        "cycling": "Easy volume, reduce as running increases"
+      },
+      "key_milestones": [
+        "Week 1-2: Walk-jog progression",
+        "Week 3-4: Easy continuous running (20-30 min)",
+        "Week 5-8: Build to 20 mpw, introduce strides",
+        "Week 9+: Introduce tempo/threshold running"
+      ]
+    },
+    "race_phase": {
+      "name": "Race Sharpening",
+      "dates": "2026-03-15 to 2026-04-04 (final 3 weeks)",
+      "primary_goal": "Specificity and freshness for 5K",
+      "key_sessions": [
+        "Race-pace intervals (1K-mile repeats at 5K goal pace)",
+        "Threshold runs (20-30 min at threshold)",
+        "Reduce bike volume significantly"
+      ],
+      "taper": "Final 7-10 days reduce volume 40-50%, maintain intensity"
+    }
+  },
+  "session_types": {
+    "cycling": {
+      "easy_ride": {
+        "description": "Zone 1 aerobic ride",
+        "intensity": "Conversational, HR 60-70% max, can talk in sentences",
+        "duration": "45 min to 3+ hours",
+        "purpose": "Volume accumulation, aerobic base, recovery",
+        "fueling": "Fuel based on duration - see fueling rules"
+      },
+      "tempo_ride": {
+        "description": "Zone 2 steady-state effort",
+        "intensity": "Comfortably hard, HR 70-80% max, can speak in short phrases",
+        "duration": "30-90 min of tempo within longer ride",
+        "purpose": "Raise aerobic threshold, lactate clearance",
+        "fueling": "Full carb availability, 60-90g/hr"
+      },
+      "threshold_intervals": {
+        "description": "Zone 3 intervals at lactate threshold",
+        "intensity": "Hard but sustainable, HR 80-88% max",
+        "structure": "2x20 min, 3x15 min, or 4x10 min with equal rest",
+        "purpose": "Raise threshold power, mental toughness",
+        "fueling": "High carb, 60-90g/hr",
+        "frequency": "1-2x per week max in Phase 1"
+      },
+      "long_ride": {
+        "description": "Extended aerobic session",
+        "intensity": "Mostly easy with optional tempo blocks",
+        "duration": "2-4 hours",
+        "purpose": "Volume accumulation, fat oxidation, mental endurance",
+        "fueling": "Critical - 60-90g/hr carbs, do not ride fasted"
+      }
+    },
+    "running": {
+      "will_be_added_in_phase_2": true,
+      "easy_run": {
+        "description": "Zone 1 conversational running",
+        "intensity": "Can hold conversation, HR 60-70% max",
+        "purpose": "Volume, aerobic maintenance, running economy"
+      },
+      "tempo_run": {
+        "description": "Zone 2-3 sustained effort",
+        "intensity": "Comfortably hard, roughly half-marathon to 10K effort",
+        "purpose": "Lactate threshold development"
+      },
+      "intervals": {
+        "description": "Race-specific work",
+        "intensity": "5K pace or faster",
+        "purpose": "VO2max, race-specific fitness",
+        "note": "Only in final 6-8 weeks before goal race"
+      }
+    }
+  },
+  "fueling_philosophy": {
+    "core_principle": "Fuel the work. High carb availability for all quality sessions. Never train low when training hard.",
+    "pre_session": {
+      "easy_session_under_90min": {
+        "requirement": "Optional, can do with light meal or fasted if truly easy",
+        "minimum": "Stay hydrated"
+      },
+      "easy_session_over_90min": {
+        "requirement": "Pre-fuel required",
+        "timing": "2-3 hours before: full meal (carbs + protein + fat)",
+        "alternative": "1 hour before: simple carbs (oats, banana, drink mix)"
+      },
+      "quality_session": {
+        "requirement": "Mandatory pre-fuel",
+        "timing": "2-3 hours before: carb-focused meal, low fat",
+        "top_up": "30-60 min before: 30-50g simple carbs",
+        "rationale": "High carb availability improves quality and adaptation"
+      }
+    },
+    "during_session": {
+      "under_60min": {
+        "carbs": "Optional, water sufficient if well-fueled before"
+      },
+      "60_to_90min": {
+        "carbs": "30-60g/hr recommended",
+        "electrolytes": "500mg sodium/hr"
+      },
+      "over_90min": {
+        "carbs": "60-90g/hr (maltodextrin + fructose mix)",
+        "electrolytes": "500-1000mg sodium/hr",
+        "note": "Train the gut - practice race fueling in training"
+      },
+      "high_intensity": {
+        "carbs": "60-90g/hr regardless of duration",
+        "rationale": "Intensity burns glycogen faster, needs constant supply"
+      }
+    },
+    "post_session": {
+      "window": "Within 30-60 min ideal, 2 hours acceptable",
+      "carbs": "1-1.2g/kg body weight",
+      "protein": "0.3-0.4g/kg body weight (20-30g)",
+      "example_for_165lb_athlete": {
+        "carbs_g": "75-90g",
+        "protein_g": "25-30g"
+      }
+    },
+    "norwegian_approach": {
+      "principle": "High carb availability for threshold and above",
+      "detail": "Norwegian athletes typically consume 8-12g carbs/kg/day on high training days",
+      "scaled_for_context": "At 165 lbs (75kg), target 600-900g carbs on big volume days, ~400-500g on moderate days"
+    }
+  },
+  "recovery_rules": {
+    "sleep": {
+      "minimum": "8 hours",
+      "optimal": "9+ hours during high volume",
+      "van_der_poel_quote": "Sleep is when adaptation happens. Train more = sleep more."
+    },
+    "between_sessions": {
+      "double_days": "Minimum 4-6 hours between sessions, ideally eat and nap between",
+      "day_to_day": "If HRV is below baseline for 3+ days, reduce volume"
+    },
+    "deload_triggers": {
+      "mandatory_deload_if": [
+        "HRV trending down for 5+ days",
+        "Sleep quality consistently poor",
+        "Persistent fatigue not resolved by one rest day",
+        "Loss of motivation/enjoyment",
+        "Any bone pain or discomfort"
+      ],
+      "deload_protocol": "Reduce volume by 30-50% for 3-5 days, maintain some movement"
+    },
+    "bone_health_specific": {
+      "constraint": "Femoral neck stress fracture history",
+      "rules": [
+        "No fasted long sessions (cortisol + low energy availability = bone risk)",
+        "Maintain calorie intake - deficit should be modest (400 kcal max)",
+        "Calcium and vitamin D intake per nutrition goals",
+        "Any hip/groin discomfort = stop and reassess"
+      ]
+    }
+  },
+  "volume_progression": {
+    "van_der_poel_principle": "Add volume in blocks, not linearly. Absorb the load, then add more.",
+    "weekly_structure": {
+      "build_weeks": 2,
+      "absorb_week": 1,
+      "pattern": "Build -> Build -> Absorb -> Build -> Build -> Absorb"
+    },
+    "volume_increase_rate": {
+      "cycling": "Add 2-3 hours per week during build weeks, cap at manageable load",
+      "running_when_added": "Add no more than 10% per week, prefer 5%"
+    },
+    "volume_caps": {
+      "phase_1_cycling": "20 hours/week max (constrained by life, not physiology)",
+      "phase_2_total": "Running + cycling should not exceed recovery capacity"
+    }
+  },
+  "intensity_distribution": {
+    "polarized_vs_threshold": {
+      "van_der_poel": "Heavy threshold focus - it's specific to 10K skating",
+      "norwegian": "Mix of easy + threshold, very little VO2max until race phase",
+      "for_5K_running": "5K is ~85% aerobic, so threshold and easy volume dominate. VO2max work only in final 6-8 weeks."
+    },
+    "phase_1_distribution": {
+      "easy": "75-85%",
+      "tempo_threshold": "15-25%",
+      "vo2max_plus": "0-5%"
+    },
+    "phase_2_distribution": {
+      "easy": "70-80%",
+      "tempo_threshold": "15-25%",
+      "vo2max_plus": "5-10% (running only, final weeks)"
+    }
+  },
+  "decision_rules": {
+    "should_i_do_intensity_today": {
+      "yes_if": [
+        "Slept 7+ hours",
+        "HRV within or above baseline",
+        "No lingering fatigue from yesterday",
+        "Pre-fueled properly"
+      ],
+      "no_if": [
+        "Sleep under 6 hours",
+        "HRV significantly below baseline",
+        "Feeling flat or unmotivated",
+        "Any pain or discomfort"
+      ],
+      "if_unsure": "Default to easy volume - you can always add intensity, you can't undo overtraining"
+    },
+    "should_i_take_a_rest_day": {
+      "yes_if": [
+        "HRV below baseline 3+ consecutive days",
+        "Motivation is absent",
+        "Sleep has been poor multiple nights",
+        "Cumulative fatigue building"
+      ],
+      "no_if": [
+        "Just feeling lazy but metrics are fine",
+        "Slight tiredness that easy movement would help"
+      ],
+      "alternative": "Easy spin or walk instead of full rest if unsure"
+    },
+    "how_long_should_today_ride_be": {
+      "factors": [
+        "Weekly volume target remaining",
+        "Days left in week",
+        "Available time in schedule",
+        "Recovery status (HRV, sleep, fatigue)",
+        "Tomorrow's planned session"
+      ],
+      "principle": "Distribute volume to protect key sessions. Long rides should not compromise next day's quality."
+    }
+  },
+  "mental_framework": {
+    "van_der_poel_mindset": [
+      "Trust the process - fitness comes from consistency, not heroics",
+      "Easy days should feel easy - ego has no place in zone 1",
+      "Hard days should be hard - but sustainable and purposeful",
+      "Recovery is training - rest without guilt",
+      "Long term > short term - one bad session means nothing"
+    ],
+    "during_hard_sessions": [
+      "Focus on execution, not pace",
+      "If form breaks down, end the interval",
+      "Sustainable discomfort, not maximal suffering"
+    ]
+  },
+  "success_metrics": {
+    "phase_1_success": {
+      "volume": "Consistently hitting 12-18 hrs/week cycling",
+      "recovery": "HRV stable or improving",
+      "body_composition": "Weight stable or slowly decreasing per plan",
+      "energy": "Feeling good, not chronically fatigued"
+    },
+    "phase_2_success": {
+      "running": "Building to 20 mpw without pain",
+      "fitness_transfer": "Easy runs feel easier than expected given time off",
+      "threshold": "Can hold tempo paces at reasonable HR"
+    },
+    "race_success": {
+      "goal": "5K in 14:45",
+      "acceptable": "5K under 15:00",
+      "process_goal": "Execute race plan regardless of time"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "_metadata": {
+    "domain": "schedule",
+    "description": "Weekly workout block availability by day",
+    "keywords": ["schedule", "workout blocks", "availability", "training windows", "time slots"],
+    "last_updated": "2025-12-21"
+  },
+  "workout_blocks": {
+    "monday": {
+      "optimal": {
+        "window": "12:00-18:00",
+        "notes": "Preferred training window"
+      },
+      "suboptimal": [
+        {
+          "window": "22:00-23:00",
+          "reason": "Late, almost always suboptimal"
+        },
+        {
+          "window": "before 11:00",
+          "reason": "Forces early wake, avoid if possible"
+        }
+      ]
+    },
+    "tuesday": {
+      "optimal": {
+        "window": "11:45-end_of_day",
+        "notes": "Anytime after 11:45am is good"
+      },
+      "suboptimal": [
+        {
+          "window": "must_finish_by 09:30",
+          "reason": "Requires early wake"
+        }
+      ]
+    },
+    "wednesday": {
+      "optimal": {
+        "window": "13:00-19:00",
+        "notes": "Primary training window"
+      },
+      "suboptimal": [
+        {
+          "window": "must_finish_by 11:15",
+          "reason": "Morning option, suboptimal for sleep"
+        }
+      ]
+    },
+    "thursday": {
+      "optimal": {
+        "window": "11:45-19:00",
+        "notes": "Same as Tuesday but must finish by 7pm"
+      },
+      "suboptimal": [
+        {
+          "window": "must_finish_by 09:30",
+          "reason": "Requires early wake"
+        }
+      ],
+      "hard_constraint": "Must be done by 19:00"
+    },
+    "friday": {
+      "optimal": {
+        "window": "all_day",
+        "notes": "Fully flexible"
+      }
+    },
+    "saturday": {
+      "optimal": {
+        "window": "all_day",
+        "notes": "Fully flexible"
+      }
+    },
+    "sunday": {
+      "optimal": {
+        "window": "until 16:00",
+        "notes": "Prefer to finish by 4pm"
+      }
+    }
+  },
+  "scheduling_rules": {
+    "prefer_optimal_windows": true,
+    "use_suboptimal_only_when": "Volume requirements cannot fit in optimal windows",
+    "sleep_priority": "Avoid early morning sessions when possible to protect sleep quality"
+  }
+}

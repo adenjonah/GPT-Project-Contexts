@@ -1,0 +1,159 @@
+{
+  "_metadata": {
+    "domain": "history",
+    "description": "Historical PRs, race results, and fitness baselines for progress tracking",
+    "keywords": ["PRs", "personal records", "race results", "progression", "track", "running", "history"],
+    "last_updated": "2025-12-21",
+    "data_sources": ["TFRRS", "Athletic.net", "Garmin"]
+  },
+  "athlete_info": {
+    "name": "Jonah Aden",
+    "birth_year": 2004,
+    "high_school": "North Central HS (Spokane, WA)",
+    "college": "Columbia University",
+    "events": ["1500m", "Mile", "3000m", "5000m"]
+  },
+  "personal_records": {
+    "current": {
+      "as_of_date": "2025-05-03",
+      "events": {
+        "800m": { "time": "2:00.36", "date": "2022-04-28", "meet": "GSL League Meet", "age": 18, "grade": "12th" },
+        "1500m": { "time": "4:03.94", "date": "2025-05-03", "meet": "Larry Ellis Invitational", "age": 21, "level": "College Jr" },
+        "mile": { "time": "4:29.68", "date": "2025-02-28", "meet": "Fastrack Last Chance", "age": 21, "level": "College Jr", "surface": "indoor" },
+        "3000m": { "time": "8:52.87", "date": "2025-02-15", "meet": "Yale Giegengack Invitational", "age": 21, "level": "College Jr", "surface": "indoor" },
+        "3200m": { "time": "9:27.25", "date": "2022-05-04", "meet": "Olympia DMR and 3200m", "age": 18, "grade": "12th" },
+        "5000m": { "time": "15:30.38", "date": "2025-04-19", "meet": "Mark Young Invitational", "age": 21, "level": "College Jr" }
+      }
+    },
+    "goal": {
+      "event": "5000m",
+      "target_time": "14:45",
+      "target_date": "2026-04-04",
+      "improvement_needed_seconds": 45
+    }
+  },
+  "progression_by_event": {
+    "800m": [
+      { "time": "2:22.5h", "date": "2019-03-21", "age": 15, "grade": "9th", "level": "JV" },
+      { "time": "2:15.76", "date": "2019-05-03", "age": 15, "grade": "9th", "level": "JV", "note": "SR" },
+      { "time": "2:03.71", "date": "2021-04-19", "age": 17, "grade": "11th" },
+      { "time": "2:01.29", "date": "2021-05-07", "age": 17, "grade": "11th", "note": "SR" },
+      { "time": "2:00.36", "date": "2022-04-28", "age": 18, "grade": "12th", "note": "PR" }
+    ],
+    "1500m": [
+      { "time": "4:07.85", "date": "2025-04-12", "age": 21, "level": "College Jr" },
+      { "time": "4:03.94", "date": "2025-05-03", "age": 21, "level": "College Jr", "note": "PR" }
+    ],
+    "1600m_mile": [
+      { "time": "5:01.6h", "date": "2019-03-21", "age": 15, "grade": "9th", "level": "JV" },
+      { "time": "4:45.84", "date": "2019-05-11", "age": 15, "grade": "9th", "note": "SR" },
+      { "time": "4:48.60", "date": "2019-06-08", "age": 15, "grade": "9th", "note": "Mile PR", "meet": "Portland Track Festival" },
+      { "time": "4:35.70", "date": "2021-04-23", "age": 17, "grade": "11th" },
+      { "time": "4:27.56", "date": "2021-05-15", "age": 17, "grade": "11th", "note": "1600m PR" },
+      { "time": "4:33.39", "date": "2022-01-16", "age": 18, "grade": "12th", "surface": "indoor", "note": "Mile SR" },
+      { "time": "4:28.77", "date": "2022-04-30", "age": 18, "grade": "12th", "note": "1600m SR" },
+      { "time": "4:29.68", "date": "2025-02-28", "age": 21, "level": "College Jr", "surface": "indoor", "note": "Mile PR" }
+    ],
+    "3000m": [
+      { "time": "9:09.45", "date": "2022-01-16", "age": 18, "grade": "12th", "surface": "indoor", "note": "PR" },
+      { "time": "8:52.87", "date": "2025-02-15", "age": 21, "level": "College Jr", "surface": "indoor", "note": "PR" }
+    ],
+    "3200m": [
+      { "time": "10:44.24", "date": "2019-05-11", "age": 15, "grade": "9th" },
+      { "time": "10:29.18", "date": "2019-04-27", "age": 15, "grade": "9th", "note": "SR" },
+      { "time": "10:00.90", "date": "2021-04-30", "age": 17, "grade": "11th", "note": "SR" },
+      { "time": "9:50.24", "date": "2022-03-26", "age": 18, "grade": "12th" },
+      { "time": "9:27.25", "date": "2022-05-04", "age": 18, "grade": "12th", "note": "PR" }
+    ],
+    "5000m": [
+      { "time": "15:38.61", "date": "2025-01-31", "age": 21, "level": "College Jr", "surface": "indoor", "meet": "Rutgers Scarlet Knights Open" },
+      { "time": "15:38.51", "date": "2025-04-04", "age": 21, "level": "College Jr", "meet": "NYC Metro Champs" },
+      { "time": "15:30.38", "date": "2025-04-19", "age": 21, "level": "College Jr", "note": "PR", "meet": "Mark Young Invitational" }
+    ]
+  },
+  "key_race_results_2025": [
+    { "date": "2025-01-31", "meet": "Rutgers Scarlet Knights Open", "event": "5000m", "time": "15:38.61", "place": 19 },
+    { "date": "2025-02-15", "meet": "Yale Giegengack Invitational", "event": "3000m", "time": "8:52.87", "place": 14, "note": "PR" },
+    { "date": "2025-02-28", "meet": "Fastrack Last Chance", "event": "Mile", "time": "4:29.68", "place": 11, "note": "PR" },
+    { "date": "2025-04-04", "meet": "NYC Metro Champs", "event": "5000m", "time": "15:38.51", "place": 9 },
+    { "date": "2025-04-12", "meet": "Oscar Moore Invitational", "event": "1500m", "time": "4:07.85", "place": 3 },
+    { "date": "2025-04-19", "meet": "Mark Young Invitational", "event": "5000m", "time": "15:30.38", "place": 3, "note": "PR" },
+    { "date": "2025-05-03", "meet": "Larry Ellis Invitational", "event": "1500m", "time": "4:03.94", "place": 23, "note": "PR" }
+  ],
+  "development_summary": {
+    "high_school_trajectory": {
+      "9th_grade_2019": "JV runner, 4:48 mile, 10:29 3200m",
+      "11th_grade_2021": "Varsity breakthrough, 4:27 1600m, 10:00 3200m, 2:01 800m",
+      "12th_grade_2022": "Continued progression, 9:27 3200m, 2:00 800m, 9:09 3000m indoor"
+    },
+    "college_trajectory": {
+      "junior_2025": "First full college outdoor season, PRs in 1500m (4:03), 5K (15:30), 3K (8:52), Mile (4:29)"
+    },
+    "strengths": [
+      "Consistent year-over-year improvement",
+      "Strong aerobic base (evidenced by 3K/5K times)",
+      "Good range (800m to 5K)"
+    ],
+    "areas_for_development": [
+      "5K specific endurance (goal: 14:45 requires ~45 sec improvement)",
+      "Threshold capacity for sustained fast running",
+      "Recovering from femoral neck stress fracture"
+    ]
+  },
+  "equivalent_paces": {
+    "current_5k_pace": {
+      "time": "15:30",
+      "per_mile": "4:59",
+      "per_km": "3:06",
+      "per_400m": "74.4"
+    },
+    "goal_5k_pace": {
+      "time": "14:45",
+      "per_mile": "4:45",
+      "per_km": "2:57",
+      "per_400m": "70.8"
+    }
+  },
+  "training_history": {
+    "pre_injury_block_2025": {
+      "duration_weeks": 12,
+      "weekly_mileage": "50-60 miles",
+      "frequency": "6 days/week",
+      "structure": "2 workouts + 1 long run per week",
+      "result": "Built to 15:30 5K fitness"
+    },
+    "injury_period": {
+      "injury_date": "2025-09-21",
+      "type": "Femoral neck stress fracture (compression side, 20% width)",
+      "non_weight_bearing_weeks": 10,
+      "return_to_activity": "2025-12-01 (walking + biking)"
+    }
+  },
+  "vdot_equivalents": {
+    "current_vdot": {
+      "from_5k_15_30": 57,
+      "equivalent_times": {
+        "mile": "4:32",
+        "3k": "8:48",
+        "5k": "15:30",
+        "10k": "32:30"
+      }
+    },
+    "goal_vdot": {
+      "from_5k_14_45": 61,
+      "equivalent_times": {
+        "mile": "4:20",
+        "3k": "8:21",
+        "5k": "14:45",
+        "10k": "30:50"
+      }
+    },
+    "training_paces_goal_vdot": {
+      "easy": "7:00-7:30/mile",
+      "tempo": "5:25-5:35/mile",
+      "interval_1k": "3:30-3:35",
+      "interval_400": "78-82 sec",
+      "repetition_200": "36-38 sec"
+    }
+  }
+}

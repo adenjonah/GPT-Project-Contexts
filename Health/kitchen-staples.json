@@ -1,0 +1,300 @@
+{
+  "_metadata": {
+    "domain": "nutrition",
+    "description": "Kitchen staples with macros, digestion speed, and workout suitability",
+    "keywords": ["food", "macros", "kitchen", "staples", "pre-workout", "post-workout", "fueling"],
+    "last_updated": "2025-12-21",
+    "note": "Bare bones starter list - augment over time"
+  },
+  "foods": [
+    {
+      "name": "Quaker Plain Instant Oats",
+      "serving_size": "1 packet (28g dry)",
+      "macros": {
+        "calories": 100,
+        "protein_g": 4,
+        "carbs_g": 19,
+        "fat_g": 2,
+        "fiber_g": 3
+      },
+      "digestion": {
+        "carb_speed": "moderate",
+        "notes": "Complex carbs, steady energy release"
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "ideal_timing_before_min": 60,
+          "notes": "Good 1-2hr pre-ride, pair with fast carbs if <60min to session"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Good base, add protein source"
+        },
+        "during_workout": {
+          "suitable": false,
+          "notes": "Too slow digesting for on-bike fuel"
+        }
+      },
+      "prep_time": "2-3 min"
+    },
+    {
+      "name": "Eggs (whole, large)",
+      "serving_size": "1 egg",
+      "macros": {
+        "calories": 70,
+        "protein_g": 6,
+        "carbs_g": 0,
+        "fat_g": 5
+      },
+      "digestion": {
+        "protein_speed": "moderate",
+        "notes": "Complete protein, contains fat so slower digestion"
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "ideal_timing_before_min": 120,
+          "notes": "Good 2-3hr pre-ride, avoid close to session due to fat content"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Quality protein for recovery"
+        },
+        "during_workout": {
+          "suitable": false
+        }
+      },
+      "prep_time": "5-10 min"
+    },
+    {
+      "name": "90/10 Ground Beef",
+      "serving_size": "4 oz (113g) cooked",
+      "macros": {
+        "calories": 200,
+        "protein_g": 23,
+        "carbs_g": 0,
+        "fat_g": 11
+      },
+      "digestion": {
+        "protein_speed": "slow",
+        "notes": "Dense protein, takes time to digest"
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": false,
+          "notes": "Too slow digesting, avoid within 3hr of hard session"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Excellent recovery protein, pair with carbs"
+        },
+        "during_workout": {
+          "suitable": false
+        }
+      },
+      "prep_time": "10-15 min"
+    },
+    {
+      "name": "Milk (2%)",
+      "serving_size": "1 cup (240ml)",
+      "macros": {
+        "calories": 122,
+        "protein_g": 8,
+        "carbs_g": 12,
+        "fat_g": 5
+      },
+      "digestion": {
+        "carb_speed": "moderate",
+        "protein_speed": "mixed (whey fast, casein slow)",
+        "notes": "Lactose is moderate-speed carb, protein blend"
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "ideal_timing_before_min": 60,
+          "notes": "Good in shake 1hr+ pre-ride"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Classic recovery drink, good protein + carb combo"
+        },
+        "during_workout": {
+          "suitable": false,
+          "notes": "Fat content slows absorption"
+        }
+      },
+      "prep_time": "0 min"
+    },
+    {
+      "name": "Greek Yogurt (plain, nonfat)",
+      "serving_size": "1 cup (227g)",
+      "macros": {
+        "calories": 100,
+        "protein_g": 17,
+        "carbs_g": 6,
+        "fat_g": 0
+      },
+      "digestion": {
+        "protein_speed": "moderate",
+        "notes": "Casein-dominant, sustained release"
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "ideal_timing_before_min": 90,
+          "notes": "Good 1.5-2hr pre-ride, low fat version digests well"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Excellent protein source, add carbs (oats, fruit, maltodextrin)"
+        },
+        "during_workout": {
+          "suitable": false
+        }
+      },
+      "prep_time": "0 min"
+    },
+    {
+      "name": "Fructose Powder",
+      "serving_size": "25g",
+      "macros": {
+        "calories": 100,
+        "protein_g": 0,
+        "carbs_g": 25,
+        "fat_g": 0
+      },
+      "digestion": {
+        "carb_speed": "fast",
+        "transport": "GLUT5 (separate from glucose)",
+        "notes": "Uses different intestinal transporter than glucose/maltodextrin"
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "ideal_timing_before_min": 15,
+          "notes": "Can use close to session start"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Good for rapid glycogen replenishment with glucose source"
+        },
+        "during_workout": {
+          "suitable": true,
+          "notes": "CRITICAL: Combine with maltodextrin at ~1:0.8 ratio for max absorption (90-120g/hr possible)"
+        }
+      },
+      "prep_time": "0 min",
+      "usage_notes": "Mix with maltodextrin for optimal carb absorption during exercise"
+    },
+    {
+      "name": "Maltodextrin Powder",
+      "serving_size": "25g",
+      "macros": {
+        "calories": 100,
+        "protein_g": 0,
+        "carbs_g": 25,
+        "fat_g": 0
+      },
+      "digestion": {
+        "carb_speed": "very_fast",
+        "transport": "SGLT1 (glucose transporter)",
+        "notes": "Rapidly digested glucose polymer, high GI"
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "ideal_timing_before_min": 10,
+          "notes": "Can use immediately before session"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Excellent for rapid glycogen replenishment"
+        },
+        "during_workout": {
+          "suitable": true,
+          "notes": "Primary on-bike fuel, combine with fructose for max absorption"
+        }
+      },
+      "prep_time": "0 min",
+      "usage_notes": "Combine with fructose at ~1:0.8 maltodextrin:fructose for 90-120g/hr carb intake"
+    },
+    {
+      "name": "Sodium Powder (table salt equivalent)",
+      "serving_size": "1g",
+      "macros": {
+        "calories": 0,
+        "protein_g": 0,
+        "carbs_g": 0,
+        "fat_g": 0,
+        "sodium_mg": 400
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "notes": "Pre-load sodium before long/hot sessions"
+        },
+        "during_workout": {
+          "suitable": true,
+          "notes": "Add to drink mix, target 500-1000mg/hr depending on sweat rate"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Aids rehydration"
+        }
+      },
+      "prep_time": "0 min"
+    },
+    {
+      "name": "Potassium Powder",
+      "serving_size": "1g",
+      "macros": {
+        "calories": 0,
+        "protein_g": 0,
+        "carbs_g": 0,
+        "fat_g": 0,
+        "potassium_mg": 500
+      },
+      "workout_suitability": {
+        "pre_workout": {
+          "suitable": true,
+          "notes": "General electrolyte support"
+        },
+        "during_workout": {
+          "suitable": true,
+          "notes": "Add small amount to drink mix"
+        },
+        "post_workout": {
+          "suitable": true,
+          "notes": "Aids rehydration and recovery"
+        }
+      },
+      "prep_time": "0 min",
+      "usage_notes": "Use conservatively, excess potassium can cause GI distress"
+    }
+  ],
+  "quick_reference": {
+    "pre_workout_immediate": ["fructose powder", "maltodextrin powder"],
+    "pre_workout_1hr": ["oats + fast carbs", "greek yogurt", "milk"],
+    "pre_workout_2hr_plus": ["eggs", "oats", "greek yogurt"],
+    "during_workout": ["maltodextrin + fructose mix", "sodium", "potassium"],
+    "post_workout_protein": ["greek yogurt", "eggs", "ground beef", "milk"],
+    "post_workout_carbs": ["maltodextrin", "oats", "fructose"]
+  },
+  "drink_mix_recipe": {
+    "name": "Homemade sport drink (per 750ml bottle)",
+    "for_duration": "1-2 hour ride",
+    "ingredients": [
+      { "item": "maltodextrin", "amount_g": 45 },
+      { "item": "fructose", "amount_g": 35 },
+      { "item": "sodium", "amount_mg": 500 },
+      { "item": "potassium", "amount_mg": 100 },
+      { "item": "water", "amount_ml": 750 }
+    ],
+    "macros_total": {
+      "calories": 320,
+      "carbs_g": 80
+    },
+    "notes": "Adjust concentration based on gut tolerance and session intensity"
+  }
+}
