@@ -1,0 +1,313 @@
+{
+  "_metadata": {
+    "course_id": "POLS-UN2601",
+    "course_name": "Introduction to International Politics",
+    "semester": "Spring 2026",
+    "credits": 4,
+    "last_updated": "2026-01-22"
+  },
+  "logistics": {
+    "schedule": {
+      "days": ["Tuesday", "Thursday"],
+      "time": "10:10 - 11:25 AM",
+      "location": "301 Uris Hall"
+    },
+    "instructor": {
+      "name": "Prof. Jayme R. Schlesinger",
+      "email": "jrs2293@columbia.edu",
+      "office_hours": {
+        "time": "Thursdays 12:00 - 2:00 PM",
+        "location": "816",
+        "format": "In-person (recommended) or online via Google Meet",
+        "booking": "Sign up in advance via link on Courseworks"
+      }
+    },
+    "teaching_assistants": [
+      { "name": "Anna Garner", "role": "Head TA", "email": "alg2264@columbia.edu" },
+      { "name": "Yingtong Chen", "email": "yc4501@columbia.edu" },
+      { "name": "Yu Cheng", "email": "yc4164@columbia.edu" },
+      { "name": "Laura Henckes", "email": "lh3346@columbia.edu" },
+      { "name": "Garret Hinck", "email": "gah2152@columbia.edu" },
+      { "name": "Zhong Li", "email": "zl3513@columbia.edu" },
+      { "name": "Dany Luz Carmona Niangar", "email": "dl2124@columbia.edu" },
+      { "name": "Meyer Thalheimer", "email": "mat2224@columbia.edu" },
+      { "name": "Ana Torres", "email": "aat2208@columbia.edu" }
+    ]
+  },
+  "requirements": {
+    "required_textbook": {
+      "title": "Causes of War",
+      "authors": ["Jack S. Levy", "William R. Thompson"],
+      "publisher": "Wiley-Blackwell",
+      "year": 2010
+    },
+    "additional_readings": "Available through Courseworks, Columbia Library (CLIO), or Open Web"
+  },
+  "grading": {
+    "breakdown": {
+      "section_attendance_participation": { "weight": 20, "note": "Weekly discussion sections required" },
+      "essay_1": { "weight": 25, "due": "2026-03-06", "due_time": "5:00 PM" },
+      "essay_2": { "weight": 25, "due": "2026-04-03", "due_time": "5:00 PM" },
+      "essay_3": { "weight": 30, "due": "2026-05-08", "due_time": "5:00 PM" }
+    },
+    "late_policy": {
+      "up_to_48_hours": "-5 points",
+      "up_to_7_days": "-10 points",
+      "beyond_7_days": "Discuss with Prof. Schlesinger"
+    }
+  },
+  "policies": {
+    "discussion_sections": {
+      "requirement": "Must register for UN1611 in addition to UN1601",
+      "start_date": "2026-02-02",
+      "absence_policy": "Contact TA (not professor) for religious holidays, illness, or emergency. Make-up assignment is a one-page essay."
+    },
+    "laptops": "Prohibited during lectures except with written permission. Slides posted in advance for printing.",
+    "academic_integrity": "Follow Columbia College Honor Code. Assignments processed through TurnItIn.",
+    "generative_ai": {
+      "policy": "Strongly discouraged for course work",
+      "allowed_uses": "Writing checks, language assistance",
+      "documentation_required": "If used, must include appendix showing: full exchange, AI tool used, how it was used, why it was used",
+      "violation": "Undocumented AI use = plagiarism = grade of 0 (F)"
+    }
+  },
+  "course_outline": {
+    "part_1_traditional_paradigms": {
+      "title": "Traditional Tools for Understanding International Politics",
+      "topics": [
+        {
+          "date": "2026-01-20",
+          "topic": "Introduction: Course Overview and the Basics of IR Theories",
+          "readings": ["Walt, 'One World, Many Theories' (Foreign Policy, 1998)"]
+        },
+        {
+          "date": "2026-01-22",
+          "topic": "Anarchy and Classical Realism",
+          "readings": [
+            "Walt, 'The World Wants You to Think Like a Realist' (Foreign Policy, 2018)",
+            "Eckstein, 'Anarchy' (Britannica)",
+            "Thucydides, 'The Melian Dialogue'",
+            "Hobbes, Leviathan Ch. XIII"
+          ]
+        },
+        {
+          "date": "2026-01-27",
+          "topic": "Structural Realism",
+          "readings": [
+            "Levy & Thompson, pp. 28-37",
+            "Lobell, 'Structural Realism' (Oxford Research Encyclopedia)",
+            "Fisher, 'The Credibility Trap' (Vox)"
+          ]
+        },
+        {
+          "dates": ["2026-01-29", "2026-02-03"],
+          "topic": "Liberalism: Economic Liberalism, Liberal Institutions, Democratic Peace (Case: EU)",
+          "readings": [
+            "Levy & Thompson, pp. 69-77",
+            "Kant, 'Perpetual Peace'",
+            "Oren, 'Democratic Peace' (Britannica)",
+            "EU case readings on Courseworks"
+          ]
+        },
+        {
+          "date": "2026-02-05",
+          "topic": "Levels of Analysis I: Domestic, Bureaucratic, Organizational Politics",
+          "readings": ["Levy & Thompson, Ch. 4 (pp. 83-85, 96-115) and Ch. 6 (pp. 162-185)"]
+        },
+        {
+          "date": "2026-02-10",
+          "topic": "Levels of Analysis II: Individual Level",
+          "readings": ["Levy & Thompson, Ch. 5 (pp. 128-161)"]
+        },
+        {
+          "date": "2026-02-12",
+          "topic": "Case Study: China's Assertiveness",
+          "readings": [
+            "Rudolf, 'The Sino-American World Conflict' (Survival, 2021)",
+            "Carter, 'Diversionary Aggression in Chinese Foreign Policy'",
+            "Allison, 'The Thucydides Trap'"
+          ]
+        },
+        {
+          "date": "2026-02-17",
+          "topic": "Constructivism: Identity and Ideas",
+          "readings": [
+            "Finnemore & Sikkink, 'Taking Stock' (Annual Review, 2001)",
+            "Theys, 'Introducing Constructivism in IR Theory'"
+          ]
+        },
+        {
+          "date": "2026-02-19",
+          "topic": "Case Study: U.S.-Afghanistan War and Withdrawal",
+          "readings": [
+            "Thomas, 'U.S. Military Withdrawal and Taliban Takeover' (CRS)",
+            "Bateman, 'In Afghanistan, Was a Loss Better than Peace?'",
+            "London, 'Not An Intelligence Failure'",
+            "Lee & Tucker, 'Was Biden Handcuffed by Trump's Deal in Doha?'"
+          ]
+        },
+        {
+          "dates": ["2026-02-24", "2026-02-26"],
+          "topic": "Case Study: NATO Enlargement and Russian War in Ukraine",
+          "readings": [
+            "Marten, 'NATO Enlargement' (International Politics, 2020)",
+            "NATO response documentation",
+            "Wright, 'The Right U.S. Strategy for Russia-Ukraine Negotiations'"
+          ]
+        }
+      ]
+    },
+    "part_2_critical_frameworks": {
+      "title": "Critical Frameworks and Cold War Politics",
+      "topics": [
+        {
+          "date": "2026-03-03",
+          "topic": "Critical Frameworks: Gender and Sexuality in IR",
+          "readings": [
+            "Thorburn, 'Feminism Meets International Relations'",
+            "Carver et al., 'Gender and International Relations'",
+            "Scheyer & Kumskova, 'Feminist Foreign Policy'"
+          ]
+        },
+        {
+          "date": "2026-03-05",
+          "topic": "Histories of Empire and the Post-Colonial State",
+          "readings": [
+            "Droin & Dolbaia, 'Russia Is Still Progressing in Africa'",
+            "The Economist, 'The Road to Hell is Unpaved'",
+            "Zvobgo & Loken, 'Why Race Matters in IR'",
+            "Annan, 'Two Concepts of Sovereignty'"
+          ],
+          "note": "ESSAY #1 DUE FRIDAY MAR 6"
+        },
+        {
+          "dates": ["2026-03-10", "2026-03-12"],
+          "topic": "Cold War: Power and Ideological Perspectives (Case: Cuban Missile Crisis)",
+          "readings": [
+            "Hitchcock, 'The Marshall Plan and the Creation of the West'",
+            "Burr & Rosenberg, 'Nuclear Competition in an Era of Stalemate'",
+            "Latham, 'The Cold War in the Third World'",
+            "Tannenwald & Wohlforth, 'The Role of Ideas and the End of the Cold War'"
+          ]
+        },
+        {
+          "dates": ["2026-03-17", "2026-03-19"],
+          "topic": "SPRING BREAK - NO CLASSES",
+          "readings": []
+        },
+        {
+          "date": "2026-03-24",
+          "topic": "Post-Cold War Paradigm Shifts",
+          "readings": [
+            "Matambo, 'IR Theory After the Cold War'",
+            "Lewis et al., 'The Future of International System'",
+            "Keohane, 'The old IPE and the new'"
+          ]
+        },
+        {
+          "date": "2026-03-26",
+          "topic": "Evolution of International Political Economy (IPE)",
+          "readings": [
+            "Office of the Historian, 'Bretton Woods-GATT'",
+            "WTO, 'What is the World Trade Organization'",
+            "Hopewell, 'The Rise of Brazil, India and China at the WTO'"
+          ]
+        }
+      ]
+    },
+    "part_3_emerging_issues": {
+      "title": "Emerging Issues and Non-State Actors",
+      "topics": [
+        {
+          "date": "2026-03-31",
+          "topic": "NGOs and International Standards (Case: Mine Ban Treaty)",
+          "readings": [
+            "Finnemore & Sikkink, 'International Norm Dynamics and Political Change'",
+            "Bachelet, 'Mine Ban Convention - 20 Years of Protection'",
+            "UN, 'Anti-Personnel Landmines Convention'"
+          ]
+        },
+        {
+          "date": "2026-04-02",
+          "topic": "NO CLASS",
+          "note": "ESSAY #2 DUE FRIDAY APR 3"
+        },
+        {
+          "date": "2026-04-07",
+          "topic": "International Law and the ICC",
+          "readings": [
+            "ICRC, 'What Is International Humanitarian Law?'",
+            "Britannica, 'Geneva Conventions'",
+            "NPR, 'The Rules of War Are Being Broken'",
+            "ICC Press Release on Putin arrest warrant"
+          ]
+        },
+        {
+          "date": "2026-04-09",
+          "topic": "Genocide, Intervention, R2P (Case: Rwanda)",
+          "readings": [
+            "Hegre et al., 'Evaluating the Conflict-Reducing Effect of UN Peacekeeping'",
+            "Peter, 'Between Doctrine and Practice'",
+            "Ted-Ed, 'What Caused the Rwanda Genocide?'",
+            "Global Centre for R2P, 'What Is R2P?'"
+          ]
+        },
+        {
+          "dates": ["2026-04-14", "2026-04-16"],
+          "topic": "Terrorism and International Response (Case: Right-Wing Terror)",
+          "readings": [
+            "Byman, 'Assessing the Right-Wing Terror Threat'",
+            "Jensen et al., 'The Use of Social Media by United States Extremists'",
+            "Kydd & Walter, 'The Strategies of Terrorism'",
+            "Cronin, 'When Should We Talk to Terrorists?'"
+          ]
+        },
+        {
+          "date": "2026-04-21",
+          "topic": "Nuclear Proliferation and Iran",
+          "readings": [
+            "Walt, 'Does Anyone Still Understand the Security Dilemma?'",
+            "Tannenwald, 'Justice and Fairness in the Nuclear Nonproliferation Regime'",
+            "CFR, 'What Is the Iran Nuclear Deal?'",
+            "Masters & Merrow, 'What Are Iran's Nuclear and Missile Capabilities?'"
+          ]
+        },
+        {
+          "date": "2026-04-23",
+          "topic": "Cyber Conflict",
+          "readings": [
+            "Sanger, 'Obama Order Sped Up Wave of Cyberattacks Against Iran'",
+            "Lieberthal & Singer, 'Cyber Security and U.S.-China Relations'",
+            "Willett, 'Lessons of the SolarWinds Hack'",
+            "Zetter, 'Inside the Hack of Ukraine's Power Grid'"
+          ]
+        },
+        {
+          "dates": ["2026-04-26", "2026-04-28"],
+          "topic": "Existential Threats: Global Health, Climate, Cooperation Challenges",
+          "readings": [
+            "McCann & Matenga, 'COVID-19 and Global Inequality'",
+            "Felter, 'Will the World Ever Solve the Mystery of COVID-19's Origin?'",
+            "Drezner, 'COVID-19 Didn't Reshape Geopolitics'",
+            "Bollyky & Bown, 'The Tragedy of Vaccine Nationalism'",
+            "Colgan, 'Climate change, grand strategy, and international order'"
+          ],
+          "note": "ESSAY #3 DUE FRIDAY MAY 8"
+        }
+      ]
+    }
+  },
+  "key_themes": [
+    "Realism (Classical and Structural)",
+    "Liberalism (Economic, Institutional, Democratic Peace)",
+    "Constructivism",
+    "Levels of Analysis",
+    "Critical Frameworks (Feminism, Post-colonialism)",
+    "Cold War and Post-Cold War Order",
+    "International Political Economy",
+    "International Law and Institutions",
+    "Non-State Actors",
+    "Security Issues (Terrorism, Nuclear Proliferation, Cyber)",
+    "Global Challenges (Health, Climate)"
+  ]
+}

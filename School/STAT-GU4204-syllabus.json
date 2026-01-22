@@ -1,0 +1,55 @@
+{
+  "_metadata": {
+    "course_id": "STAT-GU4204",
+    "course_name": "Statistical Inference",
+    "department": "Statistics",
+    "semester": "Spring 2025",
+    "last_updated": "2026-01-22"
+  },
+  "logistics": {
+    "instructor": {
+      "name": "Dr. Banu Baydil",
+      "department": "Department of Statistics, Columbia University"
+    },
+    "teaching_assistant": {
+      "name": "Michael Pressler",
+      "email": "mp4140@columbia.edu",
+      "office_hours": "See CourseWorks announcements"
+    }
+  },
+  "prerequisites": {
+    "required": "STAT GU4203 Probability Theory and its prerequisites"
+  },
+  "requirements": {
+    "textbook": {
+      "title": "Probability and Statistics",
+      "edition": "Fourth Edition",
+      "authors": ["M. H. DeGroot", "M. J. Schervish"],
+      "publisher": "Pearson",
+      "year": 2012,
+      "isbn": "978-0321500465"
+    },
+    "reading_notes": [
+      "Skip 'diamond' or 'star' marked sections unless covered in lectures or assigned",
+      "Lecture slides may cover additional material not in textbook",
+      "Read corresponding chapters as topics are covered"
+    ]
+  },
+  "grading": {
+    "breakdown": {
+      "midterm_1": { "weight": 25, "format": "In-class" },
+      "midterm_2": { "weight": 25, "format": "In-class" },
+      "final_exam": { "weight": 40, "format": "In-class" },
+      "homework": { "weight": 10, "note": "Lowest HW score dropped" }
+    }
+  },
+  "course_content": {
+    "description": "Statistical Inference course building on Probability Theory",
+    "source": "DeGroot and Schervish textbook with additional lecture material",
+    "note": "Course follows the book but lectures do not read directly from it"
+  },
+  "policies": {
+    "homework": "Lowest score dropped",
+    "exams": "2 in-class midterms + 1 in-class final"
+  }
+}

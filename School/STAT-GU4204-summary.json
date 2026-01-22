@@ -1,0 +1,41 @@
+{
+  "_metadata": {
+    "course_id": "STAT-GU4204",
+    "course_name": "Statistical Inference",
+    "semester": "Spring 2025",
+    "last_updated": "2026-01-22"
+  },
+  "quick_reference": {
+    "instructor": "Dr. Banu Baydil",
+    "ta": "Michael Pressler (mp4140@columbia.edu)",
+    "ta_office_hours": "See CourseWorks"
+  },
+  "grading_summary": {
+    "midterm_1": "25%",
+    "midterm_2": "25%",
+    "final": "40%",
+    "homework": "10% (lowest dropped)"
+  },
+  "textbook": {
+    "short": "DeGroot & Schervish, Probability and Statistics, 4th Ed (2012)",
+    "isbn": "978-0321500465",
+    "note": "Skip diamond/star sections unless assigned"
+  },
+  "prerequisites": "STAT GU4203 Probability Theory",
+  "key_policies": {
+    "exams": "All in-class (2 midterms + final)",
+    "homework": "Lowest HW score dropped",
+    "reading": "Read chapters as covered; lecture slides may have extra material"
+  },
+  "study_tips": {
+    "textbook": "Read corresponding chapters alongside lectures",
+    "lectures": "Slides cover additional material beyond textbook",
+    "sections_to_skip": "Diamond or star marked sections unless explicitly assigned"
+  },
+  "assignments": {
+    "midterm_1": { "weight": "25%", "format": "In-class", "date": "TBD" },
+    "midterm_2": { "weight": "25%", "format": "In-class", "date": "TBD" },
+    "final": { "weight": "40%", "format": "In-class", "date": "TBD" },
+    "homework": { "weight": "10%", "frequency": "Regular", "policy": "Lowest dropped" }
+  }
+}

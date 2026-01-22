@@ -1,0 +1,137 @@
+{
+  "_metadata": {
+    "description": "Master calendar of all assignments, exams, quizzes, projects, and deadlines across all courses",
+    "semester": "Spring 2026",
+    "last_updated": "2026-01-22"
+  },
+  "calendar": [
+    {
+      "date": "2026-02-02",
+      "type": "milestone",
+      "course": "POLS-UN2601",
+      "description": "Discussion sections begin",
+      "note": "Must be registered for UN1611"
+    },
+    {
+      "date": "2026-03-06",
+      "type": "assignment",
+      "course": "POLS-UN2601",
+      "description": "Essay #1 Due",
+      "time": "5:00 PM",
+      "weight": "25%",
+      "late_policy": "-5 pts up to 48hrs, -10 pts up to 7 days"
+    },
+    {
+      "date": "2026-03-17",
+      "type": "break",
+      "course": "ALL",
+      "description": "Spring Break begins"
+    },
+    {
+      "date": "2026-03-19",
+      "type": "break",
+      "course": "ALL",
+      "description": "Spring Break ends"
+    },
+    {
+      "date": "2026-04-02",
+      "type": "no_class",
+      "course": "POLS-UN2601",
+      "description": "No class held"
+    },
+    {
+      "date": "2026-04-03",
+      "type": "assignment",
+      "course": "POLS-UN2601",
+      "description": "Essay #2 Due",
+      "time": "5:00 PM",
+      "weight": "25%",
+      "late_policy": "-5 pts up to 48hrs, -10 pts up to 7 days"
+    },
+    {
+      "date": "2026-05-08",
+      "type": "assignment",
+      "course": "POLS-UN2601",
+      "description": "Essay #3 Due",
+      "time": "5:00 PM",
+      "weight": "30%",
+      "late_policy": "-5 pts up to 48hrs, -10 pts up to 7 days"
+    }
+  ],
+  "by_course": {
+    "POLS-UN2601": {
+      "assignments": [
+        { "name": "Essay #1", "due": "2026-03-06", "time": "5:00 PM", "weight": "25%" },
+        { "name": "Essay #2", "due": "2026-04-03", "time": "5:00 PM", "weight": "25%" },
+        { "name": "Essay #3", "due": "2026-05-08", "time": "5:00 PM", "weight": "30%" }
+      ],
+      "participation": {
+        "name": "Discussion Section Attendance",
+        "starts": "2026-02-02",
+        "frequency": "Weekly",
+        "weight": "20%"
+      },
+      "exams": []
+    },
+    "STAT-GU4204": {
+      "assignments": [
+        { "name": "Homework (multiple)", "frequency": "Regular", "weight": "10%", "note": "Lowest dropped" }
+      ],
+      "exams": [
+        { "name": "Midterm 1", "date": "TBD", "weight": "25%", "format": "In-class" },
+        { "name": "Midterm 2", "date": "TBD", "weight": "25%", "format": "In-class" },
+        { "name": "Final Exam", "date": "TBD", "weight": "40%", "format": "In-class" }
+      ]
+    },
+    "STAT-W4207": {
+      "assignments": [
+        { "name": "Homework 1", "date": "TBD", "weight": "Part of 25%" },
+        { "name": "Homework 2", "date": "TBD", "weight": "Part of 25%" },
+        { "name": "Homework 3", "date": "TBD", "weight": "Part of 25%" },
+        { "name": "Homework 4 (if assigned)", "date": "TBD", "weight": "Part of 25%" }
+      ],
+      "exams": [
+        { "name": "Midterm", "date": "TBD", "weight": "25%", "format": "In-class" },
+        { "name": "Final Exam", "date": "TBD", "weight": "50%", "format": "In-class" }
+      ]
+    }
+  },
+  "upcoming_deadlines": {
+    "description": "Next 30 days from anchor date (2026-01-22)",
+    "items": [
+      {
+        "date": "2026-02-02",
+        "course": "POLS-UN2601",
+        "item": "Discussion sections begin - ensure UN1611 registration"
+      }
+    ],
+    "note": "Update this section as dates become known"
+  },
+  "tbd_items": {
+    "description": "Items with dates to be announced",
+    "items": [
+      { "course": "STAT-GU4204", "item": "Midterm 1 date" },
+      { "course": "STAT-GU4204", "item": "Midterm 2 date" },
+      { "course": "STAT-GU4204", "item": "Final Exam date" },
+      { "course": "STAT-GU4204", "item": "Homework due dates" },
+      { "course": "STAT-W4207", "item": "Midterm date" },
+      { "course": "STAT-W4207", "item": "Final Exam date" },
+      { "course": "STAT-W4207", "item": "Homework 1-4 due dates" }
+    ]
+  },
+  "grading_weights_summary": {
+    "POLS-UN2601": {
+      "total": "100%",
+      "breakdown": "Participation 20% + Essay 1 25% + Essay 2 25% + Essay 3 30%"
+    },
+    "STAT-GU4204": {
+      "total": "100%",
+      "breakdown": "HW 10% (lowest dropped) + Midterm 1 25% + Midterm 2 25% + Final 40%"
+    },
+    "STAT-W4207": {
+      "total": "100%",
+      "breakdown": "HW 25% + Midterm 25% + Final 50%",
+      "curve": "May be applied; target average B+ to A-"
+    }
+  }
+}

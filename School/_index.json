@@ -1,0 +1,63 @@
+{
+  "_metadata": {
+    "domain": "school",
+    "description": "Academic context for Columbia University courses",
+    "semester": "Spring 2026",
+    "last_updated": "2026-01-22"
+  },
+  "student_info": {
+    "institution": "Columbia University",
+    "semester": "Spring 2026"
+  },
+  "courses": {
+    "POLS-UN2601": {
+      "name": "Introduction to International Politics",
+      "credits": 4,
+      "schedule": "T/R 10:10-11:25 AM",
+      "instructor": "Prof. Jayme R. Schlesinger",
+      "files": {
+        "syllabus": "POLS-UN2601-syllabus.json",
+        "summary": "POLS-UN2601-summary.json"
+      }
+    },
+    "STAT-GU4204": {
+      "name": "Statistical Inference",
+      "schedule": "TBD",
+      "instructor": "Dr. Banu Baydil",
+      "files": {
+        "syllabus": "STAT-GU4204-syllabus.json",
+        "summary": "STAT-GU4204-summary.json"
+      }
+    },
+    "STAT-W4207": {
+      "name": "Stochastic Processes",
+      "schedule": "TBD",
+      "instructor": "Prof. Mark Brown",
+      "files": {
+        "syllabus": "STAT-W4207-syllabus.json",
+        "summary": "STAT-W4207-summary.json"
+      }
+    }
+  },
+  "context_files": {
+    "key-dates.json": "Master calendar of all assignments, exams, and deadlines",
+    "POLS-UN2601-syllabus.json": "Full syllabus for International Politics",
+    "POLS-UN2601-summary.json": "Key points and quick reference for International Politics",
+    "STAT-GU4204-syllabus.json": "Full syllabus for Statistical Inference",
+    "STAT-GU4204-summary.json": "Key points and quick reference for Statistical Inference",
+    "STAT-W4207-syllabus.json": "Full syllabus for Stochastic Processes",
+    "STAT-W4207-summary.json": "Key points and quick reference for Stochastic Processes"
+  },
+  "global_rules": {
+    "date_format": "YYYY-MM-DD",
+    "time_zone": "America/New_York (Eastern)",
+    "semester_dates": {
+      "spring_break": "2026-03-17 to 2026-03-19"
+    }
+  },
+  "response_preferences": {
+    "deadline_queries": "Check key-dates.json first, then course summary",
+    "content_queries": "Check course syllabus for readings and topics",
+    "quick_reference": "Use summary files for fast lookups"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_metadata": {
+    "course_id": "STAT-W4207/5207",
+    "course_name": "Stochastic Processes",
+    "semester": "Spring 2026",
+    "last_updated": "2026-01-22"
+  },
+  "quick_reference": {
+    "instructor": "Prof. Mark Brown (mb2484@columbia.edu)",
+    "office_hours": "TBD - check CourseWorks",
+    "ta": "TBD"
+  },
+  "grading_summary": {
+    "homework": "25% (3-4 assignments)",
+    "midterm": "25% (in-class)",
+    "final": "50% (in-class)",
+    "curve": "May be applied; target average B+ to A-"
+  },
+  "textbook": {
+    "short": "Sheldon Ross, Introduction to Probability Models (10th, 11th, or 12th ed)",
+    "isbn_12th": "978-0128143469 (hardcover), 978-9351073833 (softcover)"
+  },
+  "prerequisites": {
+    "required": "Probability (W4203 level) + Calculus",
+    "helpful": "Linear algebra, differential equations"
+  },
+  "topics_outline": {
+    "assumed_from_prereq": "Chapters 1-3 (basic probability)",
+    "chapter_4": "Discrete time Markov chains",
+    "chapter_5": "Poisson processes",
+    "chapter_6": "Continuous time Markov chains",
+    "chapter_10": "Brownian motion",
+    "from_notes": "Stochastic calculus and option pricing"
+  },
+  "not_covered_systematically": {
+    "chapter_8": "Queueing theory",
+    "chapter_9": "Reliability theory",
+    "note": "Applications may appear as illustrations"
+  },
+  "key_policies": {
+    "homework": "3-4 assignments, collected and graded",
+    "zoom_review": "Homework review sessions via Zoom before due dates",
+    "lectures": "Notes posted in advance; read before class for better engagement"
+  },
+  "study_tips": {
+    "preparation": "Read posted lecture notes before attending class",
+    "homework": "Attend Zoom review sessions; videos posted to CourseWorks",
+    "applications": "Keep in mind connections to finance, engineering, operations research"
+  },
+  "assignments": {
+    "homework_1": { "weight": "Part of 25%", "date": "TBD" },
+    "homework_2": { "weight": "Part of 25%", "date": "TBD" },
+    "homework_3": { "weight": "Part of 25%", "date": "TBD" },
+    "homework_4": { "weight": "Part of 25%", "date": "TBD (if assigned)" },
+    "midterm": { "weight": "25%", "format": "In-class", "date": "TBD" },
+    "final": { "weight": "50%", "format": "In-class", "date": "TBD" }
+  }
+}

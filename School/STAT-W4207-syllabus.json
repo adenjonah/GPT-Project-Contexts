@@ -1,0 +1,106 @@
+{
+  "_metadata": {
+    "course_id": "STAT-W4207/5207",
+    "course_name": "Stochastic Processes",
+    "department": "Statistics",
+    "semester": "Spring 2026",
+    "last_updated": "2026-01-22"
+  },
+  "logistics": {
+    "instructor": {
+      "name": "Mark Brown",
+      "title": "Adjunct Professor of Statistics, Columbia University",
+      "email": "mb2484@columbia.edu",
+      "office_hours": {
+        "status": "TBD",
+        "note": "Semi-retired, no Columbia office. Will post time/place on CourseWorks."
+      }
+    },
+    "teaching_assistant": {
+      "status": "TBD",
+      "note": "Contact information will be provided on CourseWorks"
+    },
+    "grader": {
+      "status": "TBD"
+    }
+  },
+  "course_objectives": "To familiarize students with models, methodology, and applications of stochastic processes. Relevant to statistics, biostatistics, financial mathematics, actuarial science, computer science, electrical engineering, operations research, and management science.",
+  "prerequisites": {
+    "required": "Probability course at level of W4203, good knowledge of calculus",
+    "helpful_but_not_required": ["Linear algebra", "Differential equations"]
+  },
+  "requirements": {
+    "textbook": {
+      "title": "Introduction to Probability Models",
+      "author": "Sheldon M. Ross",
+      "editions_acceptable": ["10th", "11th", "12th"],
+      "isbn_12th_hardcover": "978-0128143469",
+      "isbn_12th_softcover": "978-9351073833",
+      "note": "Many discount sellers online for new and used copies"
+    }
+  },
+  "grading": {
+    "breakdown": {
+      "homework": { "weight": 25, "count": "3-4 assignments", "note": "Collected and graded" },
+      "midterm": { "weight": 25, "format": "In-class" },
+      "final": { "weight": 50, "format": "In-class" }
+    },
+    "curve_policy": "Statistical adjustment (curve) may be applied to midterm and/or final if appropriate",
+    "target_average": "Between B+ and A-"
+  },
+  "topics_covered": {
+    "assumed_knowledge": {
+      "chapters": [1, 2, 3],
+      "source": "Ross textbook, from probability prerequisite"
+    },
+    "covered_chapters": [
+      {
+        "chapter": 4,
+        "topic": "Discrete time countable state Markov chains"
+      },
+      {
+        "chapter": 5,
+        "topic": "Poisson and related processes"
+      },
+      {
+        "chapter": 6,
+        "topic": "Continuous time countable state Markov chains"
+      },
+      {
+        "chapter": 10,
+        "topic": "Brownian motion"
+      },
+      {
+        "source": "Instructor notes",
+        "topic": "Aspects of stochastic calculus and option pricing"
+      }
+    ],
+    "not_systematically_covered": {
+      "chapter_8": "Queueing theory",
+      "chapter_9": "Reliability theory",
+      "note": "May present applications from time to time to illustrate methodology"
+    }
+  },
+  "course_materials": {
+    "posted_in_advance": [
+      "Lecture notes",
+      "Problems and solutions (from time to time)"
+    ],
+    "recommendation": "Read posted lectures before class for better engagement and two-way discussion",
+    "homework_support": "Zoom homework review sessions before each assignment due, videos posted on CourseWorks"
+  },
+  "policies": {
+    "honor_code": "All students must adhere to honor code at http://www.barnard.edu/",
+    "zoom_sessions": "Used for homework review sessions (large classrooms difficult to reserve)"
+  },
+  "applications_areas": [
+    "Statistics",
+    "Biostatistics",
+    "Financial mathematics",
+    "Actuarial science",
+    "Computer science",
+    "Electrical engineering",
+    "Operations research",
+    "Management science"
+  ]
+}

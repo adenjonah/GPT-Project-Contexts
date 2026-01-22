@@ -1,0 +1,108 @@
+{
+  "_metadata": {
+    "course_id": "POLS-UN2601",
+    "course_name": "Introduction to International Politics",
+    "semester": "Spring 2026",
+    "last_updated": "2026-01-22"
+  },
+  "quick_reference": {
+    "schedule": "T/R 10:10-11:25 AM, 301 Uris Hall",
+    "instructor": "Prof. Jayme R. Schlesinger (jrs2293@columbia.edu)",
+    "head_ta": "Anna Garner (alg2264@columbia.edu)",
+    "office_hours": "Thursdays 12-2 PM, Room 816"
+  },
+  "assignments": {
+    "essay_1": {
+      "due": "2026-03-06",
+      "due_time": "5:00 PM",
+      "weight": "25%",
+      "prompt_released": "2 weeks prior"
+    },
+    "essay_2": {
+      "due": "2026-04-03",
+      "due_time": "5:00 PM",
+      "weight": "25%",
+      "prompt_released": "2 weeks prior"
+    },
+    "essay_3": {
+      "due": "2026-05-08",
+      "due_time": "5:00 PM",
+      "weight": "30%",
+      "prompt_released": "2 weeks prior"
+    },
+    "discussion_participation": {
+      "weight": "20%",
+      "frequency": "Weekly",
+      "starts": "2026-02-02"
+    }
+  },
+  "key_policies": {
+    "late_penalty": "-5 pts up to 48hrs, -10 pts up to 7 days",
+    "laptops": "PROHIBITED in lecture (print slides beforehand)",
+    "ai_policy": "Strongly discouraged; if used, must document in appendix or receive F",
+    "absences": "Contact your TA (not professor) for religious/illness/emergency",
+    "regrading": "Must discuss with TA first before requesting professor review"
+  },
+  "course_structure": {
+    "part_1": {
+      "title": "Traditional Paradigms",
+      "dates": "Jan 20 - Feb 26",
+      "key_theories": ["Realism (Classical/Structural)", "Liberalism", "Constructivism", "Levels of Analysis"],
+      "case_studies": ["EU", "China", "Afghanistan", "NATO/Ukraine"]
+    },
+    "part_2": {
+      "title": "Critical Frameworks & Cold War",
+      "dates": "Mar 3 - Mar 26",
+      "key_theories": ["Feminism in IR", "Post-colonialism", "Cold War dynamics", "IPE"],
+      "case_studies": ["Cuban Missile Crisis", "Post-Cold War order"]
+    },
+    "part_3": {
+      "title": "Emerging Issues & Non-State Actors",
+      "dates": "Mar 31 - Apr 28",
+      "key_topics": ["NGOs", "International Law", "Genocide/R2P", "Terrorism", "Nuclear Proliferation", "Cyber", "Climate/Health"],
+      "case_studies": ["Mine Ban Treaty", "ICC", "Rwanda", "Right-wing terror", "Iran", "COVID-19"]
+    }
+  },
+  "important_dates": {
+    "discussion_sections_start": "2026-02-02",
+    "essay_1_due": "2026-03-06",
+    "spring_break": "2026-03-17 to 2026-03-19",
+    "no_class_apr_2": "2026-04-02",
+    "essay_2_due": "2026-04-03",
+    "essay_3_due": "2026-05-08"
+  },
+  "required_textbook": {
+    "short": "Levy & Thompson, Causes of War (2010)",
+    "key_chapters": [
+      "Ch. 4 (pp. 83-85, 96-115): State and Societal Level",
+      "Ch. 5 (pp. 128-161): Individual Level",
+      "Ch. 6 (pp. 162-185): Organizational Level",
+      "pp. 28-37: Structural Realism",
+      "pp. 69-77: Liberalism",
+      "pp. 86-95: Economic ideological competition",
+      "pp. 104-117: Democratic Peace (suggested)"
+    ]
+  },
+  "core_concepts_by_theory": {
+    "realism": {
+      "key_concepts": ["Anarchy", "Self-help", "Balance of power", "Security dilemma", "Credibility"],
+      "key_thinkers": ["Thucydides", "Hobbes", "Waltz", "Mearsheimer"],
+      "key_reading": "Walt, 'One World, Many Theories' - chart on p.38"
+    },
+    "liberalism": {
+      "key_concepts": ["Democratic peace", "Economic interdependence", "International institutions", "Cooperation"],
+      "key_thinkers": ["Kant", "Keohane", "Ikenberry"],
+      "key_reading": "Kant, 'Perpetual Peace'"
+    },
+    "constructivism": {
+      "key_concepts": ["Identity", "Norms", "Ideas shape interests", "Social construction"],
+      "key_thinkers": ["Finnemore", "Sikkink", "Wendt"],
+      "key_reading": "Finnemore & Sikkink, 'Taking Stock'"
+    }
+  },
+  "study_tips": {
+    "reading_strategy": "Read mindfully, not every word. Focus on core arguments for discussion.",
+    "writing": "Assignments test ability to apply theories to events. Use rubric on Courseworks.",
+    "participation": "Ask questions, engage in activities, contribute substantively."
+  }
+}
